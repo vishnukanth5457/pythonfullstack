@@ -1,0 +1,246 @@
+
+# 1️⃣1️⃣ HTML BLOCK & INLINE ELEMENTS 
+
+> HTML elements are mainly classified based on **how they occupy space on a web page**.
+
+---
+
+## 🧠 Big Picture
+
+* **Block elements** → take full width, start on new line
+* **Inline elements** → take only required width, stay in same line
+
+🧠 Analogy
+Block = **Full row bench**
+Inline = **Person sitting on bench**
+
+---
+
+# 🧱 BLOCK ELEMENTS
+
+---
+
+## 🔹 What are Block Elements?
+
+Block elements:
+
+* Always start on a **new line**
+* Take **full width** of parent
+* Can contain other block & inline elements
+
+---
+
+## 🔹 Common Block Elements
+
+* `<div>`
+* `<p>`
+* `<h1>` to `<h6>`
+* `<section>`
+* `<article>`
+* `<header>`
+* `<footer>`
+* `<ul>`, `<ol>`, `<li>`
+* `<table>`
+
+---
+
+## 🔹 Example
+
+```html
+<h1>This is a heading</h1>
+<p>This is a paragraph</p>
+<div>This is a div</div>
+```
+
+🧠 Output behavior
+Each element appears on a **new line**
+
+---
+
+## 🔹 Block Element Styling
+
+```html
+<div style="background-color: lightblue;">
+  Full width block
+</div>
+```
+
+---
+
+# ➖ INLINE ELEMENTS
+
+---
+
+## 🔹 What are Inline Elements?
+
+Inline elements:
+
+* Do NOT start on a new line
+* Take **only required width**
+* Cannot contain block elements (generally)
+
+---
+
+## 🔹 Common Inline Elements
+
+* `<span>`
+* `<a>`
+* `<img>`
+* `<strong>`
+* `<em>`
+* `<label>`
+* `<code>`
+
+---
+
+## 🔹 Example
+
+```html
+<p>
+  This is <span>inline</span> text with
+  <a href="#">link</a> and an
+  <img src="icon.png" width="20">
+</p>
+```
+
+🧠 Output behavior
+Everything stays **in the same line**
+
+---
+
+## 🔹 Inline Styling Example
+
+```html
+<span style="color: red;">Red text</span>
+```
+
+---
+
+# 🔄 BLOCK vs INLINE — COMPARISON
+
+| Feature  | Block      | Inline        |
+| -------- | ---------- | ------------- |
+| New line | Yes        | No            |
+| Width    | Full width | Content width |
+| Height   | Adjustable | Limited       |
+| Margin   | All sides  | Left & right  |
+| Padding  | All sides  | Left & right  |
+
+---
+
+## 🔁 INLINE-BLOCK (IMPORTANT BONUS 🔥)
+
+Elements can be changed using CSS.
+
+```html
+<span style="display: block;">Now block</span>
+<div style="display: inline;">Now inline</div>
+```
+
+```html
+<div style="display: inline-block; width: 100px;">
+  Inline Block
+</div>
+```
+
+📌 `inline-block` allows:
+
+* Width & height
+* Inline behavior
+
+---
+
+# 🔥 COMPLETE DEMO FILE
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Block vs Inline</title>
+</head>
+<body>
+
+  <h1>Block Elements</h1>
+  <div style="background: lightgray;">Block div</div>
+  <p>Block paragraph</p>
+
+  <hr>
+
+  <h2>Inline Elements</h2>
+  <p>
+    <span style="color: blue;">Inline span</span>
+    <a href="#">Inline link</a>
+    <img src="icon.png" width="20">
+  </p>
+
+  <hr>
+
+  <h2>Inline-Block</h2>
+  <div style="display:inline-block; width:100px; background: pink;">
+    Box 1
+  </div>
+  <div style="display:inline-block; width:100px; background: lightgreen;">
+    Box 2
+  </div>
+
+</body>
+</html>
+```
+
+---
+
+## 🧠 INTERVIEW QUESTIONS & ANSWERS
+
+--> 1️⃣ Difference between block and inline?
+
+👉 Block starts new line, inline doesn’t.
+
+---
+
+--> 2️⃣ Can inline elements have width & height?
+
+👉 ❌ No (except `inline-block`).
+
+---
+
+--> 3️⃣ Can block elements contain inline?
+
+👉 ✅ Yes.
+
+---
+
+--> 4️⃣ Can inline contain block?
+
+👉 ❌ Generally no.
+
+---
+
+--> 5️⃣ Is `<img>` inline or block?
+
+👉 Inline element.
+
+---
+
+--> 6️⃣ Is `<div>` semantic?
+
+👉 ❌ No, it’s a generic container.
+
+---
+
+--> 7️⃣ What is `inline-block`?
+
+👉 Inline element with block properties.
+
+---
+
+--> 8️⃣ Why is this topic important?
+
+👉 For layout, spacing, and CSS control.
+
+---
+
+## ✅ BEST PRACTICES
+
+* Use semantic block elements when possible
+* Use `<div>` only when no semantic tag fits
+* Control layout using CSS, not `<br>`

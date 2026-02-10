@@ -1,0 +1,295 @@
+
+# 7️⃣ HTML LINKS
+
+> Links connect **one page to another**, **one section to another**, or **one action to another**.
+
+---
+
+## 🧠 Big Picture
+
+The **entire internet works because of links**.
+
+* Website → Website
+* Page → Page
+* Section → Section
+* Email / Call → Action
+
+HTML uses the **anchor tag `<a>`** for all links.
+
+---
+
+## 1️⃣ `<a>` TAG (ANCHOR TAG)
+
+--> Basic syntax
+
+```html
+<a href="https://example.com">Visit Website</a>
+```
+
+📌 `href` = destination URL
+📌 Text between tags = clickable part
+
+🧠 Analogy
+`<a>` = **road** connecting two places
+
+---
+
+## 2️⃣ ABSOLUTE URLs
+
+Links to **external websites**.
+
+--> Example
+
+```html
+<a href="https://www.google.com">Google</a>
+```
+
+📌 Includes:
+
+* Protocol (`https://`)
+* Domain name
+
+--> When to use?
+
+* External websites
+* Other domains
+
+---
+
+## 3️⃣ RELATIVE URLs
+
+Links to files **within the same website/project**.
+
+--> Example
+
+```html
+<a href="about.html">About Us</a>
+```
+
+--> Folder example
+
+```html
+<a href="pages/contact.html">Contact</a>
+```
+
+📌 No domain name
+📌 Used for internal navigation
+
+🧠 Analogy
+Relative URL = **room number inside a building**
+
+---
+
+## 4️⃣ TARGET ATTRIBUTE
+
+Controls **where the link opens**.
+
+--> Common values
+
+--># `_self` (default)
+
+```html
+<a href="home.html" target="_self">Home</a>
+```
+
+--># `_blank` (new tab)
+
+```html
+<a href="https://google.com" target="_blank">
+  Open Google
+</a>
+```
+
+📌 Best practice for external links
+
+---
+
+## 5️⃣ EMAIL LINKS (`mailto:`)
+
+Opens **default email app**.
+
+--> Example
+
+```html
+<a href="mailto:example@gmail.com">
+  Send Email
+</a>
+```
+
+--> With subject
+
+```html
+<a href="mailto:example@gmail.com?subject=Hello">
+  Email Us
+</a>
+```
+
+📌 Used in contact pages
+
+---
+
+## 6️⃣ PHONE LINKS (`tel:`)
+
+Used for **click-to-call**, especially on mobile.
+
+--> Example
+
+```html
+<a href="tel:+919876543210">
+  Call Now
+</a>
+```
+
+📌 Very common in business websites
+
+🧠 Analogy
+One-tap call button ☎️
+
+---
+
+## 7️⃣ BOOKMARK LINKS (INTERNAL PAGE LINKS)
+
+Used to jump to **specific sections** of the same page.
+
+--> Step 1: Create an ID
+
+```html
+<h2 id="services">Our Services</h2>
+```
+
+--> Step 2: Link to it
+
+```html
+<a href="#services">Go to Services</a>
+```
+
+📌 Used in:
+
+* Long pages
+* Documentation
+* FAQs
+
+---
+
+## 🔥 COMPLETE HTML LINKS DEMO FILE
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Links</title>
+</head>
+<body>
+
+  <h1>HTML Links Demo</h1>
+
+  <!-- Absolute URL -->
+  <a href="https://www.google.com" target="_blank">
+    Visit Google
+  </a>
+
+  <br><br>
+
+  <!-- Relative URL -->
+  <a href="about.html">About Us</a>
+
+  <br><br>
+
+  <!-- Email link -->
+  <a href="mailto:contact@example.com">
+    Email Us
+  </a>
+
+  <br><br>
+
+  <!-- Phone link -->
+  <a href="tel:+919876543210">
+    Call Us
+  </a>
+
+  <br><br>
+
+  <!-- Bookmark link -->
+  <a href="#contact">Go to Contact Section</a>
+
+  <hr>
+
+  <h2 id="contact">Contact Section</h2>
+  <p>This is the contact section.</p>
+
+</body>
+</html>
+```
+
+---
+
+## 🧠 INTERVIEW QUESTIONS & ANSWERS
+
+--> 1️⃣ What is the `<a>` tag?
+
+👉 Used to create hyperlinks.
+
+---
+
+--> 2️⃣ Difference between absolute and relative URL?
+
+| Absolute  | Relative   |
+| --------- | ---------- |
+| Full path | Local path |
+| External  | Internal   |
+
+---
+
+--> 3️⃣ What does `target="_blank"` do?
+
+👉 Opens link in a new tab.
+
+---
+
+--> 4️⃣ What is default target value?
+
+👉 `_self`
+
+---
+
+--> 5️⃣ What is `mailto:`?
+
+👉 Opens email client.
+
+---
+
+--> 6️⃣ What is `tel:` used for?
+
+👉 Click-to-call functionality.
+
+---
+
+--> 7️⃣ How do bookmark links work?
+
+👉 Using `id` + `#id`.
+
+---
+
+--> 8️⃣ Is anchor tag inline or block?
+
+👉 Inline element.
+
+---
+
+--> 9️⃣ Can we link images?
+
+👉 Yes.
+
+```html
+<a href="home.html">
+  <img src="logo.png">
+</a>
+```
+
+---
+
+--> 🔟 Best practices for links?
+
+* Use descriptive text
+* Use `_blank` for external links
+* Avoid “click here”

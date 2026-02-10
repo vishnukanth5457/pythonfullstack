@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <title>Advanced Header</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-md">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+    <!-- Logo -->
+    <div class="text-2xl font-bold text-blue-600">
+      vishnu<span class="text-black dark:text-white">Tech</span>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="hidden md:flex space-x-6">
+
+      <a href="#" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 transition">
+        Home
+      </a>
+
+      <!-- Dropdown -->
+      <div class="relative group">
+        <button class="text-gray-700 dark:text-gray-200 hover:text-blue-600 transition">
+          Services ▾
+        </button>
+
+        <div class="absolute hidden group-hover:block bg-white dark:bg-gray-700 mt-2 rounded shadow-md">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">Web</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">App</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600">SEO</a>
+        </div>
+      </div>
+
+      <!-- Mega Menu -->
+      <div class="relative group">
+        <button class="text-gray-700 dark:text-gray-200 hover:text-blue-600 transition">
+          Courses ▾
+        </button>
+
+        <div class="absolute hidden group-hover:flex bg-white dark:bg-gray-700 mt-2 p-6 space-x-10 shadow-lg">
+          <div>
+            <h4 class="font-semibold mb-2">Frontend</h4>
+            <a href="#" class="block text-sm hover:text-blue-500">HTML</a>
+            <a href="#" class="block text-sm hover:text-blue-500">CSS</a>
+            <a href="#" class="block text-sm hover:text-blue-500">JS</a>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2">Backend</h4>
+            <a href="#" class="block text-sm hover:text-blue-500">Python</a>
+            <a href="#" class="block text-sm hover:text-blue-500">PHP</a>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2">VLSI</h4>
+            <a href="#" class="block text-sm hover:text-blue-500">RTL</a>
+            <a href="#" class="block text-sm hover:text-blue-500">UVM</a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 transition">
+        Contact
+      </a>
+    </nav>
+
+    <!-- Search -->
+    <div class="relative hidden md:block">
+      <input id="searchInput"
+        type="text"
+        placeholder="Search..."
+        onkeyup="showSuggestions()"
+        class="rounded-full px-4 py-2 outline-none dark:bg-gray-700 dark:text-white" />
+
+      <div id="suggestions"
+        class="absolute bg-white dark:bg-gray-700 mt-2 w-full rounded shadow-md hidden">
+      </div>
+    </div>
+
+    <!-- Actions -->
+    <div class="flex items-center space-x-3">
+
+      <button onclick="toggleDark()" class="text-xl">🌙</button>
+
+      <button onclick="openModal()"
+        class="px-4 py-2 rounded-full border border-blue-600 text-blue-600">
+        Login
+      </button>
+
+      <button onclick="toggleMobile()" class="md:hidden text-2xl">☰</button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-white dark:bg-gray-800 p-6 space-y-4">
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Courses</a>
+    <a href="#">Contact</a>
+  </div>
+</header>
+
+<!-- LOGIN MODAL -->
+<div id="loginModal"
+  class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center">
+
+  <div class="bg-white dark:bg-gray-800 p-6 rounded-lg w-80 animate-fade">
+    <h2 class="text-xl font-bold mb-4">Login</h2>
+
+    <input type="email" placeholder="Email"
+      class="w-full p-2 border rounded mb-3 dark:bg-gray-700 dark:text-white" />
+
+    <input type="password" placeholder="Password"
+      class="w-full p-2 border rounded mb-3 dark:bg-gray-700 dark:text-white" />
+
+    <button class="bg-blue-600 text-white py-2 rounded w-full">
+      Login
+    </button>
+
+    <button onclick="closeModal()" class="text-sm mt-3 text-gray-500">
+      Close
+    </button>
+  </div>
+</div>
+
+<script>
+  function toggleDark() {
+    document.documentElement.classList.toggle("dark");
+  }
+
+  function toggleMobile() {
+    document.getElementById("mobileMenu").classList.toggle("hidden");
+  }
+
+  function openModal() {
+    const modal = document.getElementById("loginModal");
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+  }
+
+  function closeModal() {
+    document.getElementById("loginModal").classList.add("hidden");
+  }
+
+  const data = ["HTML", "CSS", "JavaScript", "Python", "VLSI", "RTL", "UVM"];
+
+  function showSuggestions() {
+    const input = document.getElementById("searchInput").value.toLowerCase();
+    const box = document.getElementById("suggestions");
+    box.innerHTML = "";
+
+    if (!input) {
+      box.classList.add("hidden");
+      return;
+    }
+
+    data.filter(item => item.toLowerCase().includes(input))
+      .forEach(item => {
+        const div = document.createElement("div");
+        div.textContent = item;
+        div.className = "px-4 py-2 hover:bg-gray-200 cursor-pointer";
+        box.appendChild(div);
+      });
+
+    box.classList.remove("hidden");
+  }
+</script>
+
+<style>
+@keyframes fade {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+.animate-fade {
+  animation: fade 0.3s ease;
+}
+</style>
+
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML All Elements Demo</title>
+
+  <!-- Viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- External CSS example -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Internal CSS -->
+  <style>
+    body { font-family: Arial; margin: 20px; }
+    section { border: 2px solid #ccc; padding: 15px; margin-bottom: 25px; }
+    h2 { color: #2c3e50; }
+    table, th, td { border: 1px solid black; border-collapse: collapse; padding: 8px; }
+    .blue { color: blue; }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🌐 HTML COMPLETE ELEMENTS DEMO</h1>
+  <p>This page demonstrates meanings & working of HTML elements.</p>
+</header>
+
+<nav>
+  <a href="#quotes">Quotes</a> |
+  <a href="#colors">Colors</a> |
+  <a href="#links">Links</a> |
+  <a href="#media">Media</a> |
+  <a href="#forms">Forms</a>
+</nav>
+
+<main>
+
+<!-- 5️⃣ QUOTATIONS & CODE -->
+<section id="quotes">
+  <h2>5️⃣ HTML Quotations & Code</h2>
+
+  <blockquote>
+    This is a blockquote – used for long quotes.
+  </blockquote>
+
+  <p>Short quote using <q>q tag</q></p>
+
+  <p><abbr title="HyperText Markup Language">HTML</abbr> abbreviation</p>
+
+  <address>
+    Written by Vishnukanth<br>
+    Hyderabad, India
+  </address>
+
+  <p><cite>HTML Specification</cite></p>
+
+  <p><bdo dir="rtl">This text is reversed</bdo></p>
+
+  <p>Inline code: <code>console.log("Hello")</code></p>
+
+  <pre>
+function hello() {
+  return "Preformatted text";
+}
+  </pre>
+
+  <p>Press <kbd>Ctrl</kbd> + <kbd>S</kbd></p>
+
+  <p>Sample output: <samp>Hello World</samp></p>
+
+  <p>Formula variable: <var>x</var> = 10</p>
+</section>
+
+<!-- 6️⃣ COLORS -->
+<section id="colors">
+  <h2>6️⃣ HTML Colors</h2>
+
+  <p style="color:red;">Color Name</p>
+  <p style="color:#ff5733;">HEX Color</p>
+  <p style="color:rgb(0,128,0);">RGB Color</p>
+  <p style="color:rgba(0,0,255,0.6);">RGBA Color</p>
+  <p style="color:hsl(300,100%,50%);">HSL Color</p>
+</section>
+
+<!-- 7️⃣ LINKS -->
+<section id="links">
+  <h2>7️⃣ HTML Links</h2>
+
+  <a href="https://google.com" target="_blank">Absolute URL</a><br>
+  <a href="about.html">Relative URL</a><br>
+  <a href="mailto:test@gmail.com">Email Link</a><br>
+  <a href="tel:+911234567890">Phone Link</a><br>
+  <a href="#top">Bookmark Link</a>
+</section>
+
+<!-- 8️⃣ IMAGES & MEDIA -->
+<section id="media">
+  <h2>8️⃣ Images & Media</h2>
+
+  <img src="../pexels-daigofotos-32710703.jpg" alt="Sample Image" width="150">
+
+  <audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+  </audio>
+
+  <video width="300" controls>
+    <source src="video.mp4" type="video/mp4">
+  </video>
+</section>
+
+<!-- 9️⃣ TABLES -->
+<section>
+  <h2>9️⃣ HTML Tables</h2>
+
+  <table>
+    <caption>Student Data</caption>
+    <thead>
+      <tr><th>Name</th><th>Age</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Ram</td><td>22</td></tr>
+      <tr><td>Shyam</td><td>23</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- 🔟 LISTS -->
+<section>
+  <h2>🔟 HTML Lists</h2>
+
+  <ol>
+    <li>Ordered Item</li>
+    <li>Another Ordered Item</li>
+  </ol>
+
+  <ul>
+    <li>Unordered Item</li>
+    <li>Another Unordered Item</li>
+  </ul>
+
+  <dl>
+    <dt>HTML</dt>
+    <dd>Markup Language</dd>
+  </dl>
+</section>
+
+<!-- 1️⃣1️⃣ BLOCK & INLINE -->
+<section>
+  <h2>1️⃣1️⃣ Block vs Inline</h2>
+
+  <div>This is a block element</div>
+  <span class="blue">This is inline</span>
+  <span class="blue">Inline continues</span>
+</section>
+
+<!-- 1️⃣2️⃣ DIV & SPAN -->
+<section>
+  <h2>1️⃣2️⃣ Div & Span</h2>
+
+  <div style="border:1px solid black;">
+    Room (div) with <span style="color:red;">sticker (span)</span>
+
+  </div>
+  <P>HELLO THIS IS A <SPAn style="color:blue;">Vishnukanth</SPAn></P>
+  <span><h1>hello</h1></span>
+</section>
+
+<!-- 1️⃣3️⃣ CLASS & ID -->
+<section>
+  <h2>1️⃣3️⃣ Class & ID</h2>
+
+  <p class="blue">Class example</p>
+  <p id="unique">ID example</p>
+
+</section>
+
+<!-- 1️⃣4️⃣ FORMS -->
+<section id="forms">
+  <h2>1️⃣4️⃣ HTML Forms</h2>
+
+  <form>
+    <label>Name:</label>
+    <input type="text"><br><br>
+
+    <input type="email" placeholder="Email"><br><br>
+
+    <input type="radio" name="g"> Male
+    <input type="radio" name="g"> Female<br><br>
+
+    <input type="checkbox"> Agree<br><br>
+
+    <input type="submit">
+  </form>
+</section>
+
+<!-- 1️⃣5️⃣ IFRAME -->
+<section>
+  <h2>1️⃣5️⃣ IFRAME</h2>
+
+  <iframe src="https://www.wikipedia.org" width="300" height="200"></iframe>
+  <iframe src="https://en.wikipedia.org/wiki/Virtual_reality" width="300" height="200"></iframe>
+</section>
+
+<!-- 1️⃣7️⃣ SEMANTIC -->
+<section>
+  <h2>1️⃣7️⃣ Semantic Elements</h2>
+
+  <article>
+    <p>&lt;div&gt; &lt;/div&gt;</p>
+    <h3>Article</h3>
+    <p>Independent content</p>
+  </article>
+
+  <aside>Side content</aside>
+</section>
+
+<!-- 2️⃣2️⃣ ENTITIES -->
+<section>
+  <h2>2️⃣2️⃣ HTML Entities</h2>
+
+&copy;
+&reg;
+&trade;
+&dollar;
+&euro;
+&#x20B9;
+&#x20A8;
+&riyal;
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 HTML Learning</p>
+</footer>
+
+</body>
+</html>

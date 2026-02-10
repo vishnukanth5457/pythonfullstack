@@ -1,0 +1,600 @@
+
+# 9️⃣ HTML TABLES 
+
+> Tables are used to display **tabular data** (rows & columns), **not for layout**.
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 🧠 Big Picture
+
+* Rows = horizontal data
+* Columns = vertical data
+* Table = spreadsheet-like structure
+
+🧠 Analogy
+HTML table = **Excel sheet**
+
+----------------------------------------------------------------------------------------------------------------------
+
+# 🧱 TABLE STRUCTURE TAGS
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 1️⃣ `<table>` — Table Container
+
+Wraps the entire table.
+
+```html
+<table>
+  ...
+</table>
+```
+
+📌 Without `<table>`, other table tags won’t work.
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 2️⃣ `<tr>` — Table Row
+
+Defines **one row**.
+
+```html
+<tr>
+  ...
+</tr>
+```
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 3️⃣ `<th>` — Table Header Cell
+
+* Defines **column headings**
+* Bold + center by default
+* Semantic meaning
+
+```html
+<th>Name</th>
+<th>Age</th>
+```
+
+📌 Screen readers treat headers specially
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 4️⃣ `<td>` — Table Data Cell
+
+Defines **normal cell data**.
+
+```html
+<td>Vishnukanth</td>
+<td>22</td>
+```
+
+----------------------------------------------------------------------------------------------------------------------
+
+# 🧠 BASIC TABLE EXAMPLE
+
+```html
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Role</th>
+  </tr>
+  <tr>
+    <td>Vishnu</td>
+    <td>Developer</td>
+  </tr>
+</table>
+```
+
+----------------------------------------------------------------------------------------------------------------------
+
+# 🧾 TABLE METADATA TAGS (SEMANTIC 🔥)
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 5️⃣ `<caption>` — Table Title
+
+Provides a **heading for the table**.
+
+```html
+<caption>Employee Details</caption>
+```
+
+📌 Appears at top
+📌 Improves accessibility
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 6️⃣ `<thead>` — Table Header Group
+
+Groups column headings.
+
+```html
+<thead>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+  </tr>
+</thead>
+```
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 7️⃣ `<tbody>` — Table Body
+
+Contains **main data**.
+
+```html
+<tbody>
+  <tr>
+    <td>1</td>
+    <td>Alice</td>
+  </tr>
+</tbody>
+```
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 8️⃣ `<tfoot>` — Table Footer
+
+Used for totals, summaries.
+
+```html
+<tfoot>
+  <tr>
+    <td colspan="2">Total Employees: 10</td>
+  </tr>
+</tfoot>
+```
+
+📌 Renders at bottom
+📌 Browser may load it first (performance)
+
+----------------------------------------------------------------------------------------------------------------------
+
+# 🔀 ROW & COLUMN SPANNING
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 9️⃣ `rowspan`
+
+Used to **merge rows vertically**.
+
+--> Example
+
+```html
+<td rowspan="2">Admin</td>
+```
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 🔟 `colspan` (Important to know)
+
+Used to **merge columns horizontally**.
+
+```html
+<td colspan="2">Total</td>
+```
+
+----------------------------------------------------------------------------------------------------------------------
+
+# 🔥 COMPLETE TABLE DEMO FILE
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Tables</title>
+</head>
+<body>
+
+  <h1>HTML Tables</h1>
+
+  <table border="1">
+
+    <caption>Employee Details</caption>
+
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Department</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Vishnu</td>
+        <td rowspan="2">IT</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Rahul</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="3">Total Employees: 2</td>
+      </tr>
+    </tfoot>
+
+  </table>
+
+</body>
+</html>
+```
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 🧠 INTERVIEW QUESTIONS & ANSWERS
+
+--> 1️⃣ What is the purpose of `<table>`?
+
+👉 To display structured tabular data.
+
+----------------------------------------------------------------------------------------------------------------------
+
+--> 2️⃣ Difference between `<th>` and `<td>`?
+
+| `<th>`   | `<td>`  |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Header   | Data    |
+| Bold     | Normal  |
+| Semantic | Content |
+
+----------------------------------------------------------------------------------------------------------------------
+
+--> 3️⃣ Why use `<caption>`?
+
+👉 Accessibility & table description.
+
+----------------------------------------------------------------------------------------------------------------------
+
+--> 4️⃣ Difference between `<thead>`, `<tbody>`, `<tfoot>`?
+
+👉 Semantic grouping of table sections.
+
+----------------------------------------------------------------------------------------------------------------------
+
+--> 5️⃣ What is `rowspan`?
+
+👉 Merges rows vertically.
+
+----------------------------------------------------------------------------------------------------------------------
+
+--> 6️⃣ What is `colspan`?
+
+👉 Merges columns horizontally.
+
+----------------------------------------------------------------------------------------------------------------------
+
+--> 7️⃣ Can tables be used for layout?
+
+👉 ❌ No, use CSS instead.
+
+----------------------------------------------------------------------------------------------------------------------
+
+--> 8️⃣ Which loads first: `<thead>` or `<tfoot>`?
+
+👉 `<tfoot>` may load first for performance.
+
+----------------------------------------------------------------------------------------------------------------------
+
+--> 9️⃣ Are tables responsive by default?
+
+👉 ❌ No, need CSS.
+
+----------------------------------------------------------------------------------------------------------------------
+
+## ✅ BEST PRACTICES
+
+* Use tables **only for data**
+* Always add `<caption>`
+* Use semantic sections
+* Style using CSS (not `border` attribute)
+========================================================================================
+Understood 👍
+Here is the **pure NOTEPAD format** version.
+No symbols, no emojis, no markdown, no decorations.
+Only plain text.
+
+----------------------------------------------------------------------------------------------------------------------
+
+HTML TABLES
+
+Tables are used to display tabular data (rows and columns).
+Tables should not be used for page layout.
+
+----------------------------------------------------------------------------------------------------------------------
+
+BIG PICTURE
+
+Rows represent horizontal data
+Columns represent vertical data
+A table is similar to a spreadsheet
+
+Analogy
+An HTML table is like an Excel sheet
+
+----------------------------------------------------------------------------------------------------------------------
+
+TABLE STRUCTURE TAGS
+
+----------------------------------------------------------------------------------------------------------------------
+
+TABLE TAG
+
+The table tag is the container for the entire table.
+
+Example
+
+<table>
+</table>
+
+Without the table tag, other table elements will not work.
+
+----------------------------------------------------------------------------------------------------------------------
+
+TR TAG
+
+The tr tag defines a single table row.
+
+Example
+
+<tr>
+</tr>
+
+----------------------------------------------------------------------------------------------------------------------
+
+TH TAG
+
+The th tag defines a table header cell.
+
+Characteristics
+Column headings
+Bold and center aligned by default
+Has semantic meaning
+
+Example
+
+<th>Name</th>
+<th>Age</th>
+
+Screen readers treat header cells specially.
+
+----------------------------------------------------------------------------------------------------------------------
+
+TD TAG
+
+The td tag defines a normal table data cell.
+
+Example
+
+<td>Vishnukanth</td>
+<td>22</td>
+
+----------------------------------------------------------------------------------------------------------------------
+
+BASIC TABLE EXAMPLE
+
+<table border="1">
+<tr>
+<th>Name</th>
+<th>Role</th>
+</tr>
+<tr>
+<td>Vishnu</td>
+<td>Developer</td>
+</tr>
+</table>
+
+----------------------------------------------------------------------------------------------------------------------
+
+TABLE METADATA TAGS
+
+----------------------------------------------------------------------------------------------------------------------
+
+CAPTION TAG
+
+The caption tag provides a title for the table.
+
+Example
+
+<caption>Employee Details</caption>
+
+The caption appears at the top of the table.
+It improves accessibility.
+
+----------------------------------------------------------------------------------------------------------------------
+
+THEAD TAG
+
+The thead tag groups header rows.
+
+Example
+
+<thead>
+<tr>
+<th>ID</th>
+<th>Name</th>
+</tr>
+</thead>
+
+----------------------------------------------------------------------------------------------------------------------
+
+TBODY TAG
+
+The tbody tag contains the main table data.
+
+Example
+
+<tbody>
+<tr>
+<td>1</td>
+<td>Alice</td>
+</tr>
+</tbody>
+
+----------------------------------------------------------------------------------------------------------------------
+
+TFOOT TAG
+
+The tfoot tag is used for totals or summary information.
+
+Example
+
+<tfoot>
+<tr>
+<td colspan="2">Total Employees: 10</td>
+</tr>
+</tfoot>
+
+The footer is rendered at the bottom.
+The browser may load it first for performance.
+
+----------------------------------------------------------------------------------------------------------------------
+
+ROW AND COLUMN SPANNING
+
+----------------------------------------------------------------------------------------------------------------------
+
+ROWSPAN
+
+Rowspan is used to merge rows vertically.
+
+Example
+
+<td rowspan="2">Admin</td>
+
+----------------------------------------------------------------------------------------------------------------------
+
+COLSPAN
+
+Colspan is used to merge columns horizontally.
+
+Example
+
+<td colspan="2">Total</td>
+
+----------------------------------------------------------------------------------------------------------------------
+
+COMPLETE TABLE DEMO
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>HTML Tables</title>
+</head>
+<body>
+
+<h1>HTML Tables</h1>
+
+<table border="1">
+
+<caption>Employee Details</caption>
+
+<thead>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Department</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td>Vishnu</td>
+<td rowspan="2">IT</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Rahul</td>
+</tr>
+</tbody>
+
+<tfoot>
+<tr>
+<td colspan="3">Total Employees: 2</td>
+</tr>
+</tfoot>
+
+</table>
+
+</body>
+</html>
+
+----------------------------------------------------------------------------------------------------------------------
+
+INTERVIEW QUESTIONS AND ANSWERS
+
+----------------------------------------------------------------------------------------------------------------------
+
+What is the purpose of the table tag
+To display structured tabular data
+
+----------------------------------------------------------------------------------------------------------------------
+
+Difference between th and td
+
+th
+Used for headers
+Bold by default
+Semantic meaning
+
+td
+Used for data
+Normal text
+Content only
+
+----------------------------------------------------------------------------------------------------------------------
+
+Why use the caption tag
+It improves accessibility and describes the table
+
+----------------------------------------------------------------------------------------------------------------------
+
+Difference between thead tbody and tfoot
+They provide semantic grouping of table sections
+
+----------------------------------------------------------------------------------------------------------------------
+
+What is rowspan
+It merges rows vertically
+
+----------------------------------------------------------------------------------------------------------------------
+
+What is colspan
+It merges columns horizontally
+
+----------------------------------------------------------------------------------------------------------------------
+
+Can tables be used for layout
+No. CSS should be used instead
+
+----------------------------------------------------------------------------------------------------------------------
+
+Which loads first thead or tfoot
+The tfoot section may load first for performance
+
+----------------------------------------------------------------------------------------------------------------------
+
+Are tables responsive by default
+No. CSS is required
+
+----------------------------------------------------------------------------------------------------------------------
+
+BEST PRACTICES
+
+Use tables only for data
+Always include a caption
+Use semantic table sections
+Use CSS for styling instead of HTML attributes
+
+----------------------------------------------------------------------------------------------------------------------
+
+If you want the same notepad format for other HTML topics, tell me which one next.

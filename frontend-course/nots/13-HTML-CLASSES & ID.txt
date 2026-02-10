@@ -1,0 +1,248 @@
+# 1️⃣3️⃣ HTML CLASSES & ID — COMPLETE DEEP GUIDE
+
+> `class` and `id` are used to **identify and target HTML elements** using **CSS and JavaScript**.
+
+---
+
+## 🧠 Big Picture
+
+* `class` → **group of elements**
+* `id` → **single unique element**
+
+🧠 Analogy
+
+* `class` = **school uniform** 👕
+* `id` = **Aadhaar number** 🆔
+
+---
+
+# 1️⃣ `class` ATTRIBUTE
+
+---
+
+## 🔹 What is `class`?
+
+* Used to **group multiple elements**
+* Can be reused
+* One element can have **multiple classes**
+
+--> Basic example
+
+```html
+<p class="info">Paragraph 1</p>
+<p class="info">Paragraph 2</p>
+```
+
+📌 Both elements belong to the same group.
+
+---
+
+## 🔹 Multiple Classes
+
+```html
+<div class="card active highlight">
+  Content
+</div>
+```
+
+📌 Classes are space-separated
+📌 Very common in real projects
+
+---
+
+## 🔹 Using `class` with CSS
+
+```html
+<style>
+  .info {
+    color: blue;
+    font-size: 18px;
+  }
+</style>
+
+<p class="info">Styled using class</p>
+```
+
+---
+
+## 🔹 Using `class` with JavaScript
+
+```html
+<script>
+  document.querySelectorAll(".info")
+    .forEach(el => el.style.color = "red");
+</script>
+```
+
+📌 Targets **multiple elements**
+
+---
+
+# 2️⃣ `id` ATTRIBUTE
+
+---
+
+## 🔹 What is `id`?
+
+* Identifies **one unique element**
+* Must be **unique per page**
+* Used for:
+
+  * JavaScript
+  * Anchor links
+  * Specific styling
+
+--> Basic example
+
+```html
+<h1 id="mainTitle">Welcome</h1>
+```
+
+❌ Wrong (duplicate id)
+
+```html
+<p id="text">One</p>
+<p id="text">Two</p>
+```
+
+---
+
+## 🔹 Using `id` with CSS
+
+```html
+<style>
+  #mainTitle {
+    color: green;
+  }
+</style>
+```
+
+---
+
+## 🔹 Using `id` with JavaScript
+
+```html
+<script>
+  document.getElementById("mainTitle")
+    .style.fontSize = "32px";
+</script>
+```
+
+📌 Faster and precise selection
+
+---
+
+## 🔹 Using `id` for Bookmark Links
+
+```html
+<a href="#contact">Go to Contact</a>
+
+<h2 id="contact">Contact Section</h2>
+```
+
+---
+
+# 🔄 CLASS vs ID — COMPARISON
+
+| Feature          | class    | id     |
+| ---------------- | -------- | ------ |
+| Unique           | ❌ No     | ✅ Yes  |
+| Reusable         | ✅ Yes    | ❌ No   |
+| Multiple allowed | Yes      | No     |
+| CSS selector     | `.class` | `#id`  |
+| JS selection     | Multiple | Single |
+
+---
+
+## 🔥 COMPLETE DEMO FILE
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Class & ID</title>
+  <style>
+    .box {
+      padding: 10px;
+      margin: 5px;
+      background: lightblue;
+    }
+
+    #special {
+      background: lightgreen;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">Box 1</div>
+  <div class="box">Box 2</div>
+  <div class="box" id="special">Special Box</div>
+
+</body>
+</html>
+```
+
+---
+
+## 🧠 INTERVIEW QUESTIONS & ANSWERS
+
+--> 1️⃣ Can an element have both class and id?
+
+👉 ✅ Yes.
+
+```html
+<div class="box" id="mainBox"></div>
+```
+
+---
+
+--> 2️⃣ Can two elements have same id?
+
+👉 ❌ No.
+
+---
+
+--> 3️⃣ Which is faster: class or id?
+
+👉 `id` (single element).
+
+---
+
+--> 4️⃣ Can we style using id?
+
+👉 ✅ Yes, but not recommended for reusable styles.
+
+---
+
+--> 5️⃣ Can one element have multiple classes?
+
+👉 ✅ Yes.
+
+---
+
+--> 6️⃣ Which is preferred in CSS?
+
+👉 `class` (reusable & maintainable).
+
+---
+
+--> 7️⃣ Can JavaScript select by class?
+
+👉 ✅ `querySelectorAll()`.
+
+---
+
+--> 8️⃣ Is class mandatory?
+
+👉 ❌ No, optional.
+
+---
+
+## ✅ BEST PRACTICES
+
+* Use `class` for styling
+* Use `id` for JavaScript & anchors
+* Avoid styling using id
+* Use meaningful names

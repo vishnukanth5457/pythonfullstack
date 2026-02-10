@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+.dark body {
+  background: #111;
+}
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.logo span {
+  color: #007bff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+.navbar a,
+.navbar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.dropdown-menu a {
+  display: block;
+  padding: 10px 15px;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Mega Menu
+.mega-menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: #fff;
+  padding: 20px;
+  gap: 40px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+.dropdown:hover .mega-menu {
+  display: flex;
+}
+.mega-menu h4 {
+  margin-bottom: 10px;
+} */
+
+
+
+/* Mega Menu */
+.mega-menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: #fff;
+  /* display: flex; */
+  padding: 20px;
+  gap: 40px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.dropdown:hover .mega-menu {
+  display: flex;
+}
+
+.mega-menu h4 {
+  margin-bottom: 10px;
+}
+
+/* Search */
+.search {
+  position: relative;
+}
+.search input {
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+.suggestions {
+  position: absolute;
+  top: 35px;
+  width: 100%;
+  background: #fff;
+  display: none;
+}
+.suggestions div {
+  padding: 8px;
+  cursor: pointer;
+}
+.suggestions div:hover {
+  background: #eee;
+}
+
+/* Actions */
+.actions button {
+  margin-left: 10px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.hamburger {
+  display: none;
+}
+
+/* Mobile */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  padding: 15px;
+}
+.mobile-menu a {
+  padding: 10px 0;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  width: 300px;
+  animation: fade 0.3s;
+}
+.modal-content input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+/* Animations */
+@keyframes fade {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar, .search {
+    display: none;
+  }
+  .hamburger {
+    display: inline-block;
+  }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Header</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container">
+
+    <!-- Logo -->
+    <div class="logo">VK<span>Tech</span></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <a href="#">Home</a>
+
+      <!-- Dropdown -->
+      <div class="dropdown">
+        <button>Services ▾</button>
+        <div class="dropdown-menu">
+          <a href="#">Web</a>
+          <a href="#">App</a>
+          <a href="#">SEO</a>
+        </div>
+      </div>
+
+      <!-- Mega Menu -->
+      <div class="dropdown">
+        <button>Courses ▾</button>
+        <div class="mega-menu">
+          <div>
+            <h4>Frontend</h4>
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">JS</a>
+          </div>
+          <div>
+            <h4>Backend</h4>
+            <a href="#">Python</a>
+            <a href="#">PHP</a>
+          </div>
+          <div>
+            <h4>VLSI</h4>
+            <a href="#">RTL</a>
+            <a href="#">UVM</a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#">Contact</a>
+    </nav>
+
+    <!-- Search -->
+    <div class="search">
+      <input type="text" id="searchInput" placeholder="Search..." onkeyup="showSuggestions()">
+      <div id="suggestions" class="suggestions"></div>
+    </div>
+
+    <!-- Actions -->
+    <div class="actions">
+      <button onclick="toggleDark()">🌙</button>
+      <button onclick="openModal()">Login</button>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+    </div>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Courses</a>
+    <a href="#">Contact</a>
+  </div>
+</header>
+
+<!-- LOGIN MODAL -->
+<div class="modal" id="loginModal">
+  <div class="modal-content">
+    <h2>Login</h2>
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button>Login</button>
+    <p onclick="closeModal()">Close</p>
+  </div>
+</div>
+
+<script src="script2.js"></script>
+</body>
+</html>

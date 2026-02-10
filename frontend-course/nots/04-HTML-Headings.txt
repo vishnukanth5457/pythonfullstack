@@ -1,0 +1,314 @@
+# 4️⃣ HTML TEXT & FORMATTING 
+
+> Used to **display and format textual content** on a web page.
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 🧱 PART A: TEXT TAGS (STRUCTURE)
+
+These define **structure**, not appearance.
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 1️⃣ `<h1>` to `<h6>` — Headings
+
+Used for **titles and sub-titles**.
+
+```html
+<h1>Main Heading</h1>
+<h2>Sub Heading</h2>
+<h3>Section</h3>
+<h4>Sub Section</h4>
+<h5>Small Heading</h5>
+<h6>Very Small Heading</h6>
+```
+
+📌 Rules
+
+* `<h1>` → most important
+* `<h6>` → least important
+* Only **one `<h1>` per page** (best practice)
+
+🧠 Analogy
+Book title → `<h1>`
+Chapter → `<h2>`
+Topic → `<h3>`
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 2️⃣ `<p>` — Paragraph
+
+Used for **blocks of text**.
+
+```html
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+```
+
+📌 Browser adds space automatically.
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 3️⃣ `<span>` — Inline Container
+
+Used to style or target **part of text**.
+
+```html
+<p>This is <span style="color:red;">important</span> text.</p>
+```
+
+📌 No meaning by itself
+📌 Inline element
+
+🧠 Analogy
+Sentence → `<p>`
+Word → `<span>`
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 4️⃣ `<br>` — Line Break
+
+Creates a **new line**.
+
+```html
+Address:<br>
+Hyderabad<br>
+India
+```
+
+📌 Empty (void) element
+📌 Use for poems, addresses
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 5️⃣ `<hr>` — Horizontal Rule
+
+Creates a **section divider**.
+
+```html
+<hr>
+```
+
+📌 Semantic in HTML5 (thematic break)
+
+----------------------------------------------------------------------------------------------------------------------
+
+# 🎨 PART B: FORMATTING TAGS (MEANING + STYLE)
+
+These affect **appearance + meaning**.
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 6️⃣ `<b>` vs `<strong>`
+
+--> `<b>` — Bold (visual only)
+
+```html
+<b>Bold text</b>
+```
+
+--> `<strong>` — Important text (semantic)
+
+```html
+<strong>Important text</strong>
+```
+
+📌 Screen readers emphasize `<strong>`
+
+🧠 Interview tip
+👉 Prefer `<strong>` over `<b>`
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 7️⃣ `<i>` vs `<em>`
+
+--> `<i>` — Italic (visual)
+
+```html
+<i>Italic text</i>
+```
+
+--> `<em>` — Emphasized (semantic)
+
+```html
+<em>Emphasized text</em>
+```
+
+📌 `<em>` improves accessibility
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 8️⃣ `<u>` — Underline
+
+```html
+<u>Underlined text</u>
+```
+
+⚠️ Not recommended for links (confusing)
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 9️⃣ `<mark>` — Highlight Text
+
+```html
+<p>This is <mark>highlighted</mark> text.</p>
+```
+
+📌 Common in search results
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 🔟 `<small>` — Smaller Text
+
+```html
+<small>Terms and conditions apply</small>
+```
+
+📌 Used for disclaimers, notes
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 1️⃣1️⃣ `<del>` — Deleted Text
+
+```html
+<p>Price: <del>₹1000</del> ₹800</p>
+```
+
+📌 Shows removed content
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 1️⃣2️⃣ `<ins>` — Inserted Text
+
+```html
+<p>Offer valid till <ins>Sunday</ins></p>
+```
+
+📌 Usually underlined
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 1️⃣3️⃣ `<sub>` — Subscript
+
+```html
+H<sub>2</sub>O
+```
+
+📌 Used in chemistry, math
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 1️⃣4️⃣ `<sup>` — Superscript
+
+```html
+10<sup>2</sup>
+```
+
+📌 Used for powers, footnotes
+
+----------------------------------------------------------------------------------------------------------------------
+
+
+
+## 🔥 COMPLETE FORMATTING DEMO FILE
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Text & Formatting</title>
+</head>
+<body>
+
+  <h1>HTML Text & Formatting</h1>
+
+  <p>
+    This is <strong>important</strong> and
+    this is <em>emphasized</em>.
+  </p>
+
+  <p>
+    <b>Bold</b>, <i>Italic</i>, <u>Underline</u>
+  </p>
+
+  <p>
+    Highlight: <mark>Special Offer</mark>
+  </p>
+
+  <p>
+    <small>Terms apply</small>
+  </p>
+
+  <p>
+    Old price <del>₹1000</del>
+    New price <ins>₹800</ins>
+  </p>
+
+  <p>
+    Water = H<sub>2</sub>O  
+    Square = x<sup>2</sup>
+  </p>
+
+  <hr>
+
+  <p>
+    Address:<br>
+    Hyderabad<br>
+    India
+  </p>
+
+</body>
+</html>
+```
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 🧠 INTERVIEW QUESTIONS & ANSWERS
+
+--> 1️⃣ Difference between `<b>` and `<strong>`?
+
+👉 `<b>` is visual, `<strong>` is semantic.
+
+----------------------------------------------------------------------------------------------------------------------
+
+--> 2️⃣ Difference between `<i>` and `<em>`?
+
+👉 `<i>` styles text, `<em>` adds emphasis meaning.
+
+----------------------------------------------------------------------------------------------------------------------
+
+--> 3️⃣ Is `<mark>` semantic?
+
+👉 Yes, it highlights relevant text.
+
+----------------------------------------------------------------------------------------------------------------------
+
+--> 4️⃣ Can `<span>` replace formatting tags?
+
+👉 Yes with CSS, but semantics are lost.
+
+----------------------------------------------------------------------------------------------------------------------
+
+--> 5️⃣ What is the difference between `<sub>` and `<sup>`?
+
+👉 Subscript goes down, superscript goes up.
+
+----------------------------------------------------------------------------------------------------------------------
+
+--> 6️⃣ Why avoid `<u>`?
+
+👉 It looks like a hyperlink.
+
+----------------------------------------------------------------------------------------------------------------------
+
+--> 7️⃣ Is `<hr>` only visual?
+
+👉 No, it represents a thematic break.
+
+----------------------------------------------------------------------------------------------------------------------
+
+--> 8️⃣ Which tags help accessibility?
+
+👉 `<strong>`, `<em>`, semantic tags.
+
+========================================================================================

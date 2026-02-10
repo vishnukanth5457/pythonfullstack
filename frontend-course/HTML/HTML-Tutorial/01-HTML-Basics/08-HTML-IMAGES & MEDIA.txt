@@ -1,0 +1,566 @@
+# 8️⃣ HTML IMAGES & MEDIA — COMPLETE DEEP GUIDE
+
+> Used to display **visual and multimedia content** on web pages.
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 🧠 Big Picture
+
+* Images = visual communication
+* Audio & Video = user engagement
+* Correct usage = **performance + SEO + accessibility**
+
+----------------------------------------------------------------------------------------------------------------------
+
+# 🖼️ PART A: IMAGES
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 1️⃣ `<img>` TAG
+
+Used to display images.
+
+--> Basic syntax
+
+```html
+<img src="image.jpg" alt="Description">
+```
+
+📌 `<img>` is a **void (empty) element**
+📌 Always needs `src` and `alt`
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 2️⃣ `src` ATTRIBUTE
+
+Specifies the **image path**.
+
+--> Example (relative path)
+
+```html
+<img src="images/car.jpg" alt="Red car">
+```
+
+--> Example (absolute path)
+
+```html
+<img src="https://example.com/car.jpg" alt="Car">
+```
+
+📌 Broken `src` = broken image icon
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 3️⃣ `alt` ATTRIBUTE (VERY IMPORTANT 🔥)
+
+Alternative text shown when:
+
+* Image fails to load
+* Screen reader reads the page
+
+--> Example
+
+```html
+<img src="car.jpg" alt="Red sports car parked on road">
+```
+
+📌 Improves **SEO & accessibility**
+
+🧠 Analogy
+`alt` = **spoken description of image**
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 4️⃣ `width` and `height`
+
+Used to control image size.
+
+--> Example
+
+```html
+<img src="car.jpg" alt="Car" width="300" height="200">
+```
+
+📌 Prevents layout shifting
+📌 Better performance
+
+❌ Avoid stretching images unnaturally
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 5️⃣ IMAGE FORMATS (IMPORTANT FOR INTERVIEWS)
+
+| Format     | Use Case                  |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| JPG / JPEG | Photos                    |
+| PNG        | Transparent images        |
+| SVG        | Icons, logos              |
+| WEBP       | High quality + small size |
+
+📌 **WEBP is best for performance**
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 🔥 IMAGE BEST PRACTICE EXAMPLE
+
+```html
+<img 
+  src="car.webp"
+  alt="Red car on highway"
+  width="400"
+  loading="lazy">
+```
+
+📌 `loading="lazy"` improves speed
+
+----------------------------------------------------------------------------------------------------------------------
+
+# 🎧 PART B: AUDIO
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 6️⃣ `<audio>` TAG
+
+Used to play sound files.
+
+--> Basic example
+
+```html
+<audio src="song.mp3" controls></audio>
+```
+
+📌 `controls` = play, pause, volume
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 7️⃣ `<source>` TAG (Multiple formats)
+
+```html
+<audio controls>
+  <source src="song.mp3" type="audio/mpeg">
+  <source src="song.ogg" type="audio/ogg">
+  Your browser does not support audio.
+</audio>
+```
+
+📌 Browser chooses best supported format
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 🎥 PART C: VIDEO
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 8️⃣ `<video>` TAG
+
+Used to play videos.
+
+--> Basic example
+
+```html
+<video src="movie.mp4" controls></video>
+```
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 9️⃣ VIDEO ATTRIBUTES
+
+--> `controls`
+
+```html
+<video controls></video>
+```
+
+--> `autoplay`
+
+```html
+<video autoplay muted></video>
+```
+
+📌 `muted` required for autoplay in modern browsers
+
+----------------------------------------------------------------------------------------------------------------------
+
+--> `loop`
+
+```html
+<video loop></video>
+```
+
+----------------------------------------------------------------------------------------------------------------------
+
+--> `width` & `height`
+
+```html
+<video width="400" height="250"></video>
+```
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 🔥 COMPLETE AUDIO & VIDEO DEMO
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Media</title>
+</head>
+<body>
+
+  <h1>HTML Images & Media</h1>
+
+  <!-- Image -->
+  <img src="logo.png" alt="Company Logo" width="200">
+
+  <hr>
+
+  <!-- Audio -->
+  <audio controls>
+    <source src="music.mp3" type="audio/mpeg">
+    Browser does not support audio.
+  </audio>
+
+  <hr>
+
+  <!-- Video -->
+  <video width="400" controls loop muted>
+    <source src="video.mp4" type="video/mp4">
+    Browser does not support video.
+  </video>
+
+</body>
+</html>
+```
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 🧠 INTERVIEW QUESTIONS & ANSWERS
+
+--> 1️⃣ Is `<img>` a container tag?
+
+👉 No, it’s a void element.
+
+----------------------------------------------------------------------------------------------------------------------
+
+--> 2️⃣ Why is `alt` important?
+
+👉 Accessibility, SEO, fallback text.
+
+----------------------------------------------------------------------------------------------------------------------
+
+--> 3️⃣ Difference between JPG and PNG?
+
+👉 JPG = photos, PNG = transparency.
+
+----------------------------------------------------------------------------------------------------------------------
+
+--> 4️⃣ What is SVG?
+
+👉 Scalable vector graphics.
+
+----------------------------------------------------------------------------------------------------------------------
+
+--> 5️⃣ Why use `<source>`?
+
+👉 To support multiple formats.
+
+----------------------------------------------------------------------------------------------------------------------
+
+--> 6️⃣ Why does autoplay not work sometimes?
+
+👉 Browsers block autoplay unless muted.
+
+----------------------------------------------------------------------------------------------------------------------
+
+--> 7️⃣ What is WEBP?
+
+👉 Modern image format with smaller size.
+
+----------------------------------------------------------------------------------------------------------------------
+
+--> 8️⃣ Is video tag inline or block?
+
+👉 Block-level element.
+
+----------------------------------------------------------------------------------------------------------------------
+
+## ✅ BEST PRACTICES
+
+* Always add `alt`
+* Use `WEBP` images
+* Avoid autoplay with sound
+* Use lazy loading
+* Optimize media size
+===================================================================================================
+Below is the **same content converted to pure NOTEPAD format**.
+No symbols, no emojis, no markdown styling.
+Plain text only. Copy paste friendly.
+
+----------------------------------------------------------------------------------------------------------------------
+
+HTML IMAGES AND MEDIA COMPLETE DEEP GUIDE
+
+Used to display visual and multimedia content on web pages.
+
+----------------------------------------------------------------------------------------------------------------------
+
+BIG PICTURE
+
+Images are used for visual communication
+Audio and video increase user engagement
+Correct usage improves performance SEO and accessibility
+
+----------------------------------------------------------------------------------------------------------------------
+
+PART A IMAGES
+
+----------------------------------------------------------------------------------------------------------------------
+
+IMG TAG
+
+The img tag is used to display images.
+
+Basic syntax
+
+<img src="image.jpg" alt="Description">
+
+The img tag is a void element
+It does not have a closing tag
+It always requires src and alt attributes
+
+----------------------------------------------------------------------------------------------------------------------
+
+SRC ATTRIBUTE
+
+The src attribute specifies the image path.
+
+Example using relative path
+
+<img src="images/car.jpg" alt="Red car">
+
+Example using absolute path
+
+<img src="https://example.com/car.jpg" alt="Car">
+
+If the src path is broken the browser shows a broken image icon
+
+----------------------------------------------------------------------------------------------------------------------
+
+ALT ATTRIBUTE
+
+The alt attribute provides alternative text.
+
+Alt text is shown when
+The image fails to load
+A screen reader reads the page
+
+Example
+
+<img src="car.jpg" alt="Red sports car parked on road">
+
+Alt improves SEO and accessibility
+
+Analogy
+Alt text is a spoken description of the image
+
+----------------------------------------------------------------------------------------------------------------------
+
+WIDTH AND HEIGHT ATTRIBUTES
+
+Used to control the image size.
+
+Example
+
+<img src="car.jpg" alt="Car" width="300" height="200">
+
+Setting width and height prevents layout shifting
+It improves page performance
+Images should not be stretched unnaturally
+
+----------------------------------------------------------------------------------------------------------------------
+
+IMAGE FORMATS
+
+JPG or JPEG
+Used for photographs
+
+PNG
+Used for images with transparency
+
+SVG
+Used for icons and logos
+Scales without losing quality
+
+WEBP
+High quality with small file size
+Best for performance
+
+----------------------------------------------------------------------------------------------------------------------
+
+IMAGE BEST PRACTICE EXAMPLE
+
+<img 
+src="car.webp"
+alt="Red car on highway"
+width="400"
+loading="lazy">
+
+Lazy loading improves page speed
+
+----------------------------------------------------------------------------------------------------------------------
+
+PART B AUDIO
+
+----------------------------------------------------------------------------------------------------------------------
+
+AUDIO TAG
+
+The audio tag is used to play sound files.
+
+Basic example
+
+<audio src="song.mp3" controls></audio>
+
+The controls attribute provides play pause and volume controls
+
+----------------------------------------------------------------------------------------------------------------------
+
+SOURCE TAG FOR AUDIO
+
+Used to provide multiple audio formats.
+
+<audio controls>
+<source src="song.mp3" type="audio/mpeg">
+<source src="song.ogg" type="audio/ogg">
+Your browser does not support audio.
+</audio>
+
+The browser selects the best supported format
+
+----------------------------------------------------------------------------------------------------------------------
+
+PART C VIDEO
+
+----------------------------------------------------------------------------------------------------------------------
+
+VIDEO TAG
+
+The video tag is used to play videos.
+
+Basic example
+
+<video src="movie.mp4" controls></video>
+
+----------------------------------------------------------------------------------------------------------------------
+
+VIDEO ATTRIBUTES
+
+Controls attribute
+
+<video controls></video>
+
+Autoplay attribute
+
+<video autoplay muted></video>
+
+Muted is required for autoplay in modern browsers
+
+Loop attribute
+
+<video loop></video>
+
+Width and height attributes
+
+<video width="400" height="250"></video>
+
+----------------------------------------------------------------------------------------------------------------------
+
+COMPLETE IMAGE AUDIO AND VIDEO DEMO
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>HTML Media</title>
+</head>
+<body>
+
+<h1>HTML Images and Media</h1>
+
+<img src="logo.png" alt="Company Logo" width="200">
+
+<hr>
+
+<audio controls>
+<source src="music.mp3" type="audio/mpeg">
+Browser does not support audio.
+</audio>
+
+<hr>
+
+<video width="400" controls loop muted>
+<source src="video.mp4" type="video/mp4">
+Browser does not support video.
+</video>
+
+</body>
+</html>
+
+----------------------------------------------------------------------------------------------------------------------
+
+INTERVIEW QUESTIONS AND ANSWERS
+
+----------------------------------------------------------------------------------------------------------------------
+
+Is img a container tag
+No. It is a void element
+
+----------------------------------------------------------------------------------------------------------------------
+
+Why is alt important
+It improves accessibility SEO and provides fallback text
+
+----------------------------------------------------------------------------------------------------------------------
+
+Difference between JPG and PNG
+JPG is used for photos
+PNG supports transparency
+
+----------------------------------------------------------------------------------------------------------------------
+
+What is SVG
+It is a scalable vector graphics format
+
+----------------------------------------------------------------------------------------------------------------------
+
+Why use the source tag
+To support multiple media formats
+
+----------------------------------------------------------------------------------------------------------------------
+
+Why does autoplay not work sometimes
+Browsers block autoplay unless the video is muted
+
+----------------------------------------------------------------------------------------------------------------------
+
+What is WEBP
+A modern image format with smaller file size
+
+----------------------------------------------------------------------------------------------------------------------
+
+Is the video tag inline or block
+It is a block level element
+
+----------------------------------------------------------------------------------------------------------------------
+
+BEST PRACTICES
+
+Always add alt text
+Use WEBP images
+Avoid autoplay with sound
+Use lazy loading
+Optimize media file size
+
+----------------------------------------------------------------------------------------------------------------------
+
+If you want the same notepad format for forms lists links iframe or semantic HTML, tell me which topic next.

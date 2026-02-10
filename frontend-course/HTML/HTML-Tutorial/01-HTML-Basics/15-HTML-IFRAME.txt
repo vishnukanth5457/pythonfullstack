@@ -1,0 +1,242 @@
+# 🔶 1️⃣5️⃣ HTML IFRAME
+
+👉 **Iframe (Inline Frame)** is used to **embed another web page or external content** inside your current HTML page.
+
+**Real-world analogy 🖼️**
+Think of an **iframe like a TV inside your room**:
+
+* Your room = main webpage
+* TV screen = iframe
+* Channel playing = another website / map / video
+
+---
+
+## 🔹 `<iframe>` Tag
+
+--> Basic Syntax
+
+```html
+<iframe src="URL"></iframe>
+```
+
+---
+
+## 🔹 Common `<iframe>` Attributes (VERY IMPORTANT)
+
+| Attribute         | Purpose                  |
+| ----------------- | ------------------------ |
+| `src`             | URL of page to embed     |
+| `width`           | Frame width              |
+| `height`          | Frame height             |
+| `title`           | Accessibility (required) |
+| `frameborder`     | Border (0 or 1)          |
+| `allowfullscreen` | Fullscreen mode          |
+| `loading`         | lazy / eager             |
+
+---
+
+## 🔹 Basic Iframe Example
+
+```html
+<iframe 
+  src="https://www.example.com" 
+  width="600" 
+  height="300"
+  title="Example Website">
+</iframe>
+```
+
+📌 Loads **example.com inside your page**
+
+---
+
+## 🔹 Iframe with Border & Styling
+
+```html
+<iframe 
+  src="https://www.wikipedia.org"
+  width="700"
+  height="400"
+  style="border:2px solid black;"
+  title="Wikipedia">
+</iframe>
+```
+
+---
+
+# 🔶 EMBEDDING YOUTUBE VIDEOS
+
+🎥 YouTube provides **iframe embed code** automatically
+
+---
+
+## 🔹 YouTube Embed Code
+
+```html
+<iframe 
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+  title="YouTube video"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+```
+
+--> 🔍 Important Notes
+
+* Use **`/embed/VIDEO_ID`**, not normal YouTube URL
+* `allowfullscreen` enables fullscreen mode
+* `allow` controls permissions
+
+---
+
+## 🔹 Autoplay YouTube Video
+
+```html
+<iframe 
+  src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1"
+  width="560"
+  height="315">
+</iframe>
+```
+
+⚠ Autoplay usually needs **mute=1**
+
+---
+
+# 🔶 EMBEDDING GOOGLE MAPS
+
+🗺️ Used for:
+
+* Business location
+* Office address
+* Store directions
+
+---
+
+## 🔹 How to Get Google Maps Embed
+
+1. Open **Google Maps**
+2. Search location
+3. Click **Share**
+4. Choose **Embed a map**
+5. Copy iframe code
+
+---
+
+## 🔹 Google Maps Embed Example
+
+```html
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.575..."
+  width="600"
+  height="450"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+  title="Office Location">
+</iframe>
+```
+
+📌 Shows **interactive map** inside your webpage
+
+---
+
+# 🔶 IFRAME – SECURITY & LIMITATIONS (INTERVIEW GOLD)
+
+--> ❌ When iframe DOES NOT work
+
+* Website blocks embedding using:
+
+  * `X-Frame-Options`
+  * `Content-Security-Policy`
+
+Example:
+
+```text
+Refused to display in a frame
+```
+
+---
+
+--> 🔐 Sandbox Attribute
+
+```html
+<iframe src="page.html" sandbox></iframe>
+```
+
+Limits:
+
+* No scripts
+* No forms
+* No popups
+
+Selective permissions:
+
+```html
+sandbox="allow-scripts allow-forms"
+```
+
+---
+
+# 🔶 COMPLETE DEMO PAGE (ALL IN ONE)
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Iframe Demo</title>
+</head>
+<body>
+
+<h2>Website Inside Website</h2>
+
+<iframe 
+  src="https://www.wikipedia.org"
+  width="800"
+  height="300"
+  title="Wikipedia"
+  style="border:2px solid gray;">
+</iframe>
+
+<hr>
+
+<h2>YouTube Video</h2>
+
+<iframe 
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+  title="YouTube Player"
+  allowfullscreen>
+</iframe>
+
+<hr>
+
+<h2>Google Maps Location</h2>
+
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18..."
+  width="600"
+  height="450"
+  style="border:0;"
+  loading="lazy"
+  title="Map">
+</iframe>
+
+</body>
+</html>
+```
+
+---
+
+# 🎯 INTERVIEW QUICK POINTS
+
+✔ Iframe embeds external content
+✔ Used for **videos, maps, ads**
+✔ Some sites block iframe usage
+✔ `title` is mandatory for accessibility
+✔ Avoid iframe for full websites (SEO issues)

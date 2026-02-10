@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <form action="upipin.html" autocomplete="on" method="post">
+       <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="username" name="username"><br><br>
+    <label for="Last name">Last name:</label>
+    <input type="text" id="lastname" placeholder="last name" name="lastname"><br><br>
+    <label for="class">Class:</label>
+    <input type="number" id="class" placeholder="class" name="class"><br><br>
+
+    <label for="DOB">Date of Birth:</label>
+    <input type="date" id="DOB" name="DOB"><br><br>
+
+    <!-- input as image -->
+     <label for="photo" >Upload your photo:</label>
+    <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+
+    <input type="range" id="age" name="age" min="0" max="100"><br><br>
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="female">Female </label>
+
+    
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other </label>
+
+    <input type="radio" id="female" name="gender" value="female"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" > <br> 
+    <!-- courses for institute using checkbox    -->
+    <label for="subscribe">Subscribe to newsletter:</label><br>
+    <label for="java">java</label>
+    <input type="checkbox" id="subscribe" name="subscribe" value="newsletter"><br>
+
+   <label for="java">java</label>
+    <input type="checkbox" id="java" name="courses" value="java"><br>
+    <label for="python">python</label>
+    <input type="checkbox" id="python" name="courses" value="python"><br>
+    <label for="c++">c++</label>
+    <input type="checkbox" id="c++" name="courses" value="c++"><br>
+    <input type="color" id="html" name="courses" value="html"><br>
+    <input type="month" name="" id="">
+    <input type="reset">
+    <input type="search" name="" id="">
+    <input type="url" name="" id="">
+    <input type="textarea" name="" id="">
+    <br><input type="submit" value="Submit">
+    <input type="textbox" name="" id=""><br>
+        <br>
+    <fieldset>
+        <legend>Select your country</legend>
+       
+    </fieldset> <br>
+
+     <select name="country" id="country">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="australia">Australia</option>
+        </select>
+    <!-- address input box -->
+    <br>
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address" rows="2" cols="50"
+    placeholder="Enter your address here..."></textarea><br><br>
+    </form>
+</body>
+</html>

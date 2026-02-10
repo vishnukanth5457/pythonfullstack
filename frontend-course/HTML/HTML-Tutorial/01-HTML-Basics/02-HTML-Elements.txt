@@ -2,19 +2,19 @@
 
 # 2️⃣ HTML ELEMENTS — COMPLETE DEEP DIVE
 
----
+----------------------------------------------------------------------------------------------------------------------
 
 ## 🔹 What is an HTML Element?
 
 An **HTML element** is **everything from the opening tag to the closing tag**, including the content inside.
 
-### Basic structure
+--> Basic structure
 
 ```html
 <tagname>Content</tagname>
 ```
 
-### Example
+--> Example
 
 ```html
 <p>This is a paragraph</p>
@@ -27,7 +27,7 @@ An **HTML element** is **everything from the opening tag to the closing tag**, i
 * `This is a paragraph` → content
 * **Together = one HTML element**
 
----
+----------------------------------------------------------------------------------------------------------------------
 
 ## 🧠 Real-world analogy
 
@@ -37,23 +37,23 @@ Think of an element like a **box** 📦
 * Content = item inside the box
 * Closing tag = closing the box
 
----
+----------------------------------------------------------------------------------------------------------------------
 
 ## 🔹 Opening & Closing Tags
 
-### Opening Tag
+--> Opening Tag
 
 ```html
 <h1>
 ```
 
-### Closing Tag
+--> Closing Tag
 
 ```html
 </h1>
 ```
 
-### Full Example
+--> Full Example
 
 ```html
 <h1>Welcome to HTML</h1>
@@ -61,13 +61,13 @@ Think of an element like a **box** 📦
 
 📌 Closing tag always has `/`
 
----
+----------------------------------------------------------------------------------------------------------------------
 
 ## 🔹 Empty / Self-Closing Elements
 
 Some elements **do not have content**, so **no closing tag** is needed.
 
-### Common empty elements
+--> Common empty elements
 
 * `<br>` – line break
 * `<hr>` – horizontal line
@@ -76,13 +76,13 @@ Some elements **do not have content**, so **no closing tag** is needed.
 * `<meta>` – metadata
 * `<link>` – external resource
 
-### Example
+--> Example
 
 ```html
 <p>Hello<br>World</p>
 ```
 
-### Image example
+--> Image example
 
 ```html
 <img src="logo.png" alt="Company Logo">
@@ -99,39 +99,39 @@ Some elements **do not have content**, so **no closing tag** is needed.
 <img></img>
 ```
 
----
+----------------------------------------------------------------------------------------------------------------------
 
 ## 🔹 Nested Elements
 
 When one element is placed **inside another**, it’s called **nesting**.
 
-### Correct nesting
+--> Correct nesting
 
 ```html
 <p>This is <strong>important</strong> text.</p>
 ```
 
-### Rule
+--> Rule
 
 > Tags must be closed in the **reverse order** they were opened
 
-### ❌ Incorrect nesting
+--> ❌ Incorrect nesting
 
 ```html
 <p>This is <strong>wrong</p></strong>
 ```
 
-### ✅ Correct nesting
+--> ✅ Correct nesting
 
 ```html
 <p>This is <strong>correct</strong></p>
 ```
 
----
+----------------------------------------------------------------------------------------------------------------------
 
 ## 🔹 Common HTML Elements (DEEP)
 
----
+----------------------------------------------------------------------------------------------------------------------
 
 ## 1️⃣ `<html>` Element
 
@@ -147,7 +147,7 @@ When one element is placed **inside another**, it’s called **nesting**.
 
 📌 Browser starts reading from `<html>`
 
----
+----------------------------------------------------------------------------------------------------------------------
 
 ## 2️⃣ `<head>` Element
 
@@ -167,7 +167,7 @@ Used for:
 </head>
 ```
 
----
+----------------------------------------------------------------------------------------------------------------------
 
 ## 3️⃣ `<body>` Element
 
@@ -182,7 +182,7 @@ Contains **visible content**.
 
 📌 Only **one `<body>` per page**
 
----
+----------------------------------------------------------------------------------------------------------------------
 
 ## 4️⃣ `<title>` Element
 
@@ -198,27 +198,27 @@ Contains **visible content**.
 * Browser tab
 * Google search results
 
----
+----------------------------------------------------------------------------------------------------------------------
 
 ## 5️⃣ `<meta>` Element (VERY IMPORTANT 🔥)
 
 Used for **metadata** (information about the page).
 
-### Common meta tags
+--> Common meta tags
 
-#### Character Encoding
+--># Character Encoding
 
 ```html
 <meta charset="UTF-8">
 ```
 
-#### Viewport (Responsive design)
+--># Viewport (Responsive design)
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
 
-#### Description (SEO)
+--># Description (SEO)
 
 ```html
 <meta name="description" content="Learn HTML elements with examples">
@@ -226,7 +226,7 @@ Used for **metadata** (information about the page).
 
 📌 `<meta>` is an **empty element**
 
----
+----------------------------------------------------------------------------------------------------------------------
 
 ## 🔥 COMPLETE EXAMPLE (ALL ELEMENTS)
 
@@ -249,26 +249,26 @@ Used for **metadata** (information about the page).
 </html>
 ```
 
----
+----------------------------------------------------------------------------------------------------------------------
 
 ## 🧠 INTERVIEW QUESTIONS & ANSWERS
 
-### 1️⃣ What is an HTML element?
+--> 1️⃣ What is an HTML element?
 
 👉 Everything from opening tag to closing tag including content.
 
----
+----------------------------------------------------------------------------------------------------------------------
 
-### 2️⃣ Difference between tag and element?
+--> 2️⃣ Difference between tag and element?
 
 | Tag   | Element        |
-| ----- | -------------- |
+| ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `<p>` | `<p>Hello</p>` |
 | Part  | Complete unit  |
 
----
+----------------------------------------------------------------------------------------------------------------------
 
-### 3️⃣ What are empty elements?
+--> 3️⃣ What are empty elements?
 
 👉 Elements without content and closing tag.
 
@@ -278,45 +278,253 @@ Examples:
 * `<img>`
 * `<meta>`
 
----
+----------------------------------------------------------------------------------------------------------------------
 
-### 4️⃣ What is nesting in HTML?
+--> 4️⃣ What is nesting in HTML?
 
 👉 Placing elements inside other elements following proper order.
 
----
+----------------------------------------------------------------------------------------------------------------------
 
-### 5️⃣ Can we omit closing tags?
+--> 5️⃣ Can we omit closing tags?
 
 👉 Only for **void elements**, not normal elements.
 
----
+----------------------------------------------------------------------------------------------------------------------
 
-### 6️⃣ What happens if nesting is wrong?
+--> 6️⃣ What happens if nesting is wrong?
 
 👉 Browser may render incorrectly or ignore content.
 
----
+----------------------------------------------------------------------------------------------------------------------
 
-### 7️⃣ Is HTML case-sensitive?
+--> 7️⃣ Is HTML case-sensitive?
 
 👉 No, but lowercase is recommended.
 
----
+----------------------------------------------------------------------------------------------------------------------
 
-### 8️⃣ Why is `<meta charset="UTF-8">` important?
+--> 8️⃣ Why is `<meta charset="UTF-8">` important?
 
 👉 Prevents character rendering issues.
 
----
+----------------------------------------------------------------------------------------------------------------------
 
-### 9️⃣ How many `<body>` tags allowed?
+--> 9️⃣ How many `<body>` tags allowed?
 
 👉 Only **one** per document.
 
----
+----------------------------------------------------------------------------------------------------------------------
 
-### 🔟 What are void elements?
+--> 🔟 What are void elements?
 
 👉 Elements without closing tags (same as empty elements).
 
+“Attributes provide extra information to HTML elements.
+For example, id uniquely identifies elements, class groups elements,
+data-* stores custom data for JavaScript, and global attributes like
+title, hidden, and contenteditable enhance behavior and usability.”
+=========================================================================
+
+Below is the **pure NOTEPAD format** version.
+No symbols, no emojis, no markdown.
+Only clean plain text.
+
+----------------------------------------------------------------------------------------------------------------------
+
+HTML ELEMENTS COMPLETE DEEP DIVE
+
+----------------------------------------------------------------------------------------------------------------------
+
+WHAT IS AN HTML ELEMENT
+
+An HTML element is everything from the opening tag to the closing tag including the content inside.
+
+Basic structure
+
+<tagname>Content</tagname>
+
+Example
+
+<p>This is a paragraph</p>
+
+Explanation
+
+p is the opening tag
+/p is the closing tag
+This is a paragraph is the content
+
+All together they form one HTML element
+
+----------------------------------------------------------------------------------------------------------------------
+
+REAL WORLD ANALOGY
+
+Think of an HTML element like a box.
+
+Opening tag is like opening the box
+Content is the item inside the box
+Closing tag is like closing the box
+
+----------------------------------------------------------------------------------------------------------------------
+
+OPENING AND CLOSING TAGS
+
+Opening tag example
+
+<h1>
+
+Closing tag example
+
+</h1>
+
+Full example
+
+<h1>Welcome to HTML</h1>
+
+The closing tag always contains a forward slash
+
+----------------------------------------------------------------------------------------------------------------------
+
+EMPTY OR SELF CLOSING ELEMENTS
+
+Some HTML elements do not contain content
+These elements do not require a closing tag
+
+Common empty elements include
+br for line break
+hr for horizontal line
+img for image
+input for form input
+meta for metadata
+link for external resources
+
+Example
+
+<p>Hello<br>World</p>
+
+Image example
+
+<img src="logo.png" alt="Company Logo">
+
+These elements are also called
+Void elements
+Self closing elements
+
+Wrong usage example
+
+<img></img>
+
+----------------------------------------------------------------------------------------------------------------------
+
+NESTED ELEMENTS
+
+When one HTML element is placed inside another element it is called nesting.
+
+Correct nesting example
+
+<p>This is <strong>important</strong> text.</p>
+
+Rule
+
+Tags must be closed in the reverse order in which they are opened
+
+Incorrect nesting example
+
+<p>This is <strong>wrong</p></strong>
+
+Correct nesting example
+
+<p>This is <strong>correct</strong></p>
+
+----------------------------------------------------------------------------------------------------------------------
+
+COMMON HTML ELEMENTS
+
+----------------------------------------------------------------------------------------------------------------------
+
+HTML ELEMENT
+
+The html element is the root of the document
+It wraps the entire HTML content
+
+Example
+
+<!DOCTYPE html>
+
+<html>
+</html>
+
+The browser starts reading the document from the html element
+
+----------------------------------------------------------------------------------------------------------------------
+
+HEAD ELEMENT
+
+The head element contains metadata
+Its content is not visible on the web page
+
+Used for
+Page title
+SEO information
+Linking CSS and JavaScript files
+Character encoding
+
+Example
+
+<head>
+<title>My Page</title>
+<meta charset="UTF-8">
+</head>
+
+----------------------------------------------------------------------------------------------------------------------
+
+BODY ELEMENT
+
+The body element contains all visible content.
+
+Example
+
+<body>
+<h1>Hello</h1>
+<p>This is visible</p>
+</body>
+
+Only one body element is allowed per page
+
+----------------------------------------------------------------------------------------------------------------------
+
+TITLE ELEMENT
+
+The title element defines the browser tab name
+It is important for SEO
+
+Example
+
+<title>HTML Elements Tutorial</title>
+
+The title appears in
+Browser tab
+Search engine results
+
+----------------------------------------------------------------------------------------------------------------------
+
+META ELEMENT
+
+The meta element is used to provide metadata about the page.
+
+It is an empty element.
+
+Common meta tags include
+
+Character encoding
+
+<meta charset="UTF-8">
+
+Viewport for responsive design
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+Description for SEO
+
+<meta name="

@@ -1,0 +1,242 @@
+
+
+# 🧱 HTML FOUNDATION BRICKS (WITH CODE)
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 1️⃣ What is HTML?
+
+**HTML (HyperText Markup Language)** is the **standard language used to create web pages**.
+
+* It tells the browser **what content to show**
+* It defines **structure**, not design
+* Every website starts with HTML
+
+📌 **HTML does NOT**
+
+* Add colors (CSS does)
+* Add logic or behavior (JavaScript does)
+
+--> 🧠 Real-world analogy
+
+HTML = **skeleton of the body**
+CSS = clothes
+JavaScript = brain & muscles
+
+--> ✅ Example
+
+```html
+<h1>Welcome to My Website</h1>
+<p>This is a paragraph.</p>
+```
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 2️⃣ HTML History
+
+* **1991** – Created by **Tim Berners-Lee**
+* Initially used only for **sharing documents**
+* Later evolved to support images, forms, videos
+* **HTML5 (2014)** brought:
+
+  * Audio & video
+  * Semantic tags
+  * Better performance
+
+--> 📌 Why history matters?
+
+Interviewers ask:
+
+> “Difference between HTML and HTML5?”
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 3️⃣ HTML Structure
+
+Every HTML page follows a **fixed structure**.
+
+--> Basic Structure
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <h1>Main Heading</h1>
+    <p>Content goes here</p>
+  </body>
+</html>
+```
+
+--> 🔍 Explanation
+
+* Browser reads from **top to bottom**
+* `<head>` → invisible info
+* `<body>` → visible content
+
+📌 **Without structure, browser gets confused**
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 4️⃣ HTML Document Parts
+
+--> 🔹 `<!DOCTYPE html>`
+
+* Tells browser: **This is HTML5**
+* Prevents browser errors
+
+```html
+<!DOCTYPE html>
+```
+
+----------------------------------------------------------------------------------------------------------------------
+
+--> 🔹 `<html>`
+
+* Root element
+* Wraps the entire page
+
+```html
+<html>
+  ...
+</html>
+```
+
+----------------------------------------------------------------------------------------------------------------------
+
+--> 🔹 `<head>`
+
+Contains **metadata**, not visible to users.
+
+Used for:
+
+* Page title
+* SEO
+* Linking CSS & JS
+
+```html
+<head>
+  <title>My Website</title>
+</head>
+```
+
+----------------------------------------------------------------------------------------------------------------------
+
+--> 🔹 `<body>`
+
+All **visible content** goes here.
+
+```html
+<body>
+  <h1>Hello World</h1>
+  <p>This text is visible</p>
+</body>
+```
+
+📌 Think:
+
+* `<head>` = brain planning
+* `<body>` = physical appearance
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 5️⃣ HTML Editors
+
+You can write HTML in **any text editor**.
+
+--> Common Editors
+
+* Notepad (basic)
+* VS Code (recommended)
+* Sublime Text
+* Atom
+
+--> Why VS Code?
+
+* Syntax highlighting
+* Auto-complete
+* Live Server preview
+
+📌 HTML doesn’t need installation.
+Just **type + save + open in browser**.
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 6️⃣ HTML File Extension (`.html`)
+
+HTML files must end with:
+
+```
+.html
+or
+.htm
+```
+
+--> Example
+
+```
+index.html
+about.html
+contact.html
+```
+
+📌 `index.html` is the **default homepage**
+
+--> How browser knows it’s HTML?
+
+Because of the `.html` extension.
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 7️⃣ HTML Comments
+
+Comments are **notes for developers**.
+
+* Browser ignores them
+* Used for explanation & debugging
+
+--> Syntax
+
+```html
+<!-- This is a comment -->
+```
+
+--> Example
+
+```html
+<!-- Main Heading -->
+<h1>Welcome</h1>
+
+<!-- Paragraph below -->
+<p>This is my website</p>
+```
+
+📌 Comments help in:
+
+* Team projects
+* Code readability
+* Debugging
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 🔥 COMPLETE FOUNDATION HTML FILE (ALL TOGETHER)
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Basics</title>
+</head>
+<body>
+
+  <!-- Main heading -->
+  <h1>HTML Foundation</h1>
+
+  <!-- Paragraph -->
+  <p>HTML is used to create web pages.</p>
+
+</body>
+</html>
+```

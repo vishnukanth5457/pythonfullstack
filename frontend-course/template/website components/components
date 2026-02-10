@@ -1,0 +1,81 @@
+WEBSITE
+│
+├── 1. Header
+│   ├── Logo
+│   ├── Navigation Bar (Navbar / Mega Menu)
+│   ├── Search Bar
+│   ├── Login / Signup Buttons
+│
+├── 2. Hero Section
+│   ├── Headline (Main message)
+│   ├── Subheading
+│   ├── Call-To-Action (CTA) Buttons
+│   ├── Hero Image / Slider / Video
+│
+├── 3. Feature Section
+│   ├── Key Features / Services
+│   ├── Icons + Text
+│   ├── Benefit Highlights
+│
+├── 4. Cards Section
+│   ├── Product Cards
+│   ├── Service Cards
+│   ├── Course Cards
+│   ├── Blog Cards
+│
+├── 5. About Section
+│   ├── Company / Personal Info
+│   ├── Mission & Vision
+│   ├── Timeline / Story
+│
+├── 6. Statistics / Highlights
+│   ├── Counters
+│   ├── Achievements
+│   ├── Numbers (Users, Clients, Projects)
+│
+├── 7. Testimonials
+│   ├── User Reviews
+│   ├── Ratings
+│   ├── Client Logos
+│
+├── 8. Gallery / Media Section
+│   ├── Images
+│   ├── Videos
+│   ├── Sliders / Carousels
+│
+├── 9. Pricing Section
+│   ├── Pricing Cards
+│   ├── Comparison Tables
+│   ├── Offers / Discounts
+│
+├── 10. FAQ Section
+│   ├── Questions
+│   ├── Accordion Answers
+│
+├── 11. Blog / Content Section
+│   ├── Blog Posts
+│   ├── Articles
+│   ├── News
+│
+├── 12. Call-To-Action (CTA)
+│   ├── Signup Prompt
+│   ├── Download Button
+│   ├── Contact Prompt
+│
+├── 13. Contact Section
+│   ├── Contact Form
+│   ├── Address
+│   ├── Map
+│   ├── Social Links
+│
+├── 14. Footer
+│   ├── Quick Links
+│   ├── Policies
+│   ├── Copyright
+│   ├── Social Media Icons
+│
+└── 15. Extra / Advanced Sections
+    ├── Newsletter Signup
+    ├── Chat Widget
+    ├── Cookie Banner
+    ├── Back To Top Button

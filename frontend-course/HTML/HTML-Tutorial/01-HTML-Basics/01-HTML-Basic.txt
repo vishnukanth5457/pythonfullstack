@@ -2,7 +2,7 @@
 
 # 🧱 HTML FOUNDATION BRICKS (WITH CODE)
 
----
+----------------------------------------------------------------------------------------------------------------------
 
 ## 1️⃣ What is HTML?
 
@@ -17,20 +17,20 @@
 * Add colors (CSS does)
 * Add logic or behavior (JavaScript does)
 
-### 🧠 Real-world analogy
+--> 🧠 Real-world analogy
 
 HTML = **skeleton of the body**
 CSS = clothes
 JavaScript = brain & muscles
 
-### ✅ Example
+--> ✅ Example
 
 ```html
 <h1>Welcome to My Website</h1>
 <p>This is a paragraph.</p>
 ```
 
----
+----------------------------------------------------------------------------------------------------------------------
 
 ## 2️⃣ HTML History
 
@@ -43,19 +43,19 @@ JavaScript = brain & muscles
   * Semantic tags
   * Better performance
 
-### 📌 Why history matters?
+--> 📌 Why history matters?
 
 Interviewers ask:
 
 > “Difference between HTML and HTML5?”
 
----
+----------------------------------------------------------------------------------------------------------------------
 
 ## 3️⃣ HTML Structure
 
 Every HTML page follows a **fixed structure**.
 
-### Basic Structure
+--> Basic Structure
 
 ```html
 <!DOCTYPE html>
@@ -70,7 +70,7 @@ Every HTML page follows a **fixed structure**.
 </html>
 ```
 
-### 🔍 Explanation
+--> 🔍 Explanation
 
 * Browser reads from **top to bottom**
 * `<head>` → invisible info
@@ -78,11 +78,11 @@ Every HTML page follows a **fixed structure**.
 
 📌 **Without structure, browser gets confused**
 
----
+----------------------------------------------------------------------------------------------------------------------
 
 ## 4️⃣ HTML Document Parts
 
-### 🔹 `<!DOCTYPE html>`
+--> 🔹 `<!DOCTYPE html>`
 
 * Tells browser: **This is HTML5**
 * Prevents browser errors
@@ -91,9 +91,9 @@ Every HTML page follows a **fixed structure**.
 <!DOCTYPE html>
 ```
 
----
+----------------------------------------------------------------------------------------------------------------------
 
-### 🔹 `<html>`
+--> 🔹 `<html>`
 
 * Root element
 * Wraps the entire page
@@ -104,9 +104,9 @@ Every HTML page follows a **fixed structure**.
 </html>
 ```
 
----
+----------------------------------------------------------------------------------------------------------------------
 
-### 🔹 `<head>`
+--> 🔹 `<head>`
 
 Contains **metadata**, not visible to users.
 
@@ -122,9 +122,9 @@ Used for:
 </head>
 ```
 
----
+----------------------------------------------------------------------------------------------------------------------
 
-### 🔹 `<body>`
+--> 🔹 `<body>`
 
 All **visible content** goes here.
 
@@ -140,20 +140,20 @@ All **visible content** goes here.
 * `<head>` = brain planning
 * `<body>` = physical appearance
 
----
+----------------------------------------------------------------------------------------------------------------------
 
 ## 5️⃣ HTML Editors
 
 You can write HTML in **any text editor**.
 
-### Common Editors
+--> Common Editors
 
 * Notepad (basic)
 * VS Code (recommended)
 * Sublime Text
 * Atom
 
-### Why VS Code?
+--> Why VS Code?
 
 * Syntax highlighting
 * Auto-complete
@@ -162,7 +162,7 @@ You can write HTML in **any text editor**.
 📌 HTML doesn’t need installation.
 Just **type + save + open in browser**.
 
----
+----------------------------------------------------------------------------------------------------------------------
 
 ## 6️⃣ HTML File Extension (`.html`)
 
@@ -174,7 +174,7 @@ or
 .htm
 ```
 
-### Example
+--> Example
 
 ```
 index.html
@@ -184,11 +184,11 @@ contact.html
 
 📌 `index.html` is the **default homepage**
 
-### How browser knows it’s HTML?
+--> How browser knows it’s HTML?
 
 Because of the `.html` extension.
 
----
+----------------------------------------------------------------------------------------------------------------------
 
 ## 7️⃣ HTML Comments
 
@@ -197,13 +197,13 @@ Comments are **notes for developers**.
 * Browser ignores them
 * Used for explanation & debugging
 
-### Syntax
+--> Syntax
 
 ```html
 <!-- This is a comment -->
 ```
 
-### Example
+--> Example
 
 ```html
 <!-- Main Heading -->
@@ -219,7 +219,7 @@ Comments are **notes for developers**.
 * Code readability
 * Debugging
 
----
+----------------------------------------------------------------------------------------------------------------------
 
 ## 🔥 COMPLETE FOUNDATION HTML FILE (ALL TOGETHER)
 
@@ -241,7 +241,7 @@ Comments are **notes for developers**.
 </html>
 ```
 
----
+----------------------------------------------------------------------------------------------------------------------
 
 ## 🧠 INTERVIEW QUICK POINTS
 
@@ -250,3 +250,247 @@ Comments are **notes for developers**.
 * HTML uses **tags & attributes**
 * Browser renders HTML visually
 
+=======================================================================
+Below is the **pure NOTEPAD format** version.
+No symbols, no emojis, no markdown.
+Only clean plain text.
+
+----------------------------------------------------------------------------------------------------------------------
+
+HTML FOUNDATION BRICKS WITH CODE
+
+----------------------------------------------------------------------------------------------------------------------
+
+WHAT IS HTML
+
+HTML stands for HyperText Markup Language.
+It is the standard language used to create web pages.
+
+HTML tells the browser what content to show
+HTML defines structure not design
+Every website starts with HTML
+
+HTML does not
+Add colors (CSS does that)
+Add logic or behavior (JavaScript does that)
+
+Real world analogy
+
+HTML is like the skeleton of the body
+CSS is like clothes
+JavaScript is like the brain and muscles
+
+Example
+
+<h1>Welcome to My Website</h1>
+<p>This is a paragraph.</p>
+
+----------------------------------------------------------------------------------------------------------------------
+
+HTML HISTORY
+
+HTML was created in 1991 by Tim Berners Lee.
+Initially it was used only for sharing documents.
+Later it evolved to support images forms and videos.
+
+HTML5 released in 2014 introduced
+Audio and video support
+Semantic tags
+Better performance
+
+Why history matters
+
+Interviewers often ask the difference between HTML and HTML5.
+
+----------------------------------------------------------------------------------------------------------------------
+
+HTML STRUCTURE
+
+Every HTML page follows a fixed structure.
+
+Basic structure
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<h1>Main Heading</h1>
+<p>Content goes here</p>
+</body>
+</html>
+
+Explanation
+
+The browser reads the page from top to bottom.
+The head section contains invisible information.
+The body section contains visible content.
+
+Without proper structure the browser may behave incorrectly.
+
+----------------------------------------------------------------------------------------------------------------------
+
+HTML DOCUMENT PARTS
+
+DOCTYPE DECLARATION
+
+The doctype declaration tells the browser that the document is HTML5.
+It helps prevent browser rendering errors.
+
+Example
+
+<!DOCTYPE html>
+
+----------------------------------------------------------------------------------------------------------------------
+
+HTML TAG
+
+The html tag is the root element of the page.
+It wraps the entire HTML document.
+
+Example
+
+<html>
+</html>
+
+----------------------------------------------------------------------------------------------------------------------
+
+HEAD TAG
+
+The head tag contains metadata.
+Its content is not visible to users.
+
+Used for
+Page title
+SEO information
+Linking CSS and JavaScript files
+
+Example
+
+<head>
+<title>My Website</title>
+</head>
+
+----------------------------------------------------------------------------------------------------------------------
+
+BODY TAG
+
+The body tag contains all visible content.
+
+Example
+
+<body>
+<h1>Hello World</h1>
+<p>This text is visible</p>
+</body>
+
+Think of it like this
+
+The head is the brain planning things
+The body is the physical appearance
+
+----------------------------------------------------------------------------------------------------------------------
+
+HTML EDITORS
+
+HTML can be written using any text editor.
+
+Common editors include
+Notepad
+Visual Studio Code
+Sublime Text
+Atom
+
+Why Visual Studio Code is recommended
+
+It provides syntax highlighting
+It supports auto complete
+It offers live preview using extensions
+
+HTML does not require installation.
+You just type the code save the file and open it in a browser.
+
+----------------------------------------------------------------------------------------------------------------------
+
+HTML FILE EXTENSION
+
+HTML files must use the following extensions
+
+.html
+.htm
+
+Examples
+
+index.html
+about.html
+contact.html
+
+The index.html file is the default homepage.
+
+The browser recognizes HTML files using the .html extension.
+
+----------------------------------------------------------------------------------------------------------------------
+
+HTML COMMENTS
+
+Comments are notes written for developers.
+The browser ignores comments completely.
+
+They are used for explanation and debugging.
+
+Syntax
+
+<!-- This is a comment -->
+
+Example
+
+<!-- Main Heading -->
+
+<h1>Welcome</h1>
+
+<!-- Paragraph below -->
+
+<p>This is my website</p>
+
+Comments help with
+Team collaboration
+Code readability
+Debugging
+
+----------------------------------------------------------------------------------------------------------------------
+
+COMPLETE FOUNDATION HTML FILE
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>HTML Basics</title>
+</head>
+<body>
+
+<!-- Main heading -->
+
+<h1>HTML Foundation</h1>
+
+<!-- Paragraph -->
+
+<p>HTML is used to create web pages.</p>
+
+</body>
+</html>
+
+----------------------------------------------------------------------------------------------------------------------
+
+INTERVIEW QUICK POINTS
+
+HTML is not a programming language
+HTML is case insensitive
+HTML uses tags and attributes
+The browser renders HTML visually
+
+----------------------------------------------------------------------------------------------------------------------
+
+If you want the same notepad format for the next topic like elements attributes text formatting tables forms or media, tell me which one to continue.

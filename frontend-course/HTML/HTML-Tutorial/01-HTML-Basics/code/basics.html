@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Attributes – Complete Demo</title>
+
+  <style>
+    .card {
+      width: 350px;
+      padding: 15px;
+      border: 2px solid #333;
+      border-radius: 10px;
+      font-family: Arial;
+    }
+
+    .highlight {
+      background-color: #f2f2f2;
+    }
+
+    .btn {
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+ 
+    /* #mainTitle {
+      color: blue;
+      font-size: 28px;
+      margin-bottom: 10px;
+    } */
+     .highlight {
+      color: blue;
+      font-size: 28px;
+      margin-bottom: 10px;
+      
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+
+<h1 contenteditable="false">contenteditable</h1>
+
+
+  <!-- MAIN HEADING -->
+  <h1 hidden
+    id="mainTitle"
+    class="highlight"
+    title="This is Vishnukanth"
+  >
+    User Profile
+  </h1>
+  <h1 
+    id="HELLO"
+    class="highlight"
+    title="This is the main heading"
+  >
+    User Profile
+  </h1>
+  <!-- PROFILE CARD -->
+  <div 
+    class="card"
+    data-user-role="admin"
+    data-user-id="101"
+    draggable="false"
+    title="Drag this card"
+  >
+
+    <!-- IMAGE -->
+    <img 
+      src="durandar.jpg"
+      alt="User Profile Picture"
+      id="profilePic"
+      class="image"
+      style="width:100px; border-radius:50%;"
+      draggable="true"
+    >
+
+    <!-- NAME (EDITABLE) -->
+    <h2 contenteditable="true" title="Click to edit name">
+      Vishnukanth
+    </h2>
+
+    <!-- DESCRIPTION -->
+    <p class="info" contenteditable="falseś">
+      Frontend Developer learning HTML
+    </p>
+
+    <!-- HIDDEN MESSAGE -->
+    <p id="secretMsg" hidden>
+      This text is hidden
+    </p>
+
+    <!-- BUTTON WITH DATA ATTRIBUTE -->
+    <button 
+      class="btn"
+      data-action="show"
+      title="Click to perform action"
+    > <img 
+      src="durandar.jpg"
+      alt="User Profile Picture"
+      id="profilePic"
+      class="image"
+      style="width:100px; border-radius:50%;"
+      draggable="true"
+    >
+      Click Me
+    </button>
+    <p hidden>This text is hidden</p>
+
+  </div>
+
+  <br><br>
+
+  <!-- FORM SECTION -->
+  <form id="contactForm" title="User Contact Form">
+
+    <label for="email">Email:</label><br>
+    <input 
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Enter email"
+      required
+    >
+    <br><br>
+
+    <label for="age">Age:</label><br>
+    <input 
+      type="number"
+      id="age"
+      name="age"
+      min="18"
+      max="60"
+    >
+    <br><br>
+
+    <button type="submit" class="btn">
+      Submit
+    </button>
+    <br>
+    <br>
+<br>
+    <i>hello this </i>
+    <em>hello this is vishnu</em>
+    <p>this is code it and we are starting the batch of <samp style="color: brown;">python</samp> and if your interest is in learning python then this is the right place for you</p>
+
+  </form>
+  <ins>hello </ins> <br>
+  <P>H <suP>2</suP>O</P>
+
+
+  <p title="This is a tooltip example" contenteditable="false">
+    Hover over this text to see a tooltip.
+  </p>
+
+</body>
+</html>

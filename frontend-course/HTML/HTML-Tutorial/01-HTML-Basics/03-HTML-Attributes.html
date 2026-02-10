@@ -1,0 +1,635 @@
+# 3️⃣ HTML ATTRIBUTES 
+---
+
+## 🔹 What is an HTML Attribute?
+
+An **HTML attribute** gives **extra information** about an element.
+
+--> Basic syntax
+
+```html
+<tagname attribute="value">Content</tagname>
+```
+
+--> Example
+
+```html
+<img src="car.jpg" alt="Red Car">
+```
+
+📌 Here:
+
+* `<img>` → element
+* `src`, `alt` → attributes
+* `"car.jpg"`, `"Red Car"` → attribute values
+
+---
+
+## 🧠 Real-world analogy
+
+Think of an element as a **person** 👤
+
+* Element = person
+* Attributes = **ID card, clothes, behavior, permissions**
+
+Without attributes, elements are **very limited**.
+
+---
+
+## 🔹 Types of Attributes
+
+--> 1️⃣ Global Attributes
+
+These can be used on **ANY HTML element**.
+
+Common global attributes:
+
+* `id`
+* `class`
+* `style`
+* `title`
+* `hidden`
+* `contenteditable`
+* `draggable`
+* `data-*`
+
+---
+
+## 1️⃣ `id` Attribute (UNIQUE)
+
+* Identifies **one unique element**
+* Must be **unique in the page**
+* Used by **CSS, JavaScript, anchors**
+
+--> Syntax
+
+```html
+<h1 id="mainTitle">Welcome</h1>
+```
+
+--> ❌ Wrong (duplicate id)
+
+```html
+<p id="text">One</p>
+<p id="text">Two</p>
+```
+
+--> 🧠 Analogy
+
+`id` = **Aadhaar number** (only one person)
+
+---
+
+## 2️⃣ `class` Attribute (MULTIPLE)
+
+* Groups multiple elements
+* Can be reused
+* Mainly used with CSS & JS
+
+--> Example
+
+```html
+<p class="info">Paragraph 1</p>
+<p class="info">Paragraph 2</p>
+```
+
+--> Multiple classes
+
+```html
+<div class="box active highlight"></div>
+```
+
+🧠 Analogy
+`class` = **School uniform** (many students same class)
+
+---
+
+## 3️⃣ `style` Attribute (INLINE CSS)
+
+* Applies CSS directly to element
+* Not recommended for large projects
+
+--> Example
+
+```html
+<p style="color: red; font-size: 18px;">
+  Inline styled text
+</p>
+```
+
+📌 Use only for:
+
+* Quick testing
+* Small demos
+
+---
+
+## 4️⃣ `title` Attribute (TOOLTIP)
+
+* Shows text when mouse hovers
+* Improves accessibility
+
+--> Example
+
+```html
+<button title="Click to submit form">Submit</button>
+```
+
+🧠 Analogy
+`title` = **sticky note explanation**
+
+---
+
+## 5️⃣ `hidden` Attribute
+
+* Hides the element
+* Browser does not display it
+
+--> Example
+
+```html
+<p hidden>This text is hidden</p>
+```
+
+📌 Still exists in DOM
+📌 Can be shown using JavaScript
+
+---
+
+## 6️⃣ `contenteditable` Attribute
+
+* Makes content editable in browser
+
+--> Example
+
+```html
+<p contenteditable="true">
+  You can edit this text
+</p>
+```
+
+📌 Used in:
+
+* CMS editors
+* Notes apps
+
+🧠 Analogy
+`contenteditable` = **Whiteboard you can write on**
+
+---
+
+## 7️⃣ `draggable` Attribute
+
+* Makes element draggable
+
+--> Example
+
+```html
+<img src="box.png" draggable="true">
+```
+
+📌 Values:
+
+* `true`
+* `false`
+
+🧠 Analogy
+`draggable` = **Movable object**
+
+---
+
+## 🔹 `data-*` Custom Attributes (VERY IMPORTANT 🔥)
+
+Used to store **custom data**.
+
+--> Example
+
+```html
+<button data-user-id="101">Click</button>
+```
+
+Accessed using JavaScript.
+
+📌 Interview favorite topic
+
+---
+
+## 🔥 COMPLETE ATTRIBUTE DEMO FILE
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Attributes</title>
+</head>
+<body>
+
+  <h1 id="heading" title="Main Heading">
+    HTML Attributes Demo
+  </h1>
+
+  <p class="info" style="color: blue;">
+    Styled paragraph
+  </p>
+
+  <p hidden>This is hidden text</p>
+
+  <p contenteditable="true">
+    Edit me
+  </p>
+
+  <img src="car.jpg" alt="Red Car" draggable="true">
+
+  <button data-id="25">Click Me</button>
+
+</body>
+</html>
+```
+
+---
+
+## 🧠 INTERVIEW QUESTIONS & ANSWERS
+
+--> 1️⃣ What is an HTML attribute?
+
+👉 Extra information about an element.
+
+---
+
+--> 2️⃣ Difference between `id` and `class`?
+
+| id          | class             |
+| ----------- | ----------------- |
+| Unique      | Reusable          |
+| One element | Multiple elements |
+| `#id`       | `.class`          |
+
+---
+
+--> 3️⃣ Can multiple classes be used?
+
+👉 Yes.
+
+```html
+<div class="box active"></div>
+```
+
+---
+
+--> 4️⃣ Is `style` attribute recommended?
+
+👉 No, external CSS is preferred.
+
+---
+
+--> 5️⃣ What is `hidden` attribute?
+
+👉 Hides element without deleting it.
+
+---
+
+--> 6️⃣ What does `contenteditable` do?
+
+👉 Allows editing content directly in browser.
+
+---
+
+--> 7️⃣ What are global attributes?
+
+👉 Attributes applicable to all HTML elements.
+
+---
+
+--> 8️⃣ What is `data-*` used for?
+
+👉 Storing custom data for JS access.
+
+---
+
+--> 9️⃣ Are attribute names case-sensitive?
+
+👉 No, but lowercase is best practice.
+
+---
+
+--> 🔟 Can an element have multiple attributes?
+
+👉 Yes.
+
+```html
+<img src="a.jpg" alt="img" id="pic" class="img">
+
+================================================================================================
+
+
+Below is the **pure NOTEPAD format** version.
+No symbols, no emojis, no markdown.
+Only clean plain text.
+
+---
+
+HTML ATTRIBUTES
+
+---
+
+WHAT IS AN HTML ATTRIBUTE
+
+An HTML attribute provides extra information about an HTML element.
+
+Basic syntax
+
+<tagname attribute="value">Content</tagname>
+
+Example
+
+<img src="car.jpg" alt="Red Car">
+
+Explanation
+
+img is the element
+src and alt are attributes
+car.jpg and Red Car are attribute values
+
+---
+
+REAL WORLD ANALOGY
+
+Think of an HTML element as a person.
+
+Element is the person
+Attributes are like ID card clothes behavior and permissions
+
+Without attributes an element has very limited functionality
+
+---
+
+TYPES OF ATTRIBUTES
+
+---
+
+GLOBAL ATTRIBUTES
+
+Global attributes can be used on any HTML element.
+
+Common global attributes include
+id
+class
+style
+title
+hidden
+contenteditable
+draggable
+data attributes using data dash star
+
+---
+
+ID ATTRIBUTE
+
+The id attribute uniquely identifies one element.
+
+Rules
+
+The id value must be unique in the entire page
+It is used by CSS JavaScript and anchor links
+
+Example
+
+<h1 id="mainTitle">Welcome</h1>
+
+Wrong usage example
+
+<p id="text">One</p>
+<p id="text">Two</p>
+
+This is wrong because id values must not repeat
+
+Analogy
+
+id is like an Aadhaar number
+Only one person can have it
+
+---
+
+CLASS ATTRIBUTE
+
+The class attribute is used to group multiple elements.
+
+Characteristics
+
+Multiple elements can share the same class
+An element can have multiple classes
+Commonly used with CSS and JavaScript
+
+Example
+
+<p class="info">Paragraph 1</p>
+<p class="info">Paragraph 2</p>
+
+Multiple classes example
+
+<div class="box active highlight"></div>
+
+Analogy
+
+class is like a school uniform
+Many students wear the same uniform
+
+---
+
+STYLE ATTRIBUTE
+
+The style attribute is used to apply inline CSS.
+
+Example
+
+<p style="color: red; font-size: 18px;">
+Inline styled text
+</p>
+
+The style attribute is not recommended for large projects
+It should be used only for quick testing or small demos
+
+---
+
+TITLE ATTRIBUTE
+
+The title attribute shows a tooltip when the mouse hovers.
+
+Example
+
+<button title="Click to submit form">Submit</button>
+
+It improves usability and accessibility
+
+Analogy
+
+title is like a sticky note explanation
+
+---
+
+HIDDEN ATTRIBUTE
+
+The hidden attribute hides an element from the page.
+
+Example
+
+<p hidden>This text is hidden</p>
+
+The element still exists in the DOM
+It can be shown later using JavaScript
+
+---
+
+CONTENTEDITABLE ATTRIBUTE
+
+The contenteditable attribute allows content to be edited in the browser.
+
+Example
+
+<p contenteditable="true">
+You can edit this text
+</p>
+
+Used in content management systems and notes applications
+
+Analogy
+
+contenteditable is like a whiteboard you can write on
+
+---
+
+DRAGGABLE ATTRIBUTE
+
+The draggable attribute makes an element draggable.
+
+Example
+
+<img src="box.png" draggable="true">
+
+Possible values
+true
+false
+
+Analogy
+
+draggable is like a movable object
+
+---
+
+DATA CUSTOM ATTRIBUTES
+
+Data attributes are used to store custom data.
+
+They start with data dash
+
+Example
+
+<button data-user-id="101">Click</button>
+
+These values are accessed using JavaScript
+This is a very common interview topic
+
+---
+
+COMPLETE ATTRIBUTE DEMO FILE
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>HTML Attributes</title>
+</head>
+<body>
+
+<h1 id="heading" title="Main Heading">
+HTML Attributes Demo
+</h1>
+
+<p class="info" style="color: blue;">
+Styled paragraph
+</p>
+
+<p hidden>This is hidden text</p>
+
+<p contenteditable="true">
+Edit me
+</p>
+
+<img src="car.jpg" alt="Red Car" draggable="true">
+
+<button data-id="25">Click Me</button>
+
+</body>
+</html>
+
+---
+
+INTERVIEW QUESTIONS AND ANSWERS
+
+---
+
+What is an HTML attribute
+It provides extra information about an element
+
+---
+
+Difference between id and class
+
+id
+Unique
+Used for one element
+Selected using hash id
+
+class
+Reusable
+Used for multiple elements
+Selected using dot class
+
+---
+
+Can multiple classes be used
+Yes an element can have more than one class
+
+Example
+
+<div class="box active"></div>
+
+---
+
+Is the style attribute recommended
+No external CSS is preferred
+
+---
+
+What is the hidden attribute
+It hides an element without removing it from the DOM
+
+---
+
+What does contenteditable do
+It allows editing content directly in the browser
+
+---
+
+What are global attributes
+Attributes that can be used on all HTML elements
+
+---
+
+What is data attribute used for
+Storing custom data for JavaScript access
+
+---
+
+Are attribute names case sensitive
+No but lowercase is best practice
+
+---
+
+Can an element have multiple attributes
+Yes
+
+Example
+
+<img src="a.jpg" alt="img" id="pic" class="img">
+

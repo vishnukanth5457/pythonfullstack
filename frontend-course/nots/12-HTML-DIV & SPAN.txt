@@ -1,0 +1,242 @@
+# 1️⃣2️⃣ HTML DIV & SPAN
+
+> Used for **grouping, layout, and styling** content.
+
+---
+
+## 🧠 Big Picture
+
+* `<div>` → **block-level container**
+* `<span>` → **inline-level container**
+* Both are **non-semantic** (no meaning by themselves)
+
+📌 They exist to **organize**, not to describe content.
+
+---
+
+## 🧠 Real-world analogy (remember forever)
+
+* **`div` = room 🏠**
+  Holds furniture, people, sections
+* **`span` = sticker 🏷️ inside the room**
+  Highlights a word or small part
+
+---
+
+# 🧱 `<div>` — BLOCK CONTAINER
+
+---
+
+## 🔹 What is `<div>`?
+
+* Block-level element
+* Takes **full width**
+* Starts on a **new line**
+* Used to **group multiple elements**
+
+--> Basic example
+
+```html
+<div>
+  <h2>Title</h2>
+  <p>Some content</p>
+</div>
+```
+
+📌 `<div>` itself does nothing visually without CSS.
+
+---
+
+## 🔹 Why `<div>` is used?
+
+* Page layout
+* Group related elements
+* Apply CSS styles
+* JavaScript manipulation
+
+---
+
+## 🔹 Layout Example Using `<div>`
+
+```html
+<div style="background-color: lightgray; padding: 10px;">
+  <h2>Header</h2>
+</div>
+
+<div style="background-color: lightblue; padding: 10px;">
+  <p>Main Content</p>
+</div>
+
+<div style="background-color: lightgreen; padding: 10px;">
+  <p>Footer</p>
+</div>
+```
+
+🧠 Each `<div>` acts like a **separate section/box**
+
+---
+
+## 🔹 Nested `<div>` (Very Common)
+
+```html
+<div class="card">
+  <div class="card-header">Title</div>
+  <div class="card-body">Content</div>
+</div>
+```
+
+📌 Div inside div = **room inside building**
+
+---
+
+# ➖ `<span>` — INLINE CONTAINER
+
+---
+
+## 🔹 What is `<span>`?
+
+* Inline-level element
+* Takes **only required width**
+* Does NOT start a new line
+* Used to style **part of text**
+
+--> Basic example
+
+```html
+<p>
+  This is <span>important</span> text.
+</p>
+```
+
+---
+
+## 🔹 Why `<span>` is used?
+
+* Highlight words
+* Apply color/font to small text
+* Target text with JavaScript
+
+---
+
+## 🔹 Styled `<span>` Example
+
+```html
+<p>
+  Error: <span style="color:red;">Invalid password</span>
+</p>
+```
+
+🧠 Without span → whole paragraph changes
+🧠 With span → **only selected word changes**
+
+---
+
+# 🔄 DIV vs SPAN — COMPARISON
+
+| Feature  | `<div>`           | `<span>`            |
+| -------- | ----------------- | ------------------- |
+| Display  | Block             | Inline              |
+| New line | Yes               | No                  |
+| Width    | Full width        | Content width       |
+| Use case | Layout & grouping | Inline text styling |
+| Contains | Block + inline    | Inline only         |
+
+---
+
+# 🔁 DISPLAY PROPERTY (IMPORTANT 🔥)
+
+You can change behavior using CSS.
+
+```html
+<span style="display: block;">Now block</span>
+<div style="display: inline;">Now inline</div>
+```
+
+```html
+<div style="display:inline-block; width:100px;">
+  Inline block div
+</div>
+```
+
+📌 `inline-block` = best of both worlds
+
+---
+
+# 🔥 COMPLETE DIV & SPAN DEMO FILE
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Div and Span</title>
+</head>
+<body>
+
+  <div style="border: 1px solid black; padding: 10px;">
+    <h2>Profile</h2>
+    <p>
+      Name:
+      <span style="color: blue;">Vishnu</span>
+    </p>
+    <p>
+      Status:
+      <span style="color: green;">Active</span>
+    </p>
+  </div>
+
+</body>
+</html>
+```
+
+---
+
+## 🧠 INTERVIEW QUESTIONS & ANSWERS
+
+--> 1️⃣ Is `<div>` semantic?
+
+👉 ❌ No, it has no meaning.
+
+---
+
+--> 2️⃣ Difference between `<div>` and `<span>`?
+
+👉 Block vs Inline.
+
+---
+
+--> 3️⃣ Can `<span>` contain `<div>`?
+
+👉 ❌ No.
+
+---
+
+--> 4️⃣ Can `<div>` contain `<span>`?
+
+👉 ✅ Yes.
+
+---
+
+--> 5️⃣ Why not use `<div>` everywhere?
+
+👉 Use semantic tags for meaning.
+
+---
+
+--> 6️⃣ When should you use `<span>`?
+
+👉 When only part of text needs styling.
+
+---
+
+--> 7️⃣ Can we replace `<div>` with `<section>`?
+
+👉 Yes, if content is meaningful.
+
+---
+
+## ✅ BEST PRACTICES
+
+* Prefer **semantic tags** (`section`, `article`)
+* Use `<div>` only when no semantic tag fits
+* Use `<span>` sparingly
+* Avoid deep nesting

@@ -48,6 +48,7 @@ Extra information about elements.
 * `hidden`
 * `contenteditable`
 * `draggable`
+* `data`
 
 📌 *Example:*
 `<img src="car.jpg" alt="Red Car">`
@@ -58,7 +59,7 @@ Extra information about elements.
 
 Used to display content.
 
-### Text Tags
+--> Text Tags
 
 * `<h1>` to `<h6>`
 * `<p>`
@@ -66,7 +67,7 @@ Used to display content.
 * `<br>`
 * `<hr>`
 
-### Formatting Tags
+--> Formatting Tags
 
 * `<b>` / `<strong>`
 * `<i>` / `<em>`
@@ -128,7 +129,7 @@ Navigation system of the web.
 
 Visual content.
 
-### Images
+--> Images
 
 * `<img>`
 * `src`
@@ -136,7 +137,7 @@ Visual content.
 * `width` / `height`
 * Image Formats (jpg, png, svg, webp)
 
-### Audio & Video
+--> Audio & Video
 
 * `<audio>`
 * `<video>`
@@ -207,7 +208,7 @@ Used with CSS & JS.
 
 User input system.
 
-### Form Tags
+--> Form Tags
 
 * `<form>`
 * `<input>`
@@ -219,7 +220,7 @@ User input system.
 * `<fieldset>`
 * `<legend>`
 
-### Input Types
+--> Input Types
 
 * text
 * password

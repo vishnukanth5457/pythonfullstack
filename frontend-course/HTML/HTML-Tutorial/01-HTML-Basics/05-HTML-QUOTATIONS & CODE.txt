@@ -1,0 +1,625 @@
+# 5️⃣ HTML QUOTATIONS & CODE 
+
+> Used for **quotations, references, addresses, and programming-related text**.
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 🧠 Big Picture (Why these tags exist)
+
+* Improve **semantics**
+* Help **search engines**
+* Improve **accessibility**
+* Clearly separate **normal text vs quoted/code text**
+
+----------------------------------------------------------------------------------------------------------------------
+
+# 📝 PART A: QUOTATION & REFERENCE TAGS
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 1️⃣ `<blockquote>` — Block Quote
+
+Used for **long quotations** from another source.
+
+--> Example
+
+```html
+<blockquote>
+  The future belongs to those who learn more skills and combine them in creative ways.
+</blockquote>
+```
+
+📌 Browser adds indentation
+📌 Semantic tag (SEO friendly)
+
+🧠 Analogy
+`<blockquote>` = quoted paragraph in a book
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 2️⃣ `<q>` — Inline Quote
+
+Used for **short quotations inside text**.
+
+--> Example
+
+```html
+<p>
+  HTML is <q>the structure of the web</q>.
+</p>
+```
+
+📌 Browser automatically adds quotation marks (“ ”)
+
+🧠 Analogy
+Quotation inside a sentence
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 3️⃣ `<abbr>` — Abbreviation
+
+Used to show **full meaning on hover**.
+
+--> Example
+
+```html
+<p>
+  <abbr title="HyperText Markup Language">HTML</abbr> is used for web pages.
+</p>
+```
+
+📌 Improves accessibility
+📌 Screen readers read full form
+
+🧠 Analogy
+Short name with explanation tag
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 4️⃣ `<address>` — Contact Information
+
+Used for **author or organization contact details**.
+
+--> Example
+
+```html
+<address>
+  Written by Vishnukanth<br>
+  Hyderabad, India<br>
+  Email: example@gmail.com
+</address>
+```
+
+📌 Usually italic by default
+📌 Not for random addresses
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 5️⃣ `<cite>` — Title of Work
+
+Used to reference:
+
+* Book
+* Movie
+* Website
+* Research paper
+
+--> Example
+
+```html
+<p>
+  <cite>HTML Complete Guide</cite> by W3C
+</p>
+```
+
+📌 Used for **titles**, not people
+
+🧠 Interview trap question ✔️
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 6️⃣ `<bdo>` — Bi-Directional Override
+
+Used to **change text direction**.
+
+--> Example
+
+```html
+<bdo dir="rtl">Hello World</bdo>
+```
+
+📌 `rtl` = right to left
+📌 Used for Arabic, Hebrew
+
+----------------------------------------------------------------------------------------------------------------------
+
+# 💻 PART B: CODE & PROGRAMMING TAGS
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 7️⃣ `<code>` — Inline Code
+
+Used for **short code snippets**.
+
+--> Example
+
+```html
+<p>
+  Use <code>console.log()</code> to print output.
+</p>
+```
+
+📌 Monospace font
+📌 Inline display
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 8️⃣ `<pre>` — Preformatted Text
+
+Preserves:
+
+* Spaces
+* Line breaks
+* Indentation
+
+--> Example
+
+```html
+<pre>
+function add(a, b) {
+  return a + b;
+}
+</pre>
+```
+
+📌 Often used with `<code>`
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 9️⃣ `<kbd>` — Keyboard Input
+
+Used to show **keyboard shortcuts**.
+
+--> Example
+
+```html
+<p>
+  Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy.
+</p>
+```
+
+🧠 Analogy
+Keyboard instruction manual
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 🔟 `<samp>` — Sample Output
+
+Used to show **program output**.
+
+--> Example
+
+```html
+<p>
+  Output: <samp>Hello World</samp>
+</p>
+```
+
+📌 Represents result, not code
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 1️⃣1️⃣ `<var>` — Variable
+
+Used to represent **variables in math or code**.
+
+--> Example
+
+```html
+<p>
+  Area = π × <var>r</var><sup>2</sup>
+</p>
+```
+
+📌 Semantic meaning for variables
+
+----------------------------------------------------------------------------------------------------------------------
+
+# 🔥 COMPLETE DEMO FILE (ALL TAGS)
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Quotations & Code</title>
+</head>
+<body>
+
+  <h1>HTML Quotations & Code</h1>
+
+  <blockquote>
+    Learning HTML is the first step to web development.
+  </blockquote>
+
+  <p>
+    HTML stands for <abbr title="HyperText Markup Language">HTML</abbr>.
+  </p>
+
+  <p>
+    As Tim Berners-Lee said,
+    <q>The web is for everyone</q>.
+  </p>
+
+  <address>
+    Written by Vishnukanth<br>
+    Hyderabad, India
+  </address>
+
+  <p>
+    Reference: <cite>MDN HTML Docs</cite>
+  </p>
+
+  <bdo dir="rtl">Hello World</bdo>
+
+  <hr>
+
+  <p>
+    Use <code>printf()</code> to print output.
+  </p>
+
+  <pre><code>
+for (int i = 0; i < 5; i++) {
+  printf("%d", i);
+}
+  </code></pre>
+
+  <p>
+    Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save.
+  </p>
+
+  <p>
+    Output: <samp>Saved successfully</samp>
+  </p>
+
+  <p>
+    Formula: E = m × <var>c</var><sup>2</sup>
+  </p>
+
+</body>
+</html>
+```
+
+----------------------------------------------------------------------------------------------------------------------
+
+## 🧠 INTERVIEW QUICK QUESTIONS
+
+**Q1. Difference between `<q>` and `<blockquote>`?**
+👉 `<q>` is inline, `<blockquote>` is block-level.
+
+**Q2. Can `<cite>` be used for person names?**
+👉 ❌ No, only titles of work.
+
+**Q3. Why use `<abbr>`?**
+👉 Accessibility and clarity.
+
+**Q4. Difference between `<code>` and `<pre>`?**
+👉 `<code>` = inline, `<pre>` = preserves formatting.
+
+**Q5. What does `<kbd>` represent?**
+👉 Keyboard input.
+
+**Q6. What is `<samp>` used for?**
+👉 Program output.
+
+=======================================================================
+Below is the **pure NOTEPAD format** version.
+No symbols, no emojis, no markdown.
+Only clean plain text.
+
+----------------------------------------------------------------------------------------------------------------------
+
+HTML QUOTATIONS AND CODE
+
+Used for quotations references addresses and programming related text.
+
+----------------------------------------------------------------------------------------------------------------------
+
+BIG PICTURE
+
+These tags exist to improve semantics
+They help search engines understand content
+They improve accessibility
+They clearly separate normal text from quoted and code text
+
+----------------------------------------------------------------------------------------------------------------------
+
+PART A QUOTATION AND REFERENCE TAGS
+
+----------------------------------------------------------------------------------------------------------------------
+
+BLOCKQUOTE TAG
+
+The blockquote tag is used for long quotations taken from another source.
+
+Example
+
+<blockquote>
+The future belongs to those who learn more skills and combine them in creative ways.
+</blockquote>
+
+The browser adds indentation automatically
+This is a semantic and SEO friendly tag
+
+Analogy
+A quoted paragraph in a book
+
+----------------------------------------------------------------------------------------------------------------------
+
+Q TAG
+
+The q tag is used for short quotations inside a sentence.
+
+Example
+
+<p>
+HTML is <q>the structure of the web</q>.
+</p>
+
+The browser automatically adds quotation marks
+Used for inline quotes
+
+Analogy
+A quotation inside a sentence
+
+----------------------------------------------------------------------------------------------------------------------
+
+ABBR TAG
+
+The abbr tag is used for abbreviations.
+
+It shows the full meaning when hovered.
+
+Example
+
+<p>
+<abbr title="HyperText Markup Language">HTML</abbr> is used for web pages.
+</p>
+
+It improves accessibility
+Screen readers read the full form
+
+Analogy
+A short name with explanation
+
+----------------------------------------------------------------------------------------------------------------------
+
+ADDRESS TAG
+
+The address tag is used for author or organization contact information.
+
+Example
+
+<address>
+Written by Vishnukanth<br>
+Hyderabad India<br>
+Email example@gmail.com
+</address>
+
+The text is usually italic by default
+It should not be used for random postal addresses
+
+----------------------------------------------------------------------------------------------------------------------
+
+CITE TAG
+
+The cite tag is used to reference the title of a work.
+
+It can reference books movies websites or research papers.
+
+Example
+
+<p>
+<cite>HTML Complete Guide</cite> by W3C
+</p>
+
+The cite tag is used only for titles
+It should not be used for person names
+
+----------------------------------------------------------------------------------------------------------------------
+
+BDO TAG
+
+The bdo tag is used to override text direction.
+
+Example
+
+<bdo dir="rtl">Hello World</bdo>
+
+rtl means right to left
+Used for languages like Arabic and Hebrew
+
+----------------------------------------------------------------------------------------------------------------------
+
+PART B CODE AND PROGRAMMING TAGS
+
+----------------------------------------------------------------------------------------------------------------------
+
+CODE TAG
+
+The code tag is used for short inline code snippets.
+
+Example
+
+<p>
+Use <code>console.log()</code> to print output.
+</p>
+
+Text appears in monospace font
+Displayed inline with text
+
+----------------------------------------------------------------------------------------------------------------------
+
+PRE TAG
+
+The pre tag preserves formatting.
+
+It preserves spaces
+It preserves line breaks
+It preserves indentation
+
+Example
+
+<pre>
+function add(a, b) {
+  return a + b;
+}
+</pre>
+
+Often used together with the code tag
+
+----------------------------------------------------------------------------------------------------------------------
+
+KBD TAG
+
+The kbd tag is used to represent keyboard input.
+
+Example
+
+<p>
+Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy.
+</p>
+
+Used for keyboard shortcuts and instructions
+
+----------------------------------------------------------------------------------------------------------------------
+
+SAMP TAG
+
+The samp tag is used to represent sample program output.
+
+Example
+
+<p>
+Output <samp>Hello World</samp>
+</p>
+
+It represents results not code
+
+----------------------------------------------------------------------------------------------------------------------
+
+VAR TAG
+
+The var tag is used to represent variables in math or programming.
+
+Example
+
+<p>
+Area = π × <var>r</var><sup>2</sup>
+</p>
+
+It provides semantic meaning for variables
+
+----------------------------------------------------------------------------------------------------------------------
+
+COMPLETE DEMO FILE
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>HTML Quotations and Code</title>
+</head>
+<body>
+
+<h1>HTML Quotations and Code</h1>
+
+<blockquote>
+Learning HTML is the first step to web development.
+</blockquote>
+
+<p>
+HTML stands for <abbr title="HyperText Markup Language">HTML</abbr>.
+</p>
+
+<p>
+As Tim Berners Lee said
+<q>The web is for everyone</q>.
+</p>
+
+<address>
+Written by Vishnukanth<br>
+Hyderabad India
+</address>
+
+<p>
+Reference <cite>MDN HTML Docs</cite>
+</p>
+
+<bdo dir="rtl">Hello World</bdo>
+
+<hr>
+
+<p>
+Use <code>printf()</code> to print output.
+</p>
+
+<pre><code>
+for (int i = 0; i < 5; i++) {
+  printf("%d", i);
+}
+</code></pre>
+
+<p>
+Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save.
+</p>
+
+<p>
+Output <samp>Saved successfully</samp>
+</p>
+
+<p>
+Formula E = m × <var>c</var><sup>2</sup>
+</p>
+
+</body>
+</html>
+
+----------------------------------------------------------------------------------------------------------------------
+
+INTERVIEW QUICK QUESTIONS AND ANSWERS
+
+----------------------------------------------------------------------------------------------------------------------
+
+Difference between q and blockquote
+The q tag is inline
+The blockquote tag is block level
+
+----------------------------------------------------------------------------------------------------------------------
+
+Can cite be used for person names
+No it is only for titles of work
+
+----------------------------------------------------------------------------------------------------------------------
+
+Why use abbr
+It improves accessibility and clarity
+
+----------------------------------------------------------------------------------------------------------------------
+
+Difference between code and pre
+Code is inline
+Pre preserves formatting
+
+----------------------------------------------------------------------------------------------------------------------
+
+What does kbd represent
+Keyboard input
+
+----------------------------------------------------------------------------------------------------------------------
+
+What is samp used for
+Program output
+
+----------------------------------------------------------------------------------------------------------------------
+
+If you want the same notepad format for lists links forms iframe or semantic HTML tags, tell me which topic next.
