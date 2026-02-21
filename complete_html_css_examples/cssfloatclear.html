@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Float & Clear Structure</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* section title */
+        .section {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+        /* container */
+        .container {
+            background: white;
+            padding: 20px;
+            border: 2px solid black;
+            margin-top: 10px;
+        }
+
+        /* base box */
+        .box {
+            width: 150px;
+            height: 80px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+        }
+
+        /* float left */
+        .left {
+            float: left;
+            background: blue;
+        }
+
+        /* float right */
+        .right {
+            float: right;
+            background: red;
+        }
+
+        /* clear */
+        .clear {
+            clear: both;
+            background: green;
+        }
+
+        /* clearfix */
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        /* clearfix container styling */
+        .clearfix-container {
+            border: 3px solid purple;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Float & Clear Structure</h1>
+
+    <!-- FLOAT LEFT -->
+    <div class="section">FLOAT: LEFT</div>
+
+    <div class="container">
+        <div class="box left">Left</div>
+        <div class="box left">Left</div>
+        <div class="box left">Left</div>
+        <div class="clear">Clear Both</div>
+    </div>
+
+
+    <!-- FLOAT RIGHT -->
+    <div class="section">FLOAT: RIGHT</div>
+
+    <div class="container">
+        <div class="box right">Right</div>
+        <div class="box right">Right</div>
+        <div class="box right">Right</div>
+        <div class="clear">Clear Both</div>
+    </div>
+
+
+    <!-- CLEAR PROPERTY -->
+    <div class="section">CLEAR PROPERTY</div>
+
+    <div class="container">
+        <div class="box left">Float Left</div>
+        <div class="box right">Float Right</div>
+
+        <div class="box clear">
+            clear: both
+        </div>
+
+    </div>
+
+
+    <!-- CLEARFIX CONCEPT -->
+    <div class="section">CLEARFIX CONCEPT</div>
+
+    <div class="container clearfix-container clearfix">
+
+        <div class="box left">Float Left</div>
+        <div class="box right">Float Right</div>
+
+    </div>
+
+    <p>
+        This container uses clearfix so border wraps floated elements correctly.
+    </p>
+
+
+</body>
+
+</html>

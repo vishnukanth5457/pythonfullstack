@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Transform Structure</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* section title */
+        .section {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+        /* container */
+        .container {
+            background: white;
+            padding: 20px;
+            border: 2px solid black;
+            margin-top: 10px;
+            display: flex;
+            gap: 20px;
+        }
+
+        /* base box */
+        .box {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+        }
+
+        /* translate */
+        .translate:hover {
+            transform: translate(50px, 20px);
+        }
+
+        /* rotate */
+        .rotate:hover {
+            transform: rotate(45deg);
+        }
+
+        /* scale */
+        .scale:hover {
+            transform: scale(1.5);
+        }
+
+        /* skew */
+        .skew:hover {
+            transform: skew(20deg, 10deg);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>CSS Transform Structure</h1>
+
+    <!-- TRANSLATE -->
+    <div class="section">TRANSLATE</div>
+
+    <div class="container">
+
+        <div class="box translate">
+            translate
+        </div>
+
+    </div>
+
+
+    <!-- ROTATE -->
+    <div class="section">ROTATE</div>
+
+    <div class="container">
+
+        <div class="box rotate">
+            rotate
+        </div>
+
+    </div>
+
+
+    <!-- SCALE -->
+    <div class="section">SCALE</div>
+
+    <div class="container">
+
+        <div class="box scale">
+            scale
+        </div>
+
+    </div>
+
+
+    <!-- SKEW -->
+    <div class="section">SKEW</div>
+
+    <div class="container">
+
+        <div class="box skew">
+            skew
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

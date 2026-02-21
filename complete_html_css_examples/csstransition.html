@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Transitions Structure</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* section title */
+        .section {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+        /* container */
+        .container {
+            background: white;
+            padding: 20px;
+            border: 2px solid black;
+            margin-top: 10px;
+            display: flex;
+            gap: 20px;
+        }
+
+        /* base box */
+        .box {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* transition-property */
+        .property {
+            transition-property: background;
+            transition-duration: 1s;
+        }
+
+        .property:hover {
+            background: red;
+        }
+
+        /* transition-duration */
+        .duration {
+            transition-property: transform;
+            transition-duration: 2s;
+        }
+
+        .duration:hover {
+            transform: rotate(180deg);
+        }
+
+        /* transition-timing-function */
+        .timing {
+            transition-property: transform;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .timing:hover {
+            transform: translateX(100px);
+        }
+
+        /* transition-delay */
+        .delay {
+            transition-property: background;
+            transition-duration: 1s;
+            transition-delay: 1s;
+        }
+
+        .delay:hover {
+            background: green;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>CSS Transitions Structure</h1>
+
+
+    <!-- TRANSITION PROPERTY -->
+    <div class="section">TRANSITION-PROPERTY</div>
+
+    <div class="container">
+
+        <div class="box property">
+            property
+        </div>
+
+    </div>
+
+
+    <!-- TRANSITION DURATION -->
+    <div class="section">TRANSITION-DURATION</div>
+
+    <div class="container">
+
+        <div class="box duration">
+            duration
+        </div>
+
+    </div>
+
+
+    <!-- TRANSITION TIMING FUNCTION -->
+    <div class="section">TRANSITION-TIMING-FUNCTION</div>
+
+    <div class="container">
+
+        <div class="box timing">
+            timing
+        </div>
+
+    </div>
+
+
+    <!-- TRANSITION DELAY -->
+    <div class="section">TRANSITION-DELAY</div>
+
+    <div class="container">
+
+        <div class="box delay">
+            delay
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

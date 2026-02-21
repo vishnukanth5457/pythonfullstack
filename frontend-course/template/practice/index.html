@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body { 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* header navbar */
+        header {
+            background-color: #60dfe1;
+            color: white;
+            padding: 10px 0;
+        }
+        #logo {
+            font-size: 34px;
+            font-weight: bold;
+            align-items: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        /* section with two parts */
+        
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+            background-color: aqua;
+           
+          
+        }   
+        .text-container{
+            flex: 1;
+             background-image: url(https://media.istockphoto.com/id/1224121447/vector/particles-liquid-dynamic-flow.jpg?s=170667a&w=0&k=20&c=Xuf40aUE0SRD_TcJ0aERYzCaBrZTkW_j36utUxI93lM=);
+            background-repeat: no-repeat;
+            background-size: cover;
+                padding: 20px;
+                border-radius: 20%;
+                color: white;
+        }
+        .image-container {
+            flex: 1;
+            margin-left: 20px;
+            border-radius: 20%;
+            background-color: aqua;
+        }
+        img {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <ul>
+                <li id="logo">Logo</li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/practice">Practice</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/services">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+ <!-- tow parts left in text and right one imgae only html -->
+        <div class="hero">
+            <div class="text-container"> 
+                <h2>Welcome to Our Practice</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class="image-container">
+                <img src="https://th.bing.com/th/id/R.40890ea1852e6742e0b8b5981efa6df9?rik=dsHkoiPQRUl6MQ&riu=http%3a%2f%2f38.media.tumblr.com%2f52d707ec600162594e1ea34ec1a8da70%2ftumblr_nkln8rQA7Q1shpedgo1_540.gif&ehk=Tpbfn1OsWH9hmAZYvx0Y1BNb8PLYeQLUarHTMYghqws%3d&risl=&pid=ImgRaw&r=0" alt="Practice Image" style="width: 100%; height: auto;">
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>

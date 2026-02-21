@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Text Properties Structure</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* section title */
+        .section {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+        /* container */
+        .container {
+            background: white;
+            padding: 20px;
+            border: 2px solid black;
+            margin-top: 10px;
+        }
+
+        /* base text box */
+        .box {
+            border: 2px solid red;
+            padding: 10px;
+            margin: 10px;
+            width: 400px;
+        }
+
+        /* 1 color */
+        .color {
+            color: blue;
+        }
+
+        /* 2 text-align */
+        .left {
+            text-align: left;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        /* 3 text-decoration */
+        .underline {
+            text-decoration: underline;
+        }
+
+        .overline {
+            text-decoration: overline;
+        }
+
+        .line-through {
+            text-decoration: line-through;
+        }
+
+        /* 4 text-transform */
+        .upper {
+            text-transform: uppercase;
+        }
+
+        .lower {
+            text-transform: lowercase;
+        }
+
+        .capitalize {
+            text-transform: capitalize;
+        }
+
+        /* 5 text-indent */
+        .indent {
+            text-indent: 50px;
+        }
+
+        /* 6 letter-spacing */
+        .letter {
+            letter-spacing: 5px;
+        }
+
+        /* 7 line-height */
+        .line {
+            line-height: 40px;
+        }
+
+        /* 8 word-spacing */
+        .word {
+            word-spacing: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS TEXT Properties Structure</h1>
+
+    <!-- COLOR -->
+    <div class="section">COLOR</div>
+    <div class="container">
+        <div class="box color">
+            This text uses color: blue;
+        </div>
+    </div>
+
+
+    <!-- TEXT ALIGN -->
+    <div class="section">TEXT ALIGN</div>
+    <div class="container">
+        <div class="box left">text-align: left</div>
+        <div class="box center">text-align: center</div>
+        <div class="box right">text-align: right</div>
+    </div>
+
+
+    <!-- TEXT DECORATION -->
+    <div class="section">TEXT DECORATION</div>
+    <div class="container">
+        <div class="box underline">underline text</div>
+        <div class="box overline">overline text</div>
+        <div class="box line-through">line-through text</div>
+    </div>
+
+
+    <!-- TEXT TRANSFORM -->
+    <div class="section">TEXT TRANSFORM</div>
+    <div class="container">
+        <div class="box upper">uppercase text example</div>
+        <div class="box lower">LOWERCASE TEXT EXAMPLE</div>
+        <div class="box capitalize">capitalize text example</div>
+    </div>
+
+
+    <!-- TEXT INDENT -->
+    <div class="section">TEXT INDENT</div>
+    <div class="container">
+        <div class="box indent">
+            This paragraph has text-indent applied. First line moves right.
+        </div>
+    </div>
+
+
+    <!-- LETTER SPACING -->
+    <div class="section">LETTER SPACING</div>
+    <div class="container">
+        <div class="box letter">
+            Letter spacing example
+        </div>
+    </div>
+
+
+    <!-- LINE HEIGHT -->
+    <div class="section">LINE HEIGHT</div>
+    <div class="container">
+        <div class="box line">
+            Line height example<br>
+            Line height example<br>
+            Line height example
+        </div>
+    </div>
+
+
+    <!-- WORD SPACING -->
+    <div class="section">WORD SPACING</div>
+    <div class="container">
+        <div class="box word">
+            Word spacing example text here
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Grid Structure</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* section title */
+        .section {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+        /* grid container */
+        .container {
+            background: white;
+            border: 2px solid black;
+            padding: 20px;
+            margin-top: 10px;
+            display: grid;
+        }
+
+        /* grid items */
+        .box {
+            background: blue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid red;
+        }
+
+        /* grid-template-columns */
+        .columns {
+            grid-template-columns: 100px 100px 100px;
+        }
+
+        /* grid-template-rows */
+        .rows {
+            grid-template-columns: 100px 100px;
+            grid-template-rows: 80px 80px 80px;
+        }
+
+        /* grid-gap */
+        .gap {
+            grid-template-columns: 100px 100px 100px;
+            gap: 20px;
+        }
+
+        /* grid-area layout */
+        .area {
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 80px 80px;
+        }
+
+        .item1 {
+            grid-column: 1 / 3;
+        }
+
+        .item2 {
+            grid-row: 1 / 3;
+        }
+
+        .item3 {
+            grid-column: 1/ 3;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>CSS Grid Structure</h1>
+
+
+    <!-- DISPLAY GRID -->
+    <div class="section">DISPLAY: GRID</div>
+
+    <div class="container columns">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+
+    <!-- GRID TEMPLATE COLUMNS -->
+    <div class="section">GRID-TEMPLATE-COLUMNS</div>
+
+    <div class="container columns">
+        <div class="box">Column 1</div>
+        <div class="box">Column 2</div>
+        <div class="box">Column 3</div>
+    </div>
+
+
+    <!-- GRID TEMPLATE ROWS -->
+    <div class="section">GRID-TEMPLATE-ROWS</div>
+
+    <div class="container rows">
+        <div class="box">Row 1</div>
+        <div class="box">Row 2</div>
+        <div class="box">Row 3</div>
+        <div class="box">Row 4</div>
+        <div class="box">Row 5</div>
+        <div class="box">Row 6</div>
+    </div>
+
+
+    <!-- GRID GAP -->
+    <div class="section">GRID-GAP</div>
+
+    <div class="container gap">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+
+    <!-- GRID AREA -->
+    <div class="section">GRID-AREA</div>
+
+    <div class="container area">
+        <div class="box item1">grid-column 1 / 3</div>
+        <div class="box item2">grid-row 1 / 3</div>
+        <div class="box item3">grid-column 2 / 4</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+
+
+</body>
+
+</html>

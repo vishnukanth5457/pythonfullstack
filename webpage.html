@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VK Tech Universe</title>
+
+<style>
+
+/* ===== GLOBAL ===== */
+
+:root{
+  --primary:#0a192f;
+  --secondary:#00bcd4;
+  --light:#f4f4f4;
+  --card:#ffffff;
+}
+
+body{
+  font-family:Arial;
+  margin:0;
+  background:var(--light);
+}
+
+/* ===== HEADER ===== */
+
+header{
+  background:var(--primary);
+  color:white;
+  padding:20px;
+  text-align:center;
+}
+
+nav{
+  background:#111;
+  padding:10px;
+  text-align:center;
+}
+
+nav a{
+  color:white;
+  margin:10px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+nav a:hover{
+  color:var(--secondary);
+}
+
+/* ===== HERO ===== */
+
+.hero{
+  background:var(--secondary);
+  color:white;
+  padding:50px;
+  text-align:center;
+}
+
+.hero button{
+  padding:10px 20px;
+  border:none;
+  background:black;
+  color:white;
+  cursor:pointer;
+}
+
+/* ===== GRID ===== */
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+  padding:20px;
+}
+
+.card{
+  background:var(--card);
+  padding:20px;
+  border-radius:8px;
+  box-shadow:0 0 10px rgba(0,0,0,0.2);
+  text-align:center;
+}
+
+.card:hover{
+  transform:scale(1.05);
+  transition:0.3s;
+}
+
+.card button{
+  background:var(--secondary);
+  color:white;
+  border:none;
+  padding:10px;
+  margin-top:10px;
+  cursor:pointer;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+  background:var(--primary);
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>VK Tech Universe</h1>
+<p>The Ultimate Learning Platform for Developers</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Tutorials</a>
+<a href="#">References</a>
+<a href="#">Exercises</a>
+<a href="#">Projects</a>
+<a href="#">Login</a>
+</nav>
+
+<div class="hero">
+<h2>Learn Programming from Scratch</h2>
+<p>HTML, CSS, JavaScript, Python, and More</p>
+<button>Start Learning</button>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>HTML</h3>
+<p>Learn website structure</p>
+<button>Learn HTML</button>
+</div>
+
+<div class="card">
+<h3>CSS</h3>
+<p>Style your websites</p>
+<button>Learn CSS</button>
+</div>
+
+<div class="card">
+<h3>JavaScript</h3>
+<p>Add interactivity</p>
+<button>Learn JavaScript</button>
+</div>
+
+<div class="card">
+<h3>Python</h3>
+<p>Backend and AI programming</p>
+<button>Learn Python</button>
+</div>
+
+<div class="card">
+<h3>SQL</h3>
+<p>Database management</p>
+<button>Learn SQL</button>
+</div>
+
+<div class="card">
+<h3>Projects</h3>
+<p>Practice real projects</p>
+<button>View Projects</button>
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 VK Tech Universe | Learn. Build. Grow.</p>
+</footer>
+
+</body>
+</html>
+

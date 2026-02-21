@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Width & Height Structure</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* section title */
+        .section {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+        /* container */
+        .container {
+            background: white;
+            padding: 20px;
+            border: 2px solid black;
+            margin-top: 10px;
+        }
+
+        /* base box */
+        .box {
+            background: blue;
+            color: white;
+            margin: 10px;
+            padding: 10px;
+            border: 5px solid red;
+        }
+
+        /* WIDTH examples */
+
+        .width-200 {
+            width: 200px;
+        }
+
+        .width-50 {
+            width: 50%;
+        }
+
+        /* HEIGHT examples */
+
+        .height-100 {
+            height: 100px;
+        }
+
+        .height-200 {
+            height: 200px;
+        }
+
+        /* MAX WIDTH */
+
+        .max-width {
+            max-width: 300px;
+        }
+
+        /* MIN WIDTH */
+
+        .min-width {
+            min-width: 300px;
+        }
+
+        /* MAX HEIGHT */
+
+        .max-height {
+            max-height: 100px;
+            overflow: auto;
+        }
+
+        /* MIN HEIGHT */
+
+        .min-height {
+            min-height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Width & Height Structure</h1>
+
+    <!-- WIDTH -->
+    <div class="section">WIDTH</div>
+
+    <div class="container">
+        <div class="box width-200">width:200px</div>
+        <div class="box width-50">width:50%</div>
+    </div>
+
+
+    <!-- HEIGHT -->
+    <div class="section">HEIGHT</div>
+
+    <div class="container">
+        <div class="box height-100">height:100px</div>
+        <div class="box height-200">height:200px</div>
+    </div>
+
+
+    <!-- MAX WIDTH -->
+    <div class="section">MAX-WIDTH</div>
+
+    <div class="container">
+        <div class="box max-width">
+            max-width:300px<br>
+            Resize browser to see effect
+        </div>
+    </div>
+
+
+    <!-- MIN WIDTH -->
+    <div class="section">MIN-WIDTH</div>
+
+    <div class="container">
+        <div class="box min-width">
+            min-width:300px<br>
+            Cannot go smaller
+        </div>
+    </div>
+
+
+    <!-- MAX HEIGHT -->
+    <div class="section">MAX-HEIGHT</div>
+
+    <div class="container">
+        <div class="box max-height">
+            max-height:100px<br>
+            Content overflow example<br>
+            Line 1<br>
+            Line 2<br>
+            Line 3<br>
+            Line 4<br>
+            Line 5<br>
+        </div>
+    </div>
+
+
+    <!-- MIN HEIGHT -->
+    <div class="section">MIN-HEIGHT</div>
+
+    <div class="container">
+        <div class="box min-height">
+            min-height:150px
+        </div>
+    </div>
+
+</body>
+
+</html>

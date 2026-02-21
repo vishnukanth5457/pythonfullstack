@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Lists Structure</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* section title */
+        .section {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+        /* container */
+        .container {
+            background: white;
+            padding: 20px;
+            border: 2px solid black;
+            margin-top: 10px;
+            width: 400px;
+        }
+
+        /* common list style */
+        ul,
+        ol {
+            border: 2px solid red;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* list-style-type examples */
+
+        .disc {
+            list-style-type: disc;
+        }
+
+        .circle {
+            list-style-type: circle;
+        }
+
+        .square {
+            list-style-type: square;
+        }
+
+        .none {
+            list-style-type: none;
+        }
+
+        .decimal {
+            list-style-type: decimal;
+        }
+
+        .roman {
+            list-style-type: upper-roman;
+        }
+
+        .alpha {
+            list-style-type: upper-alpha;
+        }
+
+        /* list-style-position */
+
+        .inside {
+            list-style-position: inside;
+        }
+
+        .outside {
+            list-style-position: outside;
+        }
+
+        /* list-style-image */
+
+        .image {
+            list-style-image: url("https://cdn-icons-png.flaticon.com/16/1828/1828884.png");
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Lists Structure</h1>
+
+    <!-- LIST STYLE TYPE -->
+    <div class="section">LIST-STYLE-TYPE</div>
+
+    <div class="container">
+
+        <ul class="disc">
+            <li>Disc type</li>
+            <li>Disc type</li>
+        </ul>
+
+        <ul class="circle">
+            <li>Circle type</li>
+            <li>Circle type</li>
+        </ul>
+
+        <ul class="square">
+            <li>Square type</li>
+            <li>Square type</li>
+        </ul>
+
+        <ul class="none">
+            <li>None type</li>
+            <li>None type</li>
+        </ul>
+
+        <ol class="decimal">
+            <li>Decimal type</li>
+            <li>Decimal type</li>
+        </ol>
+
+        <ol class="roman">
+            <li>Roman type</li>
+            <li>Roman type</li>
+        </ol>
+
+        <ol class="alpha">
+            <li>Alpha type</li>
+            <li>Alpha type</li>
+        </ol>
+
+    </div>
+
+
+    <!-- LIST STYLE POSITION -->
+    <div class="section">LIST-STYLE-POSITION</div>
+
+    <div class="container">
+
+        <ul class="inside">
+            <li>Inside position example text example text example text</li>
+            <li>Inside position example</li>
+        </ul>
+
+        <ul class="outside">
+            <li>Outside position example text example text example text</li>
+            <li>Outside position example</li>
+        </ul>
+
+    </div>
+
+
+    <!-- LIST STYLE IMAGE -->
+    <div class="section">LIST-STYLE-IMAGE</div>
+
+    <div class="container">
+
+        <ul class="image">
+            <li>Image bullet example</li>
+            <li>Image bullet example</li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>

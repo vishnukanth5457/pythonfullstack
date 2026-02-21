@@ -16,7 +16,9 @@ Think of an **iframe like a TV inside your room**:
 --> Basic Syntax
 
 ```html
+
 <iframe src="URL"></iframe>
+
 ```
 
 ---

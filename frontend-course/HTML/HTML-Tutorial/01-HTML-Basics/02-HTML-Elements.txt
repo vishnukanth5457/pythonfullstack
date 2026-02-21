@@ -79,6 +79,7 @@ Some elements **do not have content**, so **no closing tag** is needed.
 --> Example
 
 ```html
+
 <p>Hello<br>World</p>
 ```
 

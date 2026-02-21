@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Variables Structure</title>
+
+    <style>
+        /* ===== ROOT VARIABLES ===== */
+
+        :root {
+
+            --main-color: blue;
+            --secondary-color: red;
+            --text-color: white;
+            --box-width: 150px;
+            --box-height: 100px;
+            --font-size: 20px;
+
+        }
+
+        /* body */
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* section */
+        .section {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+        /* container */
+        .container {
+            background: white;
+            padding: 20px;
+            border: 2px solid black;
+            margin-top: 10px;
+            display: flex;
+            gap: 20px;
+        }
+
+        /* box using variables */
+        .box {
+
+            width: var(--box-width);
+            height: var(--box-height);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: var(--font-size);
+
+        }
+
+        /* reuse variables */
+
+        .primary {
+            background: var(--main-color);
+        }
+
+        .secondary {
+            background: var(--secondary-color);
+        }
+
+        /* override variable locally */
+
+        .local {
+            --main-color: green;
+            background: var(--main-color);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>CSS Variables Structure</h1>
+
+
+    <!-- ROOT VARIABLE -->
+    <div class="section">:root VARIABLES</div>
+
+    <div class="container">
+
+        <div class="box primary">
+            main-color
+        </div>
+
+    </div>
+
+
+    <!-- REUSE VARIABLES -->
+    <div class="section">REUSE VARIABLES</div>
+
+    <div class="container">
+
+        <div class="box primary">
+            reuse main
+        </div>
+
+        <div class="box secondary">
+            reuse secondary
+        </div>
+
+    </div>
+
+
+    <!-- LOCAL VARIABLE -->
+    <div class="section">LOCAL VARIABLE OVERRIDE</div>
+
+    <div class="container">
+
+        <div class="box local">
+            local override
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Overflow Structure</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* section title */
+        .section {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+        /* container */
+        .container {
+            background: white;
+            padding: 20px;
+            border: 2px solid black;
+            margin-top: 10px;
+        }
+
+        /* base box */
+        .box {
+            width: 300px;
+            height: 100px;
+            border: 3px solid red;
+            margin: 10px;
+            padding: 10px;
+            background: lightblue;
+        }
+
+        /* overflow visible */
+        .visible {
+            overflow: visible;
+        }
+
+        /* overflow hidden */
+        .hidden {
+            overflow: hidden;
+        }
+
+        /* overflow scroll */
+        .scroll {
+            overflow: scroll;
+        }
+
+        /* overflow auto */
+        .auto {
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Overflow Structure</h1>
+
+    <!-- OVERFLOW VISIBLE -->
+    <div class="section">OVERFLOW: VISIBLE</div>
+
+    <div class="container">
+
+        <div class="box visible">
+            This is overflow visible example.
+            Content exceeds box height.
+            Line 1<br>
+            Line 2<br>
+            Line 3<br>
+            Line 4<br>
+            Line 5<br>
+            Line 6<br>
+            Line 7<br>
+        </div>
+
+    </div>
+
+
+    <!-- OVERFLOW HIDDEN -->
+    <div class="section">OVERFLOW: HIDDEN</div>
+
+    <div class="container">
+
+        <div class="box hidden">
+            This is overflow hidden example.
+            Content exceeds box height.
+            Line 1<br>
+            Line 2<br>
+            Line 3<br>
+            Line 4<br>
+            Line 5<br>
+            Line 6<br>
+            Line 7<br>
+        </div>
+
+    </div>
+
+
+    <!-- OVERFLOW SCROLL -->
+    <div class="section">OVERFLOW: SCROLL</div>
+
+    <div class="container">
+
+        <div class="box scroll">
+            This is overflow scroll example.
+            Content exceeds box height.
+            Line 1<br>
+            Line 2<br>
+            Line 3<br>
+            Line 4<br>
+            Line 5<br>
+            Line 6<br>
+            Line 7<br>
+        </div>
+
+    </div>
+
+
+    <!-- OVERFLOW AUTO -->
+    <div class="section">OVERFLOW: AUTO</div>
+
+    <div class="container">
+
+        <div class="box auto">
+            This is overflow auto example.
+            Content exceeds box height.
+            Line 1<br>
+            Line 2<br>
+            Line 3<br>
+            Line 4<br>
+            Line 5<br>
+            Line 6<br>
+            Line 7<br>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

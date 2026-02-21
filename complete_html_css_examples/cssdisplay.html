@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Display Structure</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* section title */
+        .section {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+        /* container */
+        .container {
+            background: white;
+            padding: 20px;
+            border: 2px solid black;
+            margin-top: 10px;
+        }
+
+        /* base box */
+        .box {
+            background: blue;
+            color: white;
+            padding: 10px;
+            margin: 10px;
+            border: 3px solid red;
+            width: 150px;
+        }
+
+        /* display block */
+        .block {
+            display: block;
+        }
+
+        /* display inline */
+        .inline {
+            display: inline;
+        }
+
+        /* display inline-block */
+        .inline-block {
+            display: inline-block;
+        }
+
+        /* display none */
+        .none {
+            display: none;
+        }
+
+        /* visibility hidden */
+        .hidden {
+            visibility: hidden;
+        }
+
+        /* demo container */
+        .demo {
+            border: 2px dashed black;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Display Properties Structure</h1>
+
+
+    <!-- DISPLAY BLOCK -->
+    <div class="section">DISPLAY: BLOCK</div>
+
+    <div class="container demo">
+
+        <div class="box block">Block 1</div>
+        <div class="box block">Block 2</div>
+        <div class="box block">Block 3</div>
+
+    </div>
+
+
+    <!-- DISPLAY INLINE -->
+    <div class="section">DISPLAY: INLINE</div>
+
+    <div class="container demo">
+
+        <div class="box inline">Inline 1</div>
+        <div class="box inline">Inline 2</div>
+        <div class="box inline">Inline 3</div>
+
+    </div>
+
+
+    <!-- DISPLAY INLINE-BLOCK -->
+    <div class="section">DISPLAY: INLINE-BLOCK</div>
+
+    <div class="container demo">
+
+        <div class="box inline-block">Inline-Block 1</div>
+        <div class="box inline-block">Inline-Block 2</div>
+        <div class="box inline-block">Inline-Block 3</div>
+
+    </div>
+
+
+    <!-- DISPLAY NONE -->
+    <div class="section">DISPLAY: NONE</div>
+
+    <div class="container demo">
+
+        <div class="box">Visible Box</div>
+        <div class="box none">Hidden using display:none</div>
+        <div class="box">Visible Box</div>
+
+    </div>
+
+
+    <!-- VISIBILITY HIDDEN -->
+    <div class="section">VISIBILITY: HIDDEN</div>
+
+    <div class="container demo">
+
+        <div class="box">Visible Box</div>
+        <div class="box hidden">Hidden using visibility:hidden</div>
+        <div class="box">Visible Box</div>
+
+    </div>
+
+
+</body>
+
+</html>

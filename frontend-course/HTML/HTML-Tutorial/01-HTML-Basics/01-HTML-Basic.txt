@@ -207,6 +207,7 @@ Comments are **notes for developers**.
 
 ```html
 <!-- Main Heading -->
+
 <h1>Welcome</h1>
 
 <!-- Paragraph below -->

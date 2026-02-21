@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Links Structure</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* section title */
+        .section {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+        /* container */
+        .container {
+            background: white;
+            padding: 20px;
+            border: 2px solid black;
+            margin-top: 10px;
+        }
+
+        /* base link */
+        .link {
+            font-size: 20px;
+            display: block;
+            margin: 10px 0;
+        }
+
+        /* 1 link state */
+        .link1:link {
+            color: blue;
+        }
+
+        /* 2 visited state */
+        .link1:visited {
+            color: purple;
+        }
+
+        /* 3 hover state */
+        .link1:hover {
+            color: red;
+        }
+
+        /* 4 active state */
+        .link1:active {
+            color: green;
+        }
+
+        /* remove underline */
+        .link2 {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* hover effect underline */
+        .link2:hover {
+            text-decoration: underline;
+            color: red;
+        }
+
+        /* button hover effect */
+        .link3 {
+            text-decoration: none;
+            background: blue;
+            color: white;
+            padding: 10px 20px;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        .link3:hover {
+            background: red;
+        }
+
+        /* advanced hover effect */
+        .link4 {
+            text-decoration: none;
+            color: black;
+            border: 2px solid black;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .link4:hover {
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Links Structure</h1>
+
+    <!-- LINK STATES -->
+    <div class="section">LINK STATES</div>
+
+    <div class="container">
+
+        <a href="#" class="link link1">:link state example</a>
+
+        <a href="#" class="link link1">:visited state example</a>
+
+        <a href="#" class="link link1">:hover state example (move mouse)</a>
+
+        <a href="#" class="link link1">:active state example (click)</a>
+
+    </div>
+
+
+    <!-- REMOVE UNDERLINE -->
+    <div class="section">REMOVE UNDERLINE</div>
+
+    <div class="container">
+
+        <a href="#" class="link link2">Link without underline</a>
+
+    </div>
+
+
+    <!-- HOVER EFFECT -->
+    <div class="section">HOVER EFFECT</div>
+
+    <div class="container">
+
+        <a href="#" class="link link3">Button Hover Effect</a>
+
+        <br><br>
+
+        <a href="#" class="link link4">Box Hover Effect</a>
+
+    </div>
+
+</body>
+
+</html>

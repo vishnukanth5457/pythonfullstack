@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>CSS Tables Structure</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+
+    /* section title */
+    .section {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 40px;
+    }
+
+    /* container */
+    .container {
+      background: white;
+      padding: 20px;
+      border: 2px solid black;
+      margin-top: 10px;
+      width: 600px;
+    }
+
+    /* common table style */
+    table {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    /* 1 border-collapse */
+    .collapse {
+      border-collapse: collapse;
+    }
+
+    .collapse th,
+    .collapse td {
+      border: 2px solid red;
+      padding: 10px;
+    }
+
+    /* separate border */
+    .separate {
+      border-collapse: separate;
+    }
+
+    .separate th,
+    .separate td {
+      border: 2px solid blue;
+      padding: 10px;
+    }
+
+    /* 2 table-layout */
+    .fixed {
+      table-layout: fixed;
+    }
+
+    .auto {
+      table-layout: auto;
+    }
+
+    /* 3 text alignment */
+    .left {
+      text-align: left;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .right {
+      text-align: right;
+    }
+
+    /* vertical alignment */
+    .top {
+      vertical-align: top;
+    }
+
+    .middle {
+      vertical-align: middle;
+    }
+
+    .bottom {
+      vertical-align: bottom;
+    }
+
+    /* 4 zebra stripes */
+    .zebra tr:nth-child(even) {
+      background: #ddd;
+    }
+
+    .zebra tr:nth-child(odd) {
+      background: #fff;
+    }
+
+    .zebra th {
+      background: black;
+      color: white;
+    }
+
+    /* hover effect */
+    .zebra tr:hover {
+      background: yellow;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>CSS Tables Structure</h1>
+
+  <!-- BORDER COLLAPSE -->
+  <div class="section">BORDER-COLLAPSE</div>
+
+  <div class="container">
+
+    <h3>collapse</h3>
+    <table class="collapse">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Ram</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>30</td>
+      </tr>
+    </table>
+
+    <h3>separate</h3>
+    <table class="separate">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Sam</td>
+        <td>28</td>
+      </tr>
+      <tr>
+        <td>David</td>
+        <td>35</td>
+      </tr>
+    </table>
+
+  </div>
+
+
+  <!-- TABLE LAYOUT -->
+  <div class="section">TABLE-LAYOUT</div>
+
+  <div class="container">
+
+    <h3>fixed</h3>
+    <table class="collapse fixed">
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Item</td>
+        <td>Long text example showing fixed layout behavior</td>
+      </tr>
+    </table>
+
+    <h3>auto</h3>
+    <table class="collapse auto">
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Item</td>
+        <td>Long text example showing auto layout behavior</td>
+      </tr>
+    </table>
+
+  </div>
+
+
+  <!-- TEXT ALIGNMENT -->
+  <div class="section">TEXT ALIGNMENT</div>
+
+  <div class="container">
+
+    <table class="collapse">
+      <tr>
+        <th class="left">Left</th>
+        <th class="center">Center</th>
+        <th class="right">Right</th>
+      </tr>
+      <tr>
+        <td class="left top">Top Left</td>
+        <td class="center middle">Middle Center</td>
+        <td class="right bottom">Bottom Right</td>
+      </tr>
+    </table>
+
+  </div>
+
+
+  <!-- ZEBRA STRIPES -->
+  <div class="section">ZEBRA STRIPES</div>
+
+  <div class="container">
+
+    <table class="collapse zebra">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>City</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Ram</td>
+        <td>Pune</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>John</td>
+        <td>Mumbai</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Sam</td>
+        <td>Delhi</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>David</td>
+        <td>Chennai</td>
+      </tr>
+    </table>
+
+  </div>
+
+</body>
+
+</html>

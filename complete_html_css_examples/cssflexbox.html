@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Flexbox Structure</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* section title */
+        .section {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+        /* flex container */
+        .container {
+            background: white;
+            border: 2px solid black;
+            padding: 20px;
+            margin-top: 10px;
+            height: 200px;
+            display: flex;
+        }
+
+        /* flex items */
+        .box {
+            width: 80px;
+            height: 80px;
+            background: blue;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* flex-direction */
+        .row {
+            flex-direction: row;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        /* justify-content */
+        .justify-center {
+            justify-content: center;
+        }
+
+        .justify-space {
+            justify-content: space-between;
+        }
+
+        /* align-items */
+        .align-center {
+            align-items: center;
+        }
+
+        .align-end {
+            align-items: flex-end;
+        }
+
+        /* flex-wrap */
+        .wrap {
+            flex-wrap: wrap;
+        }
+
+        /* align-content */
+        .align-content {
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+
+        /* gap */
+        .gap {
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Flexbox Structure</h1>
+
+    <!-- DISPLAY FLEX -->
+    <div class="section">DISPLAY: FLEX</div>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+
+    <!-- FLEX DIRECTION -->
+    <div class="section">FLEX-DIRECTION</div>
+
+    <div class="container row">
+        <div class="box">Row</div>
+        <div class="box">Row</div>
+        <div class="box">Row</div>
+    </div>
+
+    <div class="container column">
+        <div class="box">Col</div>
+        <div class="box">Col</div>
+        <div class="box">Col</div>
+    </div>
+
+
+    <!-- JUSTIFY CONTENT -->
+    <div class="section">JUSTIFY-CONTENT</div>
+
+    <div class="container justify-center">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+    <div class="container justify-space">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+
+    <!-- ALIGN ITEMS -->
+    <div class="section">ALIGN-ITEMS</div>
+
+    <div class="container align-center">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+    <div class="container align-end">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+
+    <!-- FLEX WRAP -->
+    <div class="section">FLEX-WRAP</div>
+
+    <div class="container wrap">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+
+
+    <!-- ALIGN CONTENT -->
+    <div class="section">ALIGN-CONTENT</div>
+
+    <div class="container align-content">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+
+
+    <!-- GAP -->
+    <div class="section">GAP</div>
+
+    <div class="container gap">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+
+</body>
+
+</html>

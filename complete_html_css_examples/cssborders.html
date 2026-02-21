@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Borders Complete Example</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        /* common box style */
+        .box {
+            width: 300px;
+            height: 100px;
+            margin: 20px;
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* 1 border-style */
+        .style {
+            border-style: solid;
+        }
+
+        /* different border styles */
+        .dotted {
+            border-style: dotted;
+        }
+
+        .dashed {
+            border-style: dashed;
+        }
+
+        .double {
+            border-style: double;
+        }
+
+        /* 2 border-width */
+        .width {
+            border-style: solid;
+            border-width: 5px;
+        }
+
+        /* 3 border-color */
+        .color {
+            border-style: solid;
+            border-width: 5px;
+            border-color: red;
+        }
+
+        /* different colors on each side */
+        .multicolor {
+            border-style: solid;
+            border-width: 5px;
+            border-color: red green blue black;
+        }
+
+        /* 4 border-radius */
+        .radius {
+            border-style: solid;
+            border-width: 5px;
+            border-radius: 20px;
+        }
+
+        /* circle */
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-style: solid;
+            border-width: 5px;
+            border-radius: 50%;
+        }
+
+        /* combined border */
+        .combined {
+            border: 5px solid purple;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Borders Complete Example</h1>
+
+    <div class="box style">
+        border-style: solid
+    </div>
+
+    <div class="box dotted">
+        border-style: dotted
+    </div>
+
+    <div class="box dashed">
+        border-style: dashed
+    </div>
+
+    <div class="box double">
+        border-style: double
+    </div>
+
+    <div class="box width">
+        border-width: 5px
+    </div>
+
+    <div class="box color">
+        border-color: red
+    </div>
+
+    <div class="box multicolor">
+        different border colors
+    </div>
+
+    <div class="box radius">
+        border-radius: 20px
+    </div>
+
+    <div class="circle">
+    </div>
+
+    <div class="box combined">
+        combined border property
+    </div>
+
+</body>
+
+</html>

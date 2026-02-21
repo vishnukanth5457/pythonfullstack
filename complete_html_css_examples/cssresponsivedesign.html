@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Responsive Design Structure</title>
+
+    <style>
+        /* ===== MOBILE FIRST DESIGN ===== */
+
+        body {
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+
+        /* section */
+        .section {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px;
+        }
+
+        /* container */
+        .container {
+            background: white;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid black;
+        }
+
+        /* responsive box using % */
+        .box-percent {
+            width: 100%;
+            background: blue;
+            color: white;
+            padding: 20px;
+            margin: 10px 0;
+        }
+
+        /* responsive units vw vh */
+        .box-vw {
+            width: 50vw;
+            height: 20vh;
+            background: red;
+            color: white;
+            padding: 10px;
+        }
+
+        /* em unit */
+        .box-em {
+            font-size: 2em;
+            background: green;
+            color: white;
+            padding: 10px;
+        }
+
+        /* rem unit */
+        .box-rem {
+            font-size: 2rem;
+            background: purple;
+            color: white;
+            padding: 10px;
+        }
+
+        /* responsive image */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* responsive layout */
+        .row {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .col {
+            background: orange;
+            margin: 10px;
+            padding: 20px;
+            color: white;
+        }
+
+        /* ===== TABLET ===== */
+
+        @media(min-width:768px) {
+
+            .row {
+                flex-direction: row;
+            }
+
+            .col {
+                width: 50%;
+            }
+
+            body {
+                background: #e0f7fa;
+            }
+
+        }
+
+        /* ===== DESKTOP ===== */
+
+        @media(min-width:1024px) {
+
+            .col {
+                width: 33.33%;
+            }
+
+            body {
+                background: #fff3e0;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="margin:20px;">CSS Responsive Design Structure</h1>
+
+    <!-- RESPONSIVE UNITS -->
+    <div class="section">RESPONSIVE UNITS</div>
+
+    <div class="container">
+
+        <div class="box-percent">width: 100%</div>
+
+        <div class="box-vw">width: 50vw height: 20vh</div>
+
+        <div class="box-em">font-size: 2em</div>
+
+        <div class="box-rem">font-size: 2rem</div>
+
+    </div>
+
+
+    <!-- RESPONSIVE IMAGE -->
+    <div class="section">RESPONSIVE IMAGE</div>
+
+    <div class="container">
+
+        <img src="https://picsum.photos/800/400">
+
+    </div>
+
+
+    <!-- MEDIA QUERY LAYOUT -->
+    <div class="section">MEDIA QUERY LAYOUT</div>
+
+    <div class="container row">
+
+        <div class="col">Column 1</div>
+
+        <div class="col">Column 2</div>
+
+        <div class="col">Column 3</div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -5,13 +5,11 @@ CSS ROADMAP
 ================================
 
 1. CSS BASICS
-
 ----------------------------------------------------------------------
-
 --> What is CSS
 --> Why CSS is used
 --> CSS syntax (selector { property: value; })
---> CSS comments
+--> CSS comments /* ____ */
 --> CSS versions (CSS1, CSS2, CSS3)
 
 Real-world:
@@ -35,7 +33,7 @@ CSS = clothes / paint / design
 
 ----------------------------------------------------------------------
 
---> Universal selector (-->)
+--> Universal selector (-->) *
 --> Element selector
 --> Class selector (.)
 --> ID selector (#)
@@ -131,6 +129,7 @@ padding = space inside box
 ----------------------------------------------------------------------
 
 --> font-family
+      
 --> font-size
 --> font-style
 --> font-weight
@@ -207,6 +206,11 @@ padding = space inside box
 --> float left / right
 --> clear
 --> clearfix concept
+===================================================================================================
+
+
+
+
 
 ----------------------------------------------------------------------
 
@@ -234,7 +238,6 @@ padding = space inside box
 --> gap
 
 ----------------------------------------------------------------------
-
 19. CSS GRID
 
 ----------------------------------------------------------------------
@@ -258,9 +261,32 @@ padding = space inside box
 
 ----------------------------------------------------------------------
 
-21. CSS TRANSFORMS
-
+21. CSS TRANSFORM
 ----------------------------------------------------------------------
+
+syntax:
+    transform:transform-function(value);
+
+    if i want to rotate the image
+      ex: transform:rotate(45deg)
+
+
+1) translate (move Element)
+    translate moves Elements from its original position
+      css syntax:
+              transform :translate(x,y)
+
+              x->horizontal move
+              y->vertical move
+
+
+
+
+
+
+
+
+
 
 --> translate
 --> rotate
@@ -272,6 +298,23 @@ padding = space inside box
 22. CSS TRANSITIONS
 
 ----------------------------------------------------------------------
+css transitiion allow you to animate cahanges somthly, insted of instant cahanges
+
+real life anology:
+ think of a fan ragulator.
+
+ syntax:
+  transitiion-property: property;
+  transition-duration:time;
+  transitiion-time-function:type;
+  transitiion-delay:time;
+
+=================================================================================
+transitiion-property: property;
+
+selector{
+  property:value;
+}
 
 --> transition-property
 --> transition-duration
@@ -289,6 +332,15 @@ padding = space inside box
 --> animation-duration
 --> animation-delay
 --> animation-iteration-count
+
+@keyframes animationname{
+  from{
+    property: value;
+  }
+  to{
+    property:value;
+  }
+}
 
 ----------------------------------------------------------------------
 

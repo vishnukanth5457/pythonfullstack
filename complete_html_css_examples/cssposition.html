@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Position Structure</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 20px;
+            height: 2000px;
+            /* for scroll */
+        }
+
+        /* section title */
+        .section {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+        /* container */
+        .container {
+            background: white;
+            padding: 20px;
+            border: 2px solid black;
+            margin-top: 10px;
+            position: relative;
+            height: 200px;
+        }
+
+        /* base box */
+        .box {
+            width: 120px;
+            height: 60px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+        }
+
+        /* static */
+        .static {
+            background: blue;
+            position: static;
+        }
+
+        /* relative */
+        .relative {
+            background: green;
+            position: relative;
+            top: 20px;
+            left: 50px;
+        }
+
+        /* absolute */
+        .absolute {
+            background: red;
+            position: absolute;
+            top: 50px;
+            left: 200px;
+        }
+
+        /* fixed */
+        .fixed {
+            background: black;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+
+        /* sticky */
+        .sticky {
+            background: purple;
+            position: sticky;
+            top: 0;
+        }
+
+        /* z-index */
+        .z1 {
+            background: orange;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: 1;
+        }
+
+        .z2 {
+            background: gray;
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Position Structure</h1>
+
+    <!-- STATIC -->
+    <div class="section">POSITION: STATIC</div>
+    <div class="container">
+        <div class="box static">Static</div>
+    </div>
+
+
+    <!-- RELATIVE -->
+    <div class="section">POSITION: RELATIVE</div>
+    <div class="container">
+        <div class="box relative">Relative</div>
+    </div>
+
+
+    <!-- ABSOLUTE -->
+    <div class="section">POSITION: ABSOLUTE</div>
+    <div class="container">
+        <div class="box absolute">Absolute</div>
+    </div>
+
+
+    <!-- FIXED -->
+    <div class="section">POSITION: FIXED</div>
+    <div class="container">
+        <div class="box fixed">Fixed</div>
+        Scroll page
+    </div>
+
+
+    <!-- STICKY -->
+    <div class="section">POSITION: STICKY</div>
+    <div class="container">
+        <div class="box sticky">Sticky</div>
+        Scroll page
+    </div>
+
+
+    <!-- Z-INDEX -->
+    <div class="section">Z-INDEX</div>
+    <div class="container">
+        <div class="box z1">z-index 1</div>
+        <div class="box z2">z-index 2</div>
+    </div>
+
+
+</body>
+
+</html>

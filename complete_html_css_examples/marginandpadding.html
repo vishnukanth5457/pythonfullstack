@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Margin & Padding Structure</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* section title */
+        .section {
+            margin-top: 40px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* container */
+        .container {
+            background: white;
+            padding: 20px;
+            margin-top: 10px;
+            border: 2px solid black;
+        }
+
+        /* base box */
+        .box {
+            background: blue;
+            color: white;
+            border: 5px solid red;
+            width: 200px;
+            text-align: center;
+        }
+
+        /* ===== MARGIN EXAMPLES ===== */
+
+        .margin-all {
+            margin: 40px;
+        }
+
+        .margin-top {
+            margin-top: 40px;
+        }
+
+        .margin-right {
+            margin-right: 40px;
+        }
+
+        .margin-bottom {
+            margin-bottom: 40px;
+        }
+
+        .margin-left {
+            margin-left: 40px;
+        }
+
+        .margin-auto {
+            margin: auto;
+        }
+
+        /* shorthand */
+
+        .margin-1 {
+            margin: 40px;
+        }
+
+        .margin-2 {
+            margin: 40px 20px;
+        }
+
+        .margin-3 {
+            margin: 40px 20px 10px;
+        }
+
+        .margin-4 {
+            margin: 40px 30px 20px 10px;
+        }
+
+        /* ===== PADDING EXAMPLES ===== */
+
+        .padding-all {
+            padding: 40px;
+        }
+
+        .padding-top {
+            padding-top: 40px;
+        }
+
+        .padding-right {
+            padding-right: 40px;
+        }
+
+        .padding-bottom {
+            padding-bottom: 40px;
+        }
+
+        .padding-left {
+            padding-left: 40px;
+        }
+
+        /* shorthand */
+
+        .padding-1 {
+            padding: 40px;
+        }
+
+        .padding-2 {
+            padding: 40px 20px;
+        }
+
+        .padding-3 {
+            padding: 40px 20px 10px;
+        }
+
+        .padding-4 {
+            padding: 40px 30px 20px 10px;
+        }
+
+        /* ===== BOX MODEL ===== */
+
+        .box-model {
+            margin: 40px;
+            padding: 40px;
+            border: 10px solid black;
+            background: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Margin, Padding & Box Model Structure</h1>
+
+    <!-- MARGIN SECTION -->
+    <div class="section">MARGIN EXAMPLES</div>
+
+    <div class="container">
+        <div class="box margin-all">margin:40px</div>
+        <div class="box margin-top">margin-top</div>
+        <div class="box margin-right">margin-right</div>
+        <div class="box margin-bottom">margin-bottom</div>
+        <div class="box margin-left">margin-left</div>
+        <div class="box margin-auto">margin:auto (center)</div>
+    </div>
+
+
+    <div class="section">MARGIN SHORTHAND</div>
+
+    <div class="container">
+        <div class="box margin-1">margin:40px</div>
+        <div class="box margin-2">margin:40px 20px</div>
+        <div class="box margin-3">margin:40px 20px 10px</div>
+        <div class="box margin-4">margin:40px 30px 20px 10px</div>
+    </div>
+
+
+    <!-- PADDING SECTION -->
+    <div class="section">PADDING EXAMPLES</div>
+
+    <div class="container">
+        <div class="box padding-all">padding:40px</div>
+        <div class="box padding-top">padding-top</div>
+        <div class="box padding-right">padding-right</div>
+        <div class="box padding-bottom">padding-bottom</div>
+        <div class="box padding-left">padding-left</div>
+    </div>
+
+
+    <div class="section">PADDING SHORTHAND</div>
+
+    <div class="container">
+        <div class="box padding-1">padding:40px</div>
+        <div class="box padding-2">padding:40px 20px</div>
+        <div class="box padding-3">padding:40px 20px 10px</div>
+        <div class="box padding-4">padding:40px 30px 20px 10px</div>
+    </div>
+
+
+    <!-- BOX MODEL -->
+    <div class="section">BOX MODEL</div>
+
+    <div class="container">
+        <div class="box box-model">
+            CONTENT<br>
+            + PADDING<br>
+            + BORDER<br>
+            + MARGIN
+        </div>
+    </div>
+
+</body>
+
+</html>
