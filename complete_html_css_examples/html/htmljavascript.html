@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>HTML JavaScript Tutorial</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #f39c12;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 6px solid #f1c40f;
+        }
+
+        button {
+            padding: 8px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .code {
+            background: #2d3436;
+            color: #00ffcc;
+            padding: 5px 10px;
+            font-family: monospace;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        footer {
+            background-color: #f39c12;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+
+    <!-- Internal JavaScript -->
+    <script>
+
+        // DOM example function
+        function changeText() {
+
+            document.getElementById("demo").innerHTML = "Text changed using JavaScript DOM";
+
+        }
+
+    </script>
+
+    <!-- External JavaScript Example -->
+    <!--
+    <script src="script.js"></script>
+    -->
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>HTML JavaScript Tutorial</h1>
+
+    <p>Script tag, Inline JS, External JS, DOM Basics</p>
+
+</header>
+
+<div class="container">
+
+
+    <div class="card">
+
+        <h2>1. Script Tag</h2>
+
+        <p>Script tag is used to add JavaScript.</p>
+
+        <span class="code">
+            &lt;script&gt; alert("Hello"); &lt;/script&gt;
+        </span>
+
+        <button onclick="alert('Hello from script tag!')">
+            Click for Alert
+        </button>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>2. Inline JavaScript</h2>
+
+        <p>JavaScript written inside HTML element.</p>
+
+        <span class="code">
+            onclick="alert('Hello')"
+        </span>
+
+        <button onclick="alert('Inline JavaScript executed')">
+            Inline JS Button
+        </button>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>3. External JavaScript</h2>
+
+        <p>JavaScript written in separate file.</p>
+
+        <span class="code">
+            &lt;script src="script.js"&gt;&lt;/script&gt;
+        </span>
+
+        <p>External JS is best practice.</p>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>4. DOM Basics</h2>
+
+        <p id="demo">
+            This text will change
+        </p>
+
+        <span class="code">
+            document.getElementById("demo").innerHTML
+        </span>
+
+        <br><br>
+
+        <button onclick="changeText()">
+            Change Text
+        </button>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>What is DOM?</h2>
+
+        <ul>
+
+            <li>DOM = Document Object Model</li>
+
+            <li>JavaScript can change HTML content</li>
+
+            <li>JavaScript can change CSS</li>
+
+            <li>JavaScript can respond to events</li>
+
+        </ul>
+
+    </div>
+
+
+</div>
+
+<footer>
+
+HTML JavaScript Tutorial
+
+</footer>
+
+</body>
+
+</html>

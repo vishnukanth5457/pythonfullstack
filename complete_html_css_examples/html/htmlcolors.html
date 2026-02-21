@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>HTML Colors Tutorial</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 6px solid #3498db;
+            border-radius: 6px;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        .example {
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            background: #ecf0f1;
+        }
+
+        .color-box {
+            padding: 10px;
+            color: white;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .code {
+            background: #2d3436;
+            color: #00ffcc;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>HTML Colors Tutorial</h1>
+
+    <p>Learn different ways to use colors in HTML</p>
+
+</header>
+
+<div class="container">
+
+
+    <div class="card">
+
+        <h2>1. Color Names</h2>
+
+        <p>HTML supports predefined color names.</p>
+
+        <div class="example">
+
+            <p style="color:red;">This is red color</p>
+
+            <p style="color:blue;">This is blue color</p>
+
+            <p style="color:green;">This is green color</p>
+
+        </div>
+
+        <span class="code">style="color:red"</span>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>2. HEX Colors</h2>
+
+        <p>HEX colors use hexadecimal values.</p>
+
+        <div class="example">
+
+            <p style="color:#ff5733;">This is HEX color #ff5733</p>
+
+            <p style="color:#3498db;">This is HEX color #3498db</p>
+
+        </div>
+
+        <span class="code">style="color:#ff5733"</span>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>3. RGB Colors</h2>
+
+        <p>RGB stands for Red, Green, Blue.</p>
+
+        <div class="example">
+
+            <p style="color:rgb(255,0,0);">RGB Red</p>
+
+            <p style="color:rgb(0,255,0);">RGB Green</p>
+
+            <p style="color:rgb(0,0,255);">RGB Blue</p>
+
+        </div>
+
+        <span class="code">style="color:rgb(255,0,0)"</span>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>4. RGBA Colors</h2>
+
+        <p>RGBA adds transparency (alpha).</p>
+
+        <div class="example">
+
+            <div class="color-box" style="background-color:rgba(255,0,0,0.5);">
+                RGBA Red with transparency
+            </div>
+
+        </div>
+
+        <span class="code">style="background-color:rgba(255,0,0,0.5)"</span>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>5. HSL Colors</h2>
+
+        <p>HSL stands for Hue, Saturation, Lightness.</p>
+
+        <div class="example">
+
+            <p style="color:hsl(0,100%,50%);">HSL Red</p>
+
+            <p style="color:hsl(120,100%,50%);">HSL Green</p>
+
+            <p style="color:hsl(240,100%,50%);">HSL Blue</p>
+
+        </div>
+
+        <span class="code">style="color:hsl(0,100%,50%)"</span>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>6. HSLA Colors</h2>
+
+        <p>HSLA adds transparency.</p>
+
+        <div class="example">
+
+            <div class="color-box" style="background-color:hsla(240,100%,50%,0.5);">
+                HSLA Blue with transparency
+            </div>
+
+        </div>
+
+        <span class="code">style="background-color:hsla(240,100%,50%,0.5)"</span>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>Combined Example</h2>
+
+        <div class="example">
+
+            <p style="color:red;">Color Name</p>
+
+            <p style="color:#ff5733;">HEX Color</p>
+
+            <p style="color:rgb(0,128,255);">RGB Color</p>
+
+            <p style="color:hsl(300,100%,50%);">HSL Color</p>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<footer>
+
+HTML Colors Tutorial | Styled with CSS
+
+</footer>
+
+</body>
+
+</html>

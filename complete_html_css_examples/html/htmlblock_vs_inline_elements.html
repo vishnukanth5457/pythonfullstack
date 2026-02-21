@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>HTML Block vs Inline Elements</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #c0392b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 6px solid #e74c3c;
+            border-radius: 6px;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        .example {
+            background: #ecf0f1;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .block-example {
+            background-color: #3498db;
+            color: white;
+            margin: 5px 0;
+            padding: 10px;
+        }
+
+        .inline-example {
+            background-color: #27ae60;
+            color: white;
+            padding: 5px;
+        }
+
+        .code {
+            background: #2d3436;
+            color: #00ffcc;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        footer {
+            background: #c0392b;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>HTML Block vs Inline Elements</h1>
+
+    <p>Learn the difference between Block and Inline Elements</p>
+
+</header>
+
+<div class="container">
+
+
+    <div class="card">
+
+        <h2>1. Block Elements</h2>
+
+        <p>Block elements take full width and start on a new line.</p>
+
+        <span class="code">Examples: div, p, h1</span>
+
+        <div class="example">
+
+            <div class="block-example">This is DIV (block element)</div>
+
+            <p class="block-example">This is P (block element)</p>
+
+            <h3 class="block-example">This is H3 (block element)</h3>
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>2. Inline Elements</h2>
+
+        <p>Inline elements take only required width and stay in same line.</p>
+
+        <span class="code">Examples: span, a, img</span>
+
+        <div class="example">
+
+            <span class="inline-example">SPAN</span>
+
+            <span class="inline-example">INLINE</span>
+
+            <span class="inline-example">ELEMENT</span>
+
+            <br><br>
+
+            <a href="#" class="inline-example">This is LINK</a>
+
+            <br><br>
+
+            <img src="https://via.placeholder.com/100" alt="Image">
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>3. Difference Demonstration</h2>
+
+        <div class="example">
+
+            <div class="block-example">Block Element 1</div>
+
+            <div class="block-example">Block Element 2</div>
+
+            <span class="inline-example">Inline 1</span>
+            <span class="inline-example">Inline 2</span>
+            <span class="inline-example">Inline 3</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>4. Key Differences</h2>
+
+        <div class="example">
+
+            <b>Block Elements:</b>
+
+            <ul>
+                <li>Start on new line</li>
+                <li>Take full width</li>
+                <li>Can contain inline and block elements</li>
+            </ul>
+
+            <b>Inline Elements:</b>
+
+            <ul>
+                <li>Do not start on new line</li>
+                <li>Take only needed width</li>
+                <li>Cannot contain block elements</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<footer>
+
+HTML Block vs Inline Tutorial | Styled with CSS
+
+</footer>
+
+</body>
+
+</html>

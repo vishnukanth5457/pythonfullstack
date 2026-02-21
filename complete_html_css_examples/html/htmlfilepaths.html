@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>HTML File Paths Tutorial</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #d35400;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 6px solid #e67e22;
+        }
+
+        .example {
+            background: #ecf0f1;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .code {
+            background: #2d3436;
+            color: #00ffcc;
+            padding: 5px 10px;
+            font-family: monospace;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        img {
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #d35400;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>HTML File Paths Tutorial</h1>
+
+    <p>Learn Absolute Path and Relative Path</p>
+
+</header>
+
+<div class="container">
+
+
+    <div class="card">
+
+        <h2>1. Absolute Path</h2>
+
+        <p>
+            Absolute path is full URL including domain.
+        </p>
+
+        <span class="code">
+            https://example.com/images/photo.jpg
+        </span>
+
+        <div class="example">
+
+            <img src="https://via.placeholder.com/200"
+                 alt="Absolute Path Example">
+
+        </div>
+
+        <p>
+            Used for external files.
+        </p>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>2. Relative Path</h2>
+
+        <p>
+            Relative path is location inside your project folder.
+        </p>
+
+        <span class="code">
+            images/photo.jpg
+        </span>
+
+        <div class="example">
+
+            Example structure:<br><br>
+
+            project/<br>
+            ├── index.html<br>
+            └── images/<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;└── photo.jpg
+
+        </div>
+
+        <span class="code">
+            &lt;img src="images/photo.jpg"&gt;
+        </span>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>3. Relative Path Types</h2>
+
+        <div class="example">
+
+            Same folder:<br>
+            <span class="code">photo.jpg</span><br><br>
+
+            Subfolder:<br>
+            <span class="code">images/photo.jpg</span><br><br>
+
+            Parent folder:<br>
+            <span class="code">../photo.jpg</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>4. When to Use</h2>
+
+        <ul>
+
+            <li>Absolute path → External resources</li>
+
+            <li>Relative path → Internal project files</li>
+
+        </ul>
+
+    </div>
+
+
+</div>
+
+<footer>
+
+HTML File Paths Tutorial
+
+</footer>
+
+</body>
+
+</html>

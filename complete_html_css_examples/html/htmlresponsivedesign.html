@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Responsive Design Tutorial</title>
+
+    <!-- Viewport meta tag -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        /* Mobile-first design (default for mobile) */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #27ae60;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 15px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 6px solid #2ecc71;
+        }
+
+        .code {
+            background: #2d3436;
+            color: #00ffcc;
+            padding: 5px 10px;
+            font-family: monospace;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        /* Responsive image */
+        .responsive-img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Responsive layout */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .box {
+            background-color: #0984e3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Tablet view */
+        @media (min-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        /* Desktop view */
+        @media (min-width: 1024px) {
+            .grid {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+        footer {
+            background-color: #27ae60;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>Responsive Design Tutorial</h1>
+
+    <p>Mobile-first and responsive layout</p>
+
+</header>
+
+<div class="container">
+
+
+    <div class="card">
+
+        <h2>1. Viewport Meta Tag</h2>
+
+        <p>
+            Makes website scale correctly on mobile devices.
+        </p>
+
+        <span class="code">
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        </span>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>2. Responsive Images</h2>
+
+        <p>
+            Image adjusts based on screen size.
+        </p>
+
+        <span class="code">
+            width: 100%; height: auto;
+        </span>
+
+        <br><br>
+
+        <img src="https://via.placeholder.com/600x300"
+             alt="Responsive Example"
+             class="responsive-img">
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>3. Mobile-first Layout</h2>
+
+        <p>
+            Layout starts with mobile design and expands for larger screens.
+        </p>
+
+        <span class="code">
+            @media (min-width: 768px)
+        </span>
+
+        <div class="grid">
+
+            <div class="box">Box 1</div>
+
+            <div class="box">Box 2</div>
+
+            <div class="box">Box 3</div>
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>Why Responsive Design is Important</h2>
+
+        <ul>
+
+            <li>Works on mobile, tablet, and desktop</li>
+
+            <li>Improves user experience</li>
+
+            <li>Important for SEO ranking</li>
+
+            <li>Used in all modern websites</li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+<footer>
+
+Responsive Design Tutorial | Mobile-first Approach
+
+</footer>
+
+</body>
+
+</html>

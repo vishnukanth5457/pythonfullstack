@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>HTML Semantic Elements Tutorial</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #2d3436;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #0984e3;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            display: flex;
+            padding: 20px;
+        }
+
+        section {
+            flex: 3;
+            background: white;
+            padding: 20px;
+            margin-right: 10px;
+        }
+
+        article {
+            background: #dfe6e9;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        aside {
+            flex: 1;
+            background: #ffeaa7;
+            padding: 20px;
+        }
+
+        figure {
+            margin: 10px 0;
+        }
+
+        figcaption {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #2d3436;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 6px solid #00cec9;
+        }
+
+        .code {
+            background: #2d3436;
+            color: #00ffcc;
+            padding: 5px 10px;
+            font-family: monospace;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>HTML Semantic Elements Tutorial</h1>
+
+    <p>Learn semantic elements and why they are important</p>
+
+</header>
+
+<nav>
+
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+
+</nav>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Semantic Elements</h2>
+
+        <p>Semantic elements clearly describe their meaning.</p>
+
+        <span class="code">
+            header, nav, main, section, article, aside, footer, figure, figcaption
+        </span>
+
+    </div>
+
+</div>
+
+<main class="container">
+
+    <section>
+
+        <h2>Section Example</h2>
+
+        <article>
+
+            <h3>Article 1</h3>
+
+            <p>This is article content inside section.</p>
+
+        </article>
+
+        <article>
+
+            <h3>Article 2</h3>
+
+            <p>This is another article.</p>
+
+        </article>
+
+        <figure>
+
+            <img src="https://via.placeholder.com/300" alt="Example Image">
+
+            <figcaption>Example image with caption</figcaption>
+
+        </figure>
+
+    </section>
+
+    <aside>
+
+        <h3>Aside</h3>
+
+        <p>This is sidebar content.</p>
+
+    </aside>
+
+</main>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Why Semantic Elements are Important</h2>
+
+        <ul>
+
+            <li><b>SEO:</b> Helps search engines understand page structure</li>
+
+            <li><b>Accessibility:</b> Helps screen readers understand content</li>
+
+            <li><b>Clean Code:</b> Makes code easier to read and maintain</li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+<footer>
+
+    Copyright © 2026 Semantic Tutorial
+
+</footer>
+
+</body>
+
+</html>

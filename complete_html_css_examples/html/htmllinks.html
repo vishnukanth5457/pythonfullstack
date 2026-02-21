@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>HTML Links Tutorial</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #2980b9;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 6px solid #3498db;
+            border-radius: 6px;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        .example {
+            background: #ecf0f1;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .code {
+            background: #2d3436;
+            color: #00ffcc;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        a {
+            color: #2980b9;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #2980b9;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #bookmark-section {
+            margin-top: 400px;
+            background: #dff9fb;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>HTML Links Tutorial</h1>
+
+    <p>Learn how to create links in HTML</p>
+
+</header>
+
+<div class="container">
+
+
+    <div class="card">
+
+        <h2>1. Anchor Tag (a)</h2>
+
+        <p>The anchor tag is used to create links.</p>
+
+        <span class="code">&lt;a href="https://example.com"&gt;Visit&lt;/a&gt;</span>
+
+        <div class="example">
+
+            <a href="https://www.google.com">Visit Google</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>2. Absolute URL</h2>
+
+        <p>Full web address including https://</p>
+
+        <div class="example">
+
+            <a href="https://www.wikipedia.org">Wikipedia</a>
+
+        </div>
+
+        <span class="code">href="https://www.wikipedia.org"</span>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>3. Relative URL</h2>
+
+        <p>Link to page inside your project.</p>
+
+        <div class="example">
+
+            <a href="about.html">Go to About Page</a>
+
+        </div>
+
+        <span class="code">href="about.html"</span>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>4. Target Attribute</h2>
+
+        <p>Controls where link opens.</p>
+
+        <div class="example">
+
+            <a href="https://www.google.com" target="_blank">Open in new tab (_blank)</a>
+            <br><br>
+
+            <a href="https://www.google.com" target="_self">Open in same tab (_self)</a>
+
+        </div>
+
+        <span class="code">target="_blank"</span>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>5. Email Link</h2>
+
+        <p>Opens email client.</p>
+
+        <div class="example">
+
+            <a href="mailto:test@example.com">Send Email</a>
+
+        </div>
+
+        <span class="code">href="mailto:test@example.com"</span>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>6. Phone Link</h2>
+
+        <p>Used to make phone calls.</p>
+
+        <div class="example">
+
+            <a href="tel:+911234567890">Call Now</a>
+
+        </div>
+
+        <span class="code">href="tel:+911234567890"</span>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>7. Bookmark Link</h2>
+
+        <p>Jump to specific section in page.</p>
+
+        <div class="example">
+
+            <a href="#bookmark-section">Go to Bookmark Section</a>
+
+        </div>
+
+        <span class="code">href="#bookmark-section"</span>
+
+    </div>
+
+
+    <div id="bookmark-section">
+
+        <h2>Bookmark Section</h2>
+
+        <p>You jumped here using bookmark link.</p>
+
+        <a href="#top">Go to Top</a>
+
+    </div>
+
+
+</div>
+
+<footer>
+
+HTML Links Tutorial | Styled with CSS
+
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>HTML Images and Media Tutorial</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #8e44ad;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 6px solid #9b59b6;
+            border-radius: 6px;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        .example {
+            background: #ecf0f1;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .code {
+            background: #2d3436;
+            color: #00ffcc;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        img {
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        footer {
+            background: #8e44ad;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>HTML Images and Media Tutorial</h1>
+
+    <p>Learn Images, Audio, and Video in HTML</p>
+
+</header>
+
+<div class="container">
+
+
+    <div class="card">
+
+        <h2>1. Image Tag (img)</h2>
+
+        <p>Used to display images.</p>
+
+        <span class="code">&lt;img src="image.jpg" alt="description"&gt;</span>
+
+        <div class="example">
+
+            <img src="https://via.placeholder.com/200" alt="Sample Image">
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>2. src Attribute</h2>
+
+        <p>Specifies image location.</p>
+
+        <span class="code">src="image.jpg"</span>
+
+        <div class="example">
+
+            <img src="https://via.placeholder.com/150" alt="Example">
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>3. alt Attribute</h2>
+
+        <p>Alternative text if image cannot load.</p>
+
+        <span class="code">alt="Image description"</span>
+
+        <div class="example">
+
+            <img src="wrong-image.jpg" alt="Image not found example">
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>4. width and height</h2>
+
+        <p>Controls image size.</p>
+
+        <span class="code">width="200" height="150"</span>
+
+        <div class="example">
+
+            <img src="https://via.placeholder.com/300" width="200" height="150" alt="Sized Image">
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>5. Image Formats</h2>
+
+        <p>Supported formats: JPG, PNG, SVG, WEBP</p>
+
+        <div class="example">
+
+            <img src="https://via.placeholder.com/200.jpg" alt="JPG Example">
+            <br>
+
+            <img src="https://via.placeholder.com/200.png" alt="PNG Example">
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>6. Audio Tag</h2>
+
+        <span class="code">&lt;audio controls&gt;</span>
+
+        <div class="example">
+
+            <audio controls>
+                <source src="sample.mp3" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>7. Video Tag</h2>
+
+        <span class="code">&lt;video controls width="300"&gt;</span>
+
+        <div class="example">
+
+            <video width="300" controls>
+                <source src="sample.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>8. source Tag</h2>
+
+        <p>Used inside audio or video.</p>
+
+        <span class="code">&lt;source src="file.mp4" type="video/mp4"&gt;</span>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>9. controls Attribute</h2>
+
+        <p>Shows play, pause, volume controls.</p>
+
+        <span class="code">controls</span>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>10. autoplay Attribute</h2>
+
+        <p>Starts media automatically.</p>
+
+        <span class="code">autoplay</span>
+
+        <div class="example">
+
+            <audio controls autoplay loop>
+                <source src="sample.mp3" type="audio/mpeg">
+            </audio>
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>11. loop Attribute</h2>
+
+        <p>Repeats media continuously.</p>
+
+        <span class="code">loop</span>
+
+    </div>
+
+
+</div>
+
+<footer>
+
+HTML Images and Media Tutorial | Styled with CSS
+
+</footer>
+
+</body>
+
+</html>

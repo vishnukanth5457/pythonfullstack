@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>CSS Integration Tutorial</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Internal CSS -->
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #8e44ad;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 6px solid #9b59b6;
+        }
+
+        .internal-example {
+            color: white;
+            background-color: #3498db;
+            padding: 10px;
+        }
+
+        .code {
+            background: #2d3436;
+            color: #00ffcc;
+            padding: 5px 10px;
+            font-family: monospace;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        footer {
+            background-color: #8e44ad;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+
+    <!-- External CSS Example -->
+    <!--
+    <link rel="stylesheet" href="style.css">
+    -->
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>CSS Integration Tutorial</h1>
+
+    <p>Inline, Internal, and External CSS</p>
+
+</header>
+
+<div class="container">
+
+
+    <div class="card">
+
+        <h2>1. Inline CSS</h2>
+
+        <p>CSS applied directly inside element.</p>
+
+        <span class="code">
+            &lt;p style="color:red;"&gt;Text&lt;/p&gt;
+        </span>
+
+        <p style="color:red; background:yellow; padding:10px;">
+            This is inline CSS example
+        </p>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>2. Internal CSS</h2>
+
+        <p>CSS written inside &lt;style&gt; tag in head.</p>
+
+        <span class="code">
+            &lt;style&gt; p { color:blue; } &lt;/style&gt;
+        </span>
+
+        <p class="internal-example">
+            This is internal CSS example
+        </p>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>3. External CSS</h2>
+
+        <p>CSS written in separate file.</p>
+
+        <span class="code">
+            &lt;link rel="stylesheet" href="style.css"&gt;
+        </span>
+
+        <p>
+            External CSS is best method for real websites.
+        </p>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>Comparison</h2>
+
+        <ul>
+
+            <li><b>Inline CSS:</b> Used for single element</li>
+
+            <li><b>Internal CSS:</b> Used for single page</li>
+
+            <li><b>External CSS:</b> Used for multiple pages (best method)</li>
+
+        </ul>
+
+    </div>
+
+
+</div>
+
+<footer>
+
+CSS Integration Tutorial
+
+</footer>
+
+</body>
+
+</html>

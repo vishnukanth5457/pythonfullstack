@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>HTML Advanced / Interview Topics</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #1e272e;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 6px solid #00cec9;
+        }
+
+        .code {
+            background: #2d3436;
+            color: #00ffcc;
+            padding: 5px 10px;
+            font-family: monospace;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        canvas {
+            border: 2px solid black;
+            margin-top: 10px;
+        }
+
+        svg {
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #1e272e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>HTML Advanced / Interview Topics</h1>
+
+    <p>Important topics for interviews</p>
+
+</header>
+
+<div class="container">
+
+
+    <div class="card">
+
+        <h2>1. HTML5 Features</h2>
+
+        <ul>
+
+            <li>Semantic elements (header, nav, main, footer)</li>
+
+            <li>Audio and video support</li>
+
+            <li>Canvas and SVG graphics</li>
+
+            <li>Local storage</li>
+
+            <li>Improved forms</li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>2. HTML vs HTML5</h2>
+
+        <span class="code">
+            HTML → Older version<br>
+            HTML5 → Latest version with new features
+        </span>
+
+        <ul>
+
+            <li>HTML5 supports video and audio</li>
+
+            <li>HTML5 supports semantic tags</li>
+
+            <li>HTML5 supports canvas and SVG</li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>3. Doctype Importance</h2>
+
+        <span class="code">
+            &lt;!DOCTYPE html&gt;
+        </span>
+
+        <p>
+            Tells browser to use HTML5 standard.
+        </p>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>4. Void Elements</h2>
+
+        <p>
+            Elements without closing tag.
+        </p>
+
+        <span class="code">
+            br, hr, img, input, meta, link
+        </span>
+
+        <br><br>
+
+        Example:<br>
+
+        Line 1<br>
+        Line 2
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>5. Data Attributes</h2>
+
+        <span class="code">
+            data-user="admin"
+        </span>
+
+        <div data-user="admin">
+
+            Custom data attribute example
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>6. Canvas Basics</h2>
+
+        <span class="code">
+            &lt;canvas&gt;
+        </span>
+
+        <canvas id="myCanvas" width="200" height="100"></canvas>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>7. SVG Basics</h2>
+
+        <span class="code">
+            &lt;svg&gt;
+        </span>
+
+        <svg width="200" height="100">
+
+            <circle cx="50" cy="50" r="40"
+                    stroke="black"
+                    stroke-width="3"
+                    fill="red"/>
+
+        </svg>
+
+    </div>
+
+
+</div>
+
+<footer>
+
+HTML Advanced Interview Topics
+
+</footer>
+
+
+<script>
+
+    /* Canvas drawing example */
+
+    var canvas = document.getElementById("myCanvas");
+
+    var ctx = canvas.getContext("2d");
+
+    ctx.fillStyle = "blue";
+
+    ctx.fillRect(20, 20, 150, 60);
+
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>HTML Attributes Tutorial</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #34495e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-left: 6px solid #3498db;
+            border-radius: 6px;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+        }
+
+        .code {
+            background: #ecf0f1;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            color: #c0392b;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        .example-box {
+            background: #ecf0f1;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #34495e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>HTML Attributes Tutorial</h1>
+    <p>Learn HTML Attributes with Examples</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>1. What are Attributes</h2>
+
+        <p>
+            Attributes provide additional information about HTML elements.
+        </p>
+
+        <p>
+            Syntax:
+        </p>
+
+        <span class="code">&lt;tagname attribute="value"&gt;</span>
+
+        <div class="example-box">
+            Example:
+            <br>
+            <span class="code">&lt;p title="This is tooltip"&gt;Text&lt;/p&gt;</span>
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>2. Global Attributes</h2>
+
+        <p>
+            Global attributes can be used on ANY HTML element.
+        </p>
+
+        <p>
+            Examples: id, class, style, title, hidden, contenteditable, draggable, data-*
+        </p>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>3. id Attribute</h2>
+
+        <p>
+            id provides a unique identifier for an element.
+        </p>
+
+        <span class="code">&lt;p id="para1"&gt;This is paragraph&lt;/p&gt;</span>
+
+        <div class="example-box">
+            <p id="para1">This paragraph has an ID</p>
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>4. class Attribute</h2>
+
+        <p>
+            class is used to group multiple elements for CSS styling.
+        </p>
+
+        <span class="code">&lt;p class="text"&gt;Text&lt;/p&gt;</span>
+
+        <div class="example-box">
+            <p class="text">This paragraph uses class attribute</p>
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>5. style Attribute</h2>
+
+        <p>
+            style is used to apply CSS directly to an element.
+        </p>
+
+        <span class="code">&lt;p style="color:red;"&gt;Red Text&lt;/p&gt;</span>
+
+        <div class="example-box">
+            <p style="color:red;">This text is red</p>
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>6. title Attribute</h2>
+
+        <p>
+            title shows tooltip when mouse hovers on element.
+        </p>
+
+        <span class="code">&lt;p title="Tooltip text"&gt;Hover me&lt;/p&gt;</span>
+
+        <div class="example-box">
+            <p title="This is tooltip">Hover mouse here</p>
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>7. hidden Attribute</h2>
+
+        <p>
+            hidden hides the element from the webpage.
+        </p>
+
+        <span class="code">&lt;p hidden&gt;Hidden text&lt;/p&gt;</span>
+
+        <div class="example-box">
+            <p hidden>This text is hidden</p>
+            Hidden element is not visible
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>8. contenteditable Attribute</h2>
+
+        <p>
+            contenteditable allows user to edit the content.
+        </p>
+
+        <span class="code">&lt;p contenteditable="true"&gt;Edit me&lt;/p&gt;</span>
+
+        <div class="example-box">
+            <p contenteditable="true">Click here and edit this text</p>
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>9. draggable Attribute</h2>
+
+        <p>
+            draggable allows element to be dragged.
+        </p>
+
+        <span class="code">&lt;p draggable="true"&gt;Drag me&lt;/p&gt;</span>
+
+        <div class="example-box">
+            <p draggable="true">Drag this text</p>
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>10. data Attribute</h2>
+
+        <p>
+            data-* is used to store custom data in HTML elements.
+        </p>
+
+        <span class="code">&lt;p data-user="admin"&gt;User&lt;/p&gt;</span>
+
+        <div class="example-box">
+            <p data-user="admin">This element has custom data attribute</p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>HTML Attributes Tutorial | Styled with CSS</p>
+</footer>
+
+</body>
+
+</html>

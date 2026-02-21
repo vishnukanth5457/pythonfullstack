@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>HTML Div and Span Tutorial</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #2e86de;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 6px solid #54a0ff;
+            border-radius: 6px;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        .example {
+            background: #ecf0f1;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .div-box {
+            background-color: #0984e3;
+            color: white;
+            padding: 20px;
+            margin-top: 10px;
+        }
+
+        .span-text {
+            background-color: #fdcb6e;
+            padding: 5px;
+            color: black;
+            font-weight: bold;
+        }
+
+        .room {
+            background-color: #74b9ff;
+            padding: 20px;
+            margin-top: 10px;
+            color: white;
+        }
+
+        .sticker {
+            background-color: yellow;
+            color: black;
+            padding: 3px 6px;
+            font-weight: bold;
+        }
+
+        .code {
+            background: #2d3436;
+            color: #00ffcc;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        footer {
+            background: #2e86de;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>HTML Div and Span Tutorial</h1>
+
+    <p>Learn Block Container and Inline Container</p>
+
+</header>
+
+<div class="container">
+
+
+    <div class="card">
+
+        <h2>1. div : Block Container</h2>
+
+        <p>div is a block element used to group large sections.</p>
+
+        <span class="code">&lt;div&gt;Content&lt;/div&gt;</span>
+
+        <div class="example">
+
+            <div class="div-box">
+                This is a DIV container (takes full width)
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>2. span : Inline Container</h2>
+
+        <p>span is an inline element used to style part of text.</p>
+
+        <span class="code">&lt;span&gt;Text&lt;/span&gt;</span>
+
+        <div class="example">
+
+            This is normal text and 
+            <span class="span-text">this is span text</span>
+            inside the line.
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>3. Real-world Example (Room and Sticker)</h2>
+
+        <p>
+            div = Room (big container)<br>
+            span = Sticker (small item inside room)
+        </p>
+
+        <div class="example">
+
+            <div class="room">
+
+                This is a ROOM (DIV)
+
+                <br><br>
+
+                This is a 
+                <span class="sticker">STICKER (SPAN)</span>
+                inside the room
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>4. Combined Example</h2>
+
+        <div class="example">
+
+            <div style="background:#6c5ce7; color:white; padding:15px;">
+
+                Welcome to my website
+
+                <br><br>
+
+                My name is 
+                <span style="background:yellow; color:black;">
+                    John
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>5. Key Differences</h2>
+
+        <div class="example">
+
+            <b>DIV:</b>
+
+            <ul>
+                <li>Block element</li>
+                <li>Takes full width</li>
+                <li>Used for layout</li>
+                <li>Like a room</li>
+            </ul>
+
+            <b>SPAN:</b>
+
+            <ul>
+                <li>Inline element</li>
+                <li>Takes only needed width</li>
+                <li>Used for styling text</li>
+                <li>Like a sticker</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<footer>
+
+HTML Div and Span Tutorial | Styled with CSS
+
+</footer>
+
+</body>
+
+</html>

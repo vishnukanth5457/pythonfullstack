@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>HTML URL Encoding Tutorial</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #e84393;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 6px solid #fd79a8;
+        }
+
+        .example {
+            background: #ecf0f1;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .code {
+            background: #2d3436;
+            color: #00ffcc;
+            padding: 5px 10px;
+            font-family: monospace;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        footer {
+            background-color: #e84393;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>HTML URL Encoding Tutorial</h1>
+
+    <p>Learn how URLs encode spaces and special characters</p>
+
+</header>
+
+<div class="container">
+
+
+    <div class="card">
+
+        <h2>1. What is URL Encoding?</h2>
+
+        <p>
+            URL encoding converts special characters into a format that can be safely used in URLs.
+        </p>
+
+        <p>
+            URLs can only contain standard ASCII characters.
+        </p>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>2. Space Encoding</h2>
+
+        <p>
+            Space cannot be used in URL directly.
+        </p>
+
+        <span class="code">
+            Space → %20
+        </span>
+
+        <div class="example">
+
+            Wrong:<br>
+            https://example.com/my file.html<br><br>
+
+            Correct:<br>
+            https://example.com/my%20file.html
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>3. Special Character Encoding</h2>
+
+        <div class="example">
+
+            # → %23<br>
+            & → %26<br>
+            @ → %40<br>
+            = → %3D<br>
+            ? → %3F<br>
+            / → %2F<br>
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>4. Example with Link</h2>
+
+        <span class="code">
+            &lt;a href="my%20page.html"&gt;Open Page&lt;/a&gt;
+        </span>
+
+        <div class="example">
+
+            <a href="#">Example encoded link: my%20page.html</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>5. Why URL Encoding is Important?</h2>
+
+        <ul>
+
+            <li>Prevents URL errors</li>
+
+            <li>Allows special characters in URLs</li>
+
+            <li>Required for query parameters</li>
+
+            <li>Used in forms and APIs</li>
+
+        </ul>
+
+    </div>
+
+
+</div>
+
+<footer>
+
+HTML URL Encoding Tutorial
+
+</footer>
+
+</body>
+
+</html>

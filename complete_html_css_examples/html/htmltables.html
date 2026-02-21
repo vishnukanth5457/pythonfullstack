@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>HTML Tables Tutorial</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #16a085;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 6px solid #1abc9c;
+            border-radius: 6px;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        .example {
+            background: #ecf0f1;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        .code {
+            background: #2d3436;
+            color: #00ffcc;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid #2c3e50;
+        }
+
+        th {
+            background-color: #1abc9c;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        caption {
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        tfoot {
+            background-color: #d5f5e3;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #16a085;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>HTML Tables Tutorial</h1>
+
+    <p>Learn how to create tables in HTML</p>
+
+</header>
+
+<div class="container">
+
+
+    <div class="card">
+
+        <h2>1. Basic Table (table, tr, th, td)</h2>
+
+        <span class="code">&lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;</span>
+
+        <div class="example">
+
+            <table>
+
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                </tr>
+
+                <tr>
+                    <td>Ram</td>
+                    <td>22</td>
+                    <td>Pune</td>
+                </tr>
+
+                <tr>
+                    <td>Priya</td>
+                    <td>24</td>
+                    <td>Mumbai</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>2. Caption</h2>
+
+        <span class="code">&lt;caption&gt;</span>
+
+        <div class="example">
+
+            <table>
+
+                <caption>Student Table</caption>
+
+                <tr>
+                    <th>Name</th>
+                    <th>Marks</th>
+                </tr>
+
+                <tr>
+                    <td>Rahul</td>
+                    <td>90</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>3. thead, tbody, tfoot</h2>
+
+        <span class="code">&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</span>
+
+        <div class="example">
+
+            <table>
+
+                <caption>Employee Salary Table</caption>
+
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Salary</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Amit</td>
+                        <td>50000</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sneha</td>
+                        <td>60000</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td>110000</td>
+                    </tr>
+                </tfoot>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>4. colspan</h2>
+
+        <span class="code">colspan="2"</span>
+
+        <div class="example">
+
+            <table>
+
+                <tr>
+                    <th colspan="2">Full Name</th>
+                    <th>Age</th>
+                </tr>
+
+                <tr>
+                    <td>Ram</td>
+                    <td>Kumar</td>
+                    <td>25</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>5. rowspan</h2>
+
+        <span class="code">rowspan="2"</span>
+
+        <div class="example">
+
+            <table>
+
+                <tr>
+                    <th>Name</th>
+                    <th>Subject</th>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">Anita</td>
+                    <td>Math</td>
+                </tr>
+
+                <tr>
+                    <td>Science</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<footer>
+
+HTML Tables Tutorial | Styled with CSS
+
+</footer>
+
+</body>
+
+</html>
